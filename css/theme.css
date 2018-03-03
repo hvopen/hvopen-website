@@ -49,3 +49,15 @@ body {
 .author a {
     color: #ee4444;
 }
+
+.banner {
+    #background-color: #ff0000;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.banner-img {
+    height: 200px;
+    background-image: url(/images/banner-wide-2.png);
+}

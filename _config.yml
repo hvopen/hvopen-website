@@ -1,16 +1,16 @@
 # Jekyll configuration
 
-name: My blog
-description: A jekyll theme
+name: Hudson Valley Open Technology Forum
+description: Open Source, Open Hardware, Open Data
 
 # url is currently only used only for the RSS feed in feed.xml
-url: https://scotte.github.io/jekyll-clean
+url: https://hvopen.org
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: /jekyll-clean
+baseurl:
 
 # These can be '' to hide the Github or Gitlab nav buttons
 github: 'scotte/jekyll-clean'
@@ -35,6 +35,8 @@ paginate: 3
 
 highlighter: rouge
 markdown: kramdown
+# markdown_ext: "markdown, mkdown, mkdn, mkd, md"
+
 gems: ['jekyll-paginate']
 
-exclude: ['README.md', 'LICENSE']
+exclude: ['README.md', 'LICENSE', 'vendor']

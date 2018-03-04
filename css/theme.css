@@ -20,12 +20,13 @@ body {
 }
 
 .sidebar h1 {
-    color: #ee4444;
+    color: #1DA8DE;
+    font-weight: bold;
     font-size: 1.3em;
 }
 
 .sidebar a {
-    color: #428bca;
+    color: #1684B9;
 }
 
 .sidebar li {
@@ -42,16 +43,16 @@ body {
 }
 
 .well h1 {
-    color: #ee4444;
+    color: #1DA8DE;
     font-size: 1.3em;
 }
 
 .author {
-    color: #ee4444;
+    color: #1DA8DE;
 }
 
 .author a {
-    color: #ee4444;
+    color: #1DA8DE;
 }
 
 .banner {
@@ -63,5 +64,5 @@ body {
 
 .banner-img {
     height: 200px;
-    background-image: url(/images/banner-wide-2.png);
+    background-image: url(/images/banner-wide-white.png);
 }

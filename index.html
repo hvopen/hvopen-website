@@ -2,6 +2,17 @@
 layout: default
 ---
 
+{% assign future_events = (site.events | where_exp: "item", "item.dtend > site.time") %}
+
+{% for event in future_events %}
+<div class="article">
+  <div class="">
+    <h1>{{ event.title }}</h1>
+    {{ event.dtend }}
+  </div>
+</div>
+{% endfor %}
+
 {% for post in paginator.posts %}
 <div class="article">
     <div class="">

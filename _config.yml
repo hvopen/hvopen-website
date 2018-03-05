@@ -30,6 +30,8 @@ isso: ''
 # Set this to your disqus shortname to enable comments via disqus. Set to '' to disable disqus.
 disqus: ''
 
+timezone: America/New_York
+
 collections:
   events:
     output: true

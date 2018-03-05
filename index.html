@@ -4,26 +4,49 @@ layout: default
 
 {% assign future_events = (site.events | where_exp: "item", "item.dtend > site.time") %}
 
-{% for event in future_events %}
-<div class="article">
-  <div class="">
-    <h1>{{ event.title }}</h1>
-    {{ event.dtend }}
+<div class="row">
+  <div class="col-md-3">
+    <h1>Next Meeting</h1>
+  </div>
+  <div class="col-md-9">
+
+    {% for event in future_events %}
+
+    <div class="article">
+      <div class="row">
+        <div class="col-md-9">
+        <h1 class="meeting-title"><a href="{{ site.baseurl}}{{ event.url }}">{{ event.title }}</a></h1>
+        </div>
+        <div class="col-md-3 date-container">
+          <div class="dateBox">
+            <span class="month">{{ event.date | date: "%b" }}</span>
+            <span class="day">{{ event.date | date: "%-d" }}</span>
+          </div>
+        </div>
+      </div>
+        <div class="content">
+          {{ event.content }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
-{% endfor %}
+
+<div class="row">
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <h1>News</h1>
+  </div>
+  <div class="col-md-9">
+
 
 {% for post in paginator.posts %}
 <div class="article">
     <div class="">
         <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
-        {% if site.comments and post.comments %}
-            {% if site.disqus != '' %}
-            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url | slugify }}">Comments</a></p>
-            {% elsif site.isso != '' %}
-            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}{{ site.isso_suffix }}#isso-thread">Comments</a></p>
-            {% endif %}
-        {% endif %}
         <div class="content">
             {{ post.content }}
         </div>
@@ -43,4 +66,6 @@ layout: default
   {% if paginator.next_page %}
     <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
   {% endif %}
+</div>
+  </div>
 </div>

@@ -6,7 +6,7 @@ location: Rockefeller Hall Room 300
 ---
 
 Kubernetes seems to be all the rage in today’s cloud focused,
-microservice architecture hyped world — but what is this mysterious
+microservice architecture hyped world - but what is this mysterious
 beast and how does one use it in practice?
 
 In the first part of this talk, Dan will take you through the core

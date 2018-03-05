@@ -7,8 +7,10 @@ layout: default
 {% for event in future_events %}
 <div class="article">
   <div class="">
-    <h1>{{ event.title }}</h1>
-    {{ event.dtend }}
+    <h1><a href="{{ site.baseurl}}{{ event.url }}">{{ event.date | date: "%b %-d, %Y" }} - {{ event.title }}</a></h1>
+    <div class="content">
+      {{ event.content }}
+    </div>
   </div>
 </div>
 {% endfor %}

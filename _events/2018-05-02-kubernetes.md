@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes"
-start: 2018-04-01 18:00:00
-end: 2018-04-01 20:00:00
+start: 2018-05-02 18:00:00
+end: 2018-05-02 20:00:00
 location: Rockefeller Hall Room 300
 ---
 

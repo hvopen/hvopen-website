@@ -13,8 +13,17 @@ layout: default
     {% for event in future_events %}
 
     <div class="article">
-      <div class="">
-        <h1><a href="{{ site.baseurl}}{{ event.url }}">{{ event.date | date: "%b %-d, %Y" }} - {{ event.title }}</a></h1>
+      <div class="row">
+        <div class="col-md-9">
+        <h1 class="meeting-title"><a href="{{ site.baseurl}}{{ event.url }}">{{ event.title }}</a></h1>
+        </div>
+        <div class="col-md-3 date-container">
+          <div class="dateBox">
+            <span class="month">{{ event.date | date: "%b" }}</span>
+            <span class="day">{{ event.date | date: "%-d" }}</span>
+          </div>
+        </div>
+      </div>
         <div class="content">
           {{ event.content }}
         </div>

@@ -84,6 +84,19 @@ div {
     background-image: url(/images/banner-wide-white.png);
 }
 
+h1.highlight {
+    padding-left: 10px;
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+span.highlight {
+    background: #FFD503;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .navbar {
     background-color: white;
 }

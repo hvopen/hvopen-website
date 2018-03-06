@@ -5,6 +5,7 @@ body {
     font-family: "Source Sans Pro";
     font-size: 16px;
     padding-top: 60px;
+    color: #17171A;
     /* padding-bottom: 60px; */
 }
 
@@ -62,7 +63,6 @@ body {
 }
 
 .banner {
-    #background-color: #ff0000;
     width: 100%;
     margin-top: -10px;
     margin-bottom: 20px;
@@ -75,6 +75,10 @@ body {
 
 .navbar {
     background-color: white;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #17171A;
 }
 
 .navbar-logo img {

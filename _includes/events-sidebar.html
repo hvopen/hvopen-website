@@ -1,0 +1,10 @@
+{% assign events = (site.events | where: "type", "meeting") %}
+
+<div class="sidebar">
+    <h1>Meetings</h1>
+    <ul>
+        {% for event in events %}
+          <li><a href="{{ site.baseurl}}{{ event.url }}">{{ event.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

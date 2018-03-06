@@ -3,6 +3,7 @@ title: "Kubernetes"
 dtstart: 2018-05-02 18:00:00 -0400
 dtend: 2018-05-02 20:00:00 -0400
 location: Rockefeller Hall Room 300
+type: meeting
 ---
 
 Kubernetes seems to be all the rage in today’s cloud focused,

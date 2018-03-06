@@ -13,7 +13,7 @@ url: https://hvopen.org
 baseurl:
 
 # These can be '' to hide the Github or Gitlab nav buttons
-github: 'scotte/jekyll-clean'
+github: 'mhvlug/hvopen-website'
 gitlab: ''
 
 # Set this to your UA-# value, or '' to disable the block completely
@@ -22,7 +22,7 @@ gaaccount: ''
 # The 'comments' setting enables comments. You'll need to select either
 # disqus or isso below to choose a comment system. Individual posts can
 # override 'comments' to disable on a post-by-post basis.
-comments: true
+comments: false
 
 # Set this to your public isso URL to enable comments via isso. Set to '' to disable isso.
 isso: ''

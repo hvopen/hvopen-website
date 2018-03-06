@@ -2,8 +2,15 @@
 layout: default
 ---
 
-{% for item in site.events %}
-  <h2>{{ item.title }}</h2>
-  <p>{{ item.description }}</p>
-  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% assign posts_by_year = (site.events | group_by_exp: "event", "event.dtstart | date: '%Y'") %}
+
+<div class="">
+{% for year in posts_by_year %}
+<h1>{{ year.name }}</h1>
+<ul>
+  {% for post in year.items %}
+  <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.dtstart | date: "%b %-d" }} - {{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 {% endfor %}
+</div>

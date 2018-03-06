@@ -2,7 +2,10 @@
 layout: default
 ---
 
-{% assign future_events = (site.events | where_exp: "item", "item.dtend > site.time") %}
+{% assign upcomming_events = (site.events | where_exp: "item",
+"item.dtend > site.time" | where: "type", "meeting") %}
+
+{% assign next_event = upcomming_events.first %}
 
 <div class="row">
   <div class="col-md-3">
@@ -10,31 +13,25 @@ layout: default
   </div>
   <div class="col-md-9">
 
-    {% for event in future_events %}
-
     <div class="article">
       <div class="row">
         <div class="col-md-9">
-        <h1 class="meeting-title"><a href="{{ site.baseurl}}{{ event.url }}">{{ event.title }}</a></h1>
+        <h1 class="meeting-title"><a href="{{ site.baseurl}}{{ next_event.url }}">{{ next_event.title }}</a></h1>
         </div>
         <div class="col-md-3 date-container">
           <div class="dateBox">
-            <span class="month">{{ event.date | date: "%b" }}</span>
-            <span class="day">{{ event.date | date: "%-d" }}</span>
+            <span class="month">{{ next_event.date | date: "%b" }}</span>
+            <span class="day">{{ next_event.date | date: "%-d" }}</span>
           </div>
         </div>
       </div>
         <div class="content">
-          {{ event.content }}
+          {{ next_event.content }}
         </div>
-      </div>
     </div>
-    {% endfor %}
   </div>
 </div>
 
-<div class="row">
-</div>
 
 <div class="row">
   <div class="col-md-3">
@@ -43,29 +40,29 @@ layout: default
   <div class="col-md-9">
 
 
-{% for post in paginator.posts %}
-<div class="article">
-    <div class="">
+    {% for post in paginator.posts %}
+    <div class="article">
+      <div class="">
         <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
         <div class="content">
-            {{ post.content }}
+          {{ post.content }}
         </div>
+      </div>
     </div>
-</div>
-{% endfor %}
+    {% endfor %}
 
-<div class="pagination">
-  {% if paginator.previous_page %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
+      <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
       {% else %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
+      <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
       {% endif %}
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
-  {% endif %}
-</div>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+      <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
+      {% endif %}
+    </div>
   </div>
 </div>

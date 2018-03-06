@@ -5,7 +5,12 @@ body {
     font-family: "Source Sans Pro";
     font-size: 16px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
+}
+
+.footer-container {
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .copyright {

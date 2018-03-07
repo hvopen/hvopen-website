@@ -4,13 +4,19 @@ layout: default
 
 {% assign posts_by_year = (site.events | group_by_exp: "event", "event.dtstart | date: '%Y'") %}
 
-<div class="">
-{% for year in posts_by_year %}
-<h1>{{ year.name }}</h1>
-<ul>
-  {% for post in year.items %}
-  <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.dtstart | date: "%b %-d" }} - {{ post.title }}</a></li>
+<div class="row">
+  {% for year in posts_by_year %}
+  <div class="col-md-3">
+    <h1>{{ year.name }}</h1>
+  </div>
+  <div class="col-md-9">
+    {% assign items = (year.items | sort: 'dtstart' | reverse ) %}
+    {% for post in items %}
+    <div>
+      <a href="{{ site.baseurl}}{{ post.url }}">{{ post.dtstart |
+        date: "%b %-d" }} - {{ post.title }}</a>
+    </div>
+    {% endfor %}
+  </div>
   {% endfor %}
-</ul>
-{% endfor %}
 </div>

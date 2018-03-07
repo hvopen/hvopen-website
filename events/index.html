@@ -9,7 +9,7 @@ layout: default
   <div class="col-md-3">
     <h1>{{ year.name }}</h1>
   </div>
-  <div class="col-md-9">
+  <div class="col-md-9 paired-content">
     {% assign items = (year.items | sort: 'dtstart' | reverse ) %}
     {% for post in items %}
     <div>

@@ -34,7 +34,7 @@ div {
 }
 
 .footer a {
-    color: #ee4444;
+    color: #1684B9;
 }
 
 .sidebar h1 {
@@ -108,12 +108,20 @@ span.highlight {
     background-color: white;
 }
 
+.navbar-toggle {
+    border-color: #ddd;
+}
+
 .navbar-toggle .icon-bar {
     background-color: #17171A;
 }
 
 .navbar-logo img {
     margin: 0.4em;
+}
+
+.paired-content {
+    margin-top: 1.9em;
 }
 
 @media (max-width: 990px) {

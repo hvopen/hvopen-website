@@ -23,15 +23,16 @@ body {
 }
 
 .copyright {
-    color: #ffffff;
+    padding-top: 4em;
+    color: #bbbbbb;
 }
 
-.footer {
-    text-align: center;
+.footer-container a {
+    color: #FFD503; /* white; /* #1684B9; */
 }
 
-.footer a {
-    color: #1684B9;
+.footer-container a.hover {
+    text-decortation: underline;
 }
 
 .sidebar h1 {

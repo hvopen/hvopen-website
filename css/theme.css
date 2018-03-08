@@ -12,12 +12,9 @@ body {
     /* padding-bottom: 60px; */
 }
 
-div {
-    background-color: white;
-}
-
 .navbar-inverse {
     background-color: #17171A;
+    color: white;
 }
 
 .footer-container {

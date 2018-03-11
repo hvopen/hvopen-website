@@ -11,6 +11,11 @@ module Jekyll
       page = context.registers[:page]
       puts page.inspect
 
+      popup = "<b>#{page["title"]}</b>"
+      if page["subtitle"]
+        popup += "<br>#{page["subtitle"]}"
+      end
+
       <<-MAP
 <div id="mapid" class="location-map"></div>
  <script language="javascript">
@@ -22,7 +27,7 @@ module Jekyll
         accessToken: 'pk.eyJ1Ijoic2RhZ3VlIiwiYSI6ImNqZW1vdjQ0bDBuYm4zM3FtMmg2NWluYjAifQ.IMna_1cRxM3XgrXUn2QxGQ'
     }).addTo(mymap);
   var marker = L.marker([#{page["lat"]}, #{page["lon"]}]).addTo(mymap);
-  marker.bindPopup("<b>#{page["title"]}</b><br>3rd Floor Auditorium").openPopup();
+  marker.bindPopup("#{popup}").openPopup();
 
   var myIcon = L.icon({
       iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/32px-Parking_icon.svg.png',

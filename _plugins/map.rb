@@ -8,8 +8,10 @@ module Jekyll
     end
 
     def render(context)
+      page = context.registers[:page]
+      puts page.inspect
+
       <<-MAP
-<div>#{@text} Why </div>
 <div id="mapid" class="location-map"></div>
  <script language="javascript">
     var mymap = L.map('mapid').setView([41.68790, -73.8968], 16);
@@ -19,16 +21,16 @@ module Jekyll
         id: 'mapbox.streets',
         accessToken: 'pk.eyJ1Ijoic2RhZ3VlIiwiYSI6ImNqZW1vdjQ0bDBuYm4zM3FtMmg2NWluYjAifQ.IMna_1cRxM3XgrXUn2QxGQ'
     }).addTo(mymap);
-  var marker = L.marker([41.6879, -73.8968]).addTo(mymap);
-  marker.bindPopup("<b>300 Rockefeller Hall</b><br>3rd Floor Auditorium").openPopup();
+  var marker = L.marker([#{page["lat"]}, #{page["lon"]}]).addTo(mymap);
+  marker.bindPopup("<b>#{page["title"]}</b><br>3rd Floor Auditorium").openPopup();
 
   var myIcon = L.icon({
       iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/32px-Parking_icon.svg.png',
       iconSize: [32, 32],
-      iconAnchor: [22, 94],
+      iconAnchor: [32, 32],
       popupAnchor: [-3, -76],
   });
-  var parking = L.marker([41.6896, -73.8970], {icon: myIcon}).addTo(mymap);
+  var parking = L.marker(#{page["parking"]}, {icon: myIcon}).addTo(mymap);
  </script>
 
         MAP

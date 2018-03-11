@@ -3,7 +3,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3 hidden-xs">
-      {% include events-sidebar.html %}
     </div>
     <div class="col-md-9">
       <div class="article">
@@ -12,12 +11,8 @@
               {{ page.title }}
           </a></h1>
         </div>
-        <div class="when">
-          {{ page.dtstart | date: "%b %-d, %Y: %-I%P" }} - {{ page.dtend
-          | date: "%-I%P" }}
-        </div>
-        <div class="post-content">
-          {{ content }}
+        <div class="where">
+          {% map "some text", lat:73 %}
         </div>
       </div>
     </div>

@@ -37,12 +37,20 @@ collections:
     output: true
     title: Events
     permalink: /:collection/:year/:month/:title
+  locations:
+    output: true
+    title: Locations
+    permalink: /:collection/:title
 
 defaults:
   - scope:
       type: events
     values:
       layout: event
+  - scope:
+      type: locations
+    values:
+      layout: location
 
 permalink: /:year/:month/:title
 paginate: 3
@@ -53,4 +61,4 @@ markdown: kramdown
 
 gems: ['jekyll-paginate']
 
-exclude: ['README.md', 'LICENSE', 'vendor']
+exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*']

@@ -32,7 +32,7 @@ body {
 }
 
 .footer-container a.hover {
-    text-decortation: underline;
+    text-decoration: underline;
 }
 
 .sidebar h1 {
@@ -79,7 +79,7 @@ body {
 
 .banner-img {
     height: 200px;
-    background-image: url(/images/banner-wide-white.png);
+    background-image: url(/images/banner-wide-white.jpg);
 }
 
 h1.highlight {

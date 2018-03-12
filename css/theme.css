@@ -113,7 +113,12 @@ span.highlight {
     padding-left: 10px;
 }
 
-.navbar {
+@media (min-width: 768px) {
+    .navbar {
+        background-color: white;
+    }
+}
+.navbar-header {
     background-color: white;
     /* background-color: rgba(255, 255, 255, 0.8); */
 }

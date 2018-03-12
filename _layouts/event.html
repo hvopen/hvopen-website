@@ -3,26 +3,32 @@
 {% assign location = (site.locations | where: "title", page.location ) | first %}
 <div class="container">
   <div class="row">
-    <div class="col-md-3 hidden-xs">
-      {% include events-sidebar.html %}
-    </div>
-    <div class="col-md-9">
-      <div class="article">
-        <div class="">
+    <div class="col-md-8 col-md-offset-4">
           <h1><a href="{{ site.baseurl}}{{ page.url }}">
               {{ page.title }}
           </a></h1>
-        </div>
-        <div class="when">
-          {{ page.dtstart | date: "%b %-d, %Y: %-I%P" }} - {{ page.dtend
-          | date: "%-I%P" }}
-        </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-push-4">
+      <div class="article">
         <div class="post-content">
           {{ content }}
         </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+      <h3>When</h3>
+      <div class="when">
+          {{ page.dtstart | date: "%b %-d, %Y: %-I%P" }} - {{ page.dtend
+          | date: "%-I%P" }}
+      </div>
+      <h3>Where</h3>
         <div>Location: {{ page.location }}</div>
         {% map location %}
-      </div>
+
+      <h3>RSVP</h3>
     </div>
   </div>
 </div>

@@ -1,5 +1,6 @@
 {% include header.html %}
 
+{% assign location = (site.locations | where: "title", page.location ) | first %}
 <div class="container">
   <div class="row">
     <div class="col-md-3 hidden-xs">
@@ -19,6 +20,8 @@
         <div class="post-content">
           {{ content }}
         </div>
+        <div>Location: {{ page.location }}</div>
+        {% map location %}
       </div>
     </div>
   </div>

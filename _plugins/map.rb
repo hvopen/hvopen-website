@@ -9,13 +9,27 @@ module Jekyll
     end
 
     def render(context)
+      page = nil
       if @text != ""
         puts "Assigning from text"
         page = context[@text]
       else
         puts "Assigning from page"
-        page = context.registers[:page]
+        local = context.registers[:page]
+        if local["collection"] == "locations"
+          page = local
+          # TODO(sdague): it would be nice to move the location magic
+          # lookup here so that we can just look up, by title, pages
+          # that have location attributes without have to assign
+          # location on the parent document.
+        end
       end
+
+      if page == nil
+        puts "ERROR: no location information found"
+        return ""
+      end
+
       puts page.inspect
 
       popup = "<b>#{page["title"]}</b>"

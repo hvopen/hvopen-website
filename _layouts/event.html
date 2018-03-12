@@ -20,15 +20,22 @@
     </div>
     <div class="col-md-4 col-md-pull-8">
       <h3>When</h3>
-      <div class="when">
-          {{ page.dtstart | date: "%b %-d, %Y: %-I%P" }} - {{ page.dtend
-          | date: "%-I%P" }}
-      </div>
+      <div>{{ page.dtstart | date: "%a, %b %-d, %Y" }}</div>
+      <div>{{ page.dtstart | date: "%-I%P" }} - {{
+        page.dtend | date: "%-I%P" }}</div>
       <h3>Where</h3>
-        <div>Location: {{ page.location }}</div>
-        {% map location %}
-
+      <div><a href="{{ site.baseurl}}{{location.url}}">{{ location.title }}</a></div>
+      <div class="address">
+        {{ location.address }}<br/>
+        {% if location.address1 %}
+        {{ location.address1 }}<br/>
+        {% endif %}
+        {{ location.city }}, {{ location.state }} {{ location.zip }}
+      </div>
+      {% map location %}
       <h3>RSVP</h3>
+      <a class="btn btn-default btn-hvopen" href="{{ page.meetup }}"
+         role="button">RSVP on Meetup</a>
     </div>
   </div>
 </div>

@@ -34,7 +34,7 @@ next_event.location ) | first %}
         <div class="row logistics">
           <div class="col-md-4">
             <h3>When</h3>
-            <div>{{ next_event.dtstart | date: "%a, %b %-d" }}</div>
+            <div>{{ next_event.dtstart | date: "%a, %b %-d, %Y" }}</div>
             <div>{{ next_event.dtstart | date: "%-I%P" }} - {{
               next_event.dtend | date: "%-I%P" }}</div>
           </div>
@@ -51,7 +51,7 @@ next_event.location ) | first %}
           </div>
           <div class="col-md-4">
              <h3>RSVP</h3>
-             <a class="btn btn-default btn-hvopen" href="#"
+             <a class="btn btn-default btn-hvopen" href="{{ next_event.meetup }}"
                 role="button">RSVP on Meetup</a>
           </div>
         </div>

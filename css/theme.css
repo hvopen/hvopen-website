@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: "Source Sans Pro";
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 60px;
     color: #17171A;
     /* padding-bottom: 60px; */
@@ -15,6 +15,17 @@ body {
 .navbar-inverse {
     background-color: #17171A;
     color: white;
+}
+
+h3, .h3 {
+    font-weight: bold;
+    color: #5c5e6d;
+}
+
+.btn-hvopen {
+    background-color: #FFD503;
+    border-color: #B5B6BC;
+    font-weight: bold;
 }
 
 .footer-container {
@@ -104,6 +115,11 @@ span.highlight {
 
 .navbar {
     background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+.navbar-collapse {
+    background-color: white;
 }
 
 .navbar-toggle {
@@ -122,18 +138,21 @@ span.highlight {
     margin-top: 1.9em;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
     .date-container {
+        display: none;
         text-align: left;
     }
-}
-@media (min-width: 992px) {
-    .date-container {
-        text-align: right;
+    .location-map {
+        height: 400px;
     }
 }
 
 @media (min-width: 992px) {
+    .date-container {
+        text-align: right;
+    }
+
 .dateBox {
     display: inline-block;
     width: 60px;
@@ -168,8 +187,9 @@ span.highlight {
     border-radius: 2px 2px 0 0;
     -webkit-border-radius: 2px 2px 0 0;
 }
-}
 
 .location-map {
     height: 600px;
+}
+
 }

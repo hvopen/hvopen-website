@@ -6,6 +6,9 @@ layout: default
 "item.dtend > site.time" | where: "type", "meeting") %}
 
 {% assign next_event = upcomming_events.first %}
+{% assign location = (site.locations | where: "title",
+next_event.location ) | first %}
+
 
 <div class="row">
   <div class="col-md-3">
@@ -27,6 +30,30 @@ layout: default
       </div>
         <div class="content">
           {{ next_event.content }}
+        </div>
+        <div class="row logistics">
+          <div class="col-md-4">
+            <h3>When</h3>
+            <div>{{ next_event.dtstart | date: "%a, %b %-d" }}</div>
+            <div>{{ next_event.dtstart | date: "%-I%P" }} - {{
+              next_event.dtend | date: "%-I%P" }}</div>
+          </div>
+          <div class="col-md-4">
+            <h3>Where</h3>
+            <div><a href="{{ site.baseurl}}{{location.url}}">{{ location.title }}</a></div>
+            <div class="address">
+              {{ location.address }}<br/>
+              {% if location.address1 %}
+              {{ location.address1 }}<br/>
+              {% endif %}
+              {{ location.city }}, {{ location.state }} {{ location.zip }}
+            </div>
+          </div>
+          <div class="col-md-4">
+             <h3>RSVP</h3>
+             <a class="btn btn-default btn-hvopen" href="#"
+                role="button">RSVP on Meetup</a>
+          </div>
         </div>
     </div>
   </div>

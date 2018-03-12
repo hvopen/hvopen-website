@@ -1,4 +1,5 @@
 # coding: utf-8
+
 module Jekyll
   class MapTag < Liquid::Tag
 
@@ -8,7 +9,13 @@ module Jekyll
     end
 
     def render(context)
-      page = context.registers[:page]
+      if @text != ""
+        puts "Assigning from text"
+        page = context[@text]
+      else
+        puts "Assigning from page"
+        page = context.registers[:page]
+      end
       puts page.inspect
 
       popup = "<b>#{page["title"]}</b>"

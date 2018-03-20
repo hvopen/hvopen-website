@@ -2,7 +2,7 @@
 dtend: 2018-05-02 20:00:00 -0400
 dtstart: 2018-05-02 18:00:00 -0400
 location: 300 Rockefeller Hall
-meetup_id: '248908664'
+meetup_id: '247516815'
 title: Kubernetes
 type: meeting
 ---

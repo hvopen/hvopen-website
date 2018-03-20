@@ -1,0 +1,5 @@
+click==6.7
+flake8==3.5.0
+Markdown==2.6.11
+python-frontmatter==0.4.2
+requests==2.18.4

@@ -11,7 +11,7 @@ layout: default
 {% assign next_event = upcoming_meetings.first %}
 {% assign location = site.locations | where: "title", next_event.location | first %}
 
-<div class="row front-page-section">
+<div class="row">
   <div class="col-md-9 col-md-offset-3">
     Welcome to HVOpen (previously MHVLUG). Learn
     more <a href="/about.html">about us</a> and
@@ -109,7 +109,8 @@ layout: default
       <div class="post-content">
 
         {{ post.excerpt }}
-        <p><a href="{{ post.url }}">Read More</a></p>
+        <p><a href="{{ post.url }}">Read More</a> <i>({{ page.content |
+        number_of_words | divided_by: 180 | append: " minutes to read" }})</i></p>
       </div>
     </div>
     {% endfor %}

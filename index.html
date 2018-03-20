@@ -11,6 +11,12 @@ layout: default
 {% assign next_event = upcoming_meetings.first %}
 {% assign location = site.locations | where: "title", next_event.location | first %}
 
+<div class="row front-page-section">
+  <div class="col-md-9 col-md-offset-3">
+    Welcome to HVOpen (previously MHVLUG). Learn more about us and our
+    rebranding.
+  </div>
+</div>
 
 <div class="row front-page-section">
   <div class="col-md-3">
@@ -83,6 +89,28 @@ layout: default
     </div>
     {% endfor %}
 
+    {% endfor %}
+
+  </div>
+</div>
+
+
+
+<div class="row front-page-section">
+  <div class="col-md-3">
+    <h1 class="highlight"><span class="highlight">News</span></h1>
+  </div>
+  <div class="col-md-9">
+    {% for post in site.posts %}
+    <div class="row col-md-12">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <div class="post-content">
+
+        {{ post.excerpt }}
+        <p><a href="{{ post.url }}">Read More</a></p>
+      </div>
+    </div>
     {% endfor %}
 
   </div>

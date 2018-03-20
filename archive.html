@@ -4,13 +4,18 @@ layout: default
 
 {% assign posts_by_year = (site.posts | group_by_exp: "post", "post.date | date: '%Y'") %}
 
-<div class="">
 {% for year in posts_by_year %}
-<h1>{{ year.name }}</h1>
-<ul>
-  {% for post in year.items %}
-  <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-{% endfor %}
+<div class="row news-by-year front-page-section">
+  <div class="col-md-3">
+    <h1>{{ year.name }}</h1>
+  </div>
+  <div class="col-md-9 body-content-valign">
+    {% for post in year.items %}
+    <div class="">
+      <a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date:
+        "%b %-d" }} - {{ post.title }}</a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
+{% endfor %}

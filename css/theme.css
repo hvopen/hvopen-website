@@ -143,6 +143,10 @@ span.highlight {
     margin-top: 1.9em;
 }
 
+.body-content-valign {
+    padding-top: 1.1em;
+}
+
 .day-of-month {
     font-size: 2em;
     font-weight: bold;

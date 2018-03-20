@@ -12,7 +12,7 @@ layout: default
 {% assign location = site.locations | where: "title", next_event.location | first %}
 
 
-<div class="row">
+<div class="row front-page-section">
   <div class="col-md-3">
     <h1 class="highlight"><span class="highlight">Next</span> Meeting</h1>
   </div>
@@ -61,7 +61,7 @@ layout: default
   </div>
 </div>
 
-<div class="row">
+<div class="row front-page-section">
   <div class="col-md-3">
     <h1 class="highlight"><span class="highlight">Upcoming</span></h1>
   </div>
@@ -85,39 +85,5 @@ layout: default
 
     {% endfor %}
 
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-3">
-    <h1 class="highlight"><span class="highlight">News</span></h1>
-  </div>
-  <div class="col-md-9">
-
-
-    {% for post in paginator.posts %}
-    <div class="article">
-      <div class="">
-        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
-        <div class="content">
-          {{ post.content }}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-      <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
-      {% else %}
-      <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
-      {% endif %}
-      {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-      <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
-      {% endif %}
-    </div>
   </div>
 </div>

@@ -2,12 +2,14 @@
 layout: default
 ---
 
-{% assign upcomming_events = (site.events | where_exp: "item",
+{% assign upcoming_events = site.events | where_exp: "item",
+"item.dtend > site.time" | sort: 'dtstart' | group_by_exp: "item", "item.dtstart | date:
+'%B'" %}
+{% assign upcoming_meetings = site.events | where_exp: "item",
 "item.dtend > site.time" | where: "type", "meeting") %}
 
-{% assign next_event = upcomming_events.first %}
-{% assign location = (site.locations | where: "title",
-next_event.location ) | first %}
+{% assign next_event = upcoming_meetings.first %}
+{% assign location = site.locations | where: "title", next_event.location | first %}
 
 
 <div class="row">
@@ -59,6 +61,32 @@ next_event.location ) | first %}
   </div>
 </div>
 
+<div class="row">
+  <div class="col-md-3">
+    <h1 class="highlight"><span class="highlight">Upcoming</span></h1>
+  </div>
+  <div class="col-md-9">
+    {% for month in upcoming_events %}
+    <div class="row col-md-12">
+      <h3>{{ month.name }}</h3>
+    </div>
+    {% for post in month.items %}
+    <div class="row">
+      <div class="col-xs-2 col-sm-1 day-of-month">
+        {{ post.dtstart | date: "%-d" }}
+      </div>
+      <div class="col-xs-10 col-sm-11 event-list">
+        <a href="{{ post.url }}">{{ post.title }}</a><br/>
+        Time: {{ post.dtstart | date: "%-I:%M%P" }}<br/>
+        Location: {{ post.location }}
+      </div>
+    </div>
+    {% endfor %}
+
+    {% endfor %}
+
+  </div>
+</div>
 
 <div class="row">
   <div class="col-md-3">

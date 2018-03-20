@@ -37,10 +37,15 @@ module Jekyll
         popup += "<br>#{page["subtitle"]}"
       end
 
+      parking = ""
+      if page["parking"]
+        parking = "var parking = L.marker(#{page["parking"]}, {icon: myIcon}).addTo(mymap);"
+      end
+
       <<-MAP
 <div id="mapid" class="location-map"></div>
  <script language="javascript">
-    var mymap = L.map('mapid').setView([41.68790, -73.8968], 16);
+    var mymap = L.map('mapid').setView([#{page["lat"]}, #{page["lon"]}], 16);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 18,
@@ -56,7 +61,7 @@ module Jekyll
       iconAnchor: [32, 32],
       popupAnchor: [-3, -76],
   });
-  var parking = L.marker(#{page["parking"]}, {icon: myIcon}).addTo(mymap);
+  #{parking}
  </script>
 
         MAP

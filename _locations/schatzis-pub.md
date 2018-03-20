@@ -1,7 +1,7 @@
 ---
 title: Schatzi's Pub
-lat: 41.7045374
-lon: -73.93336
+lat: 41.704765
+lon: -73.93111
 address: 202 Main St
 city: Poughkeepsie
 state: NY

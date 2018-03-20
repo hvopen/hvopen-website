@@ -26,7 +26,6 @@ Location:
 
 ADDRESS = """
 {title}
-{subtitle}
 {addr}
 {city}, {state} {zipcode}
 """.replace("\n", "  \n")
@@ -48,13 +47,16 @@ class Location(object):
 
     @property
     def address(self):
+        title = self._g("title")
+        if self._g("subtitle"):
+            title += "  \n" + self._g("subtitle")
+
         addr = self._g("address")
         if self._g("address1"):
             addr += "  \n" + self._g("address1")
 
         return ADDRESS.format(
-            title=self._g("title"),
-            subtitle=self._g("subtitle"),
+            title=title,
             addr=addr,
             city=self._g("city"),
             state=self._g("state"),

@@ -32,9 +32,13 @@
         {% endif %}
         {{ location.city }}, {{ location.state }} {{ location.zip }}
       </div>
+      {% if page.meetup_id %}
+      {% if page.dtend > site.time %}
       <h3>RSVP</h3>
       <a class="btn btn-default btn-hvopen" href="https://www.meetup.com/mhvlug/events/{{ page.meetup_id }}"
          role="button">RSVP on Meetup</a>
+      {% endif %}
+      {% endif %}
     </div>
   </div>
 </div>

@@ -65,4 +65,4 @@ include: ['_redirects']
 
 exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*', 'tools',
 'meetup-sync.py', 'setup.py', 'tox.ini', 'requirements_dev.txt',
-'*egg-info', '.venv*', 'Gemfile*', 'config.ini']
+'*egg-info', '.venv*', 'Gemfile*', 'config.ini', '.tox']

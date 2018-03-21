@@ -1,6 +1,6 @@
 {% include header.html %}
 
-{% assign location = (site.locations | where: "title", page.location ) | first %}
+{% assign location = site.locations | where: "title", page.location | first %}
 <div class="container">
   <div class="row">
     <div class="col-md-9 col-md-offset-3">

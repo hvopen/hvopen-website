@@ -16,15 +16,15 @@ redirect_from:
   </div>
 </div>
 
-{% assign posts_by_year = (site.events | where: "type", "meeting" |
-sort: "dtstart" | reverse | group_by_exp: "event", "event.dtstart | date: '%Y'") %}
+{% assign posts_by_year = site.events | where: "type", "meeting" |
+sort: "dtstart" | reverse | group_by_exp: "event", "event.dtstart | date: '%Y'" %}
 {% for year in posts_by_year %}
 <div class="row news-by-year front-page-section">
   <div class="col-md-3">
     <h1>{{ year.name }}</h1>
   </div>
   <div class="col-md-9 body-content-valign">
-    {% assign items = (year.items | sort: 'dtstart' | reverse ) %}
+    {% assign items = year.items | sort: 'dtstart' | reverse %}
     {% for post in items %}
     <div>
       <a href="{{ site.baseurl}}{{ post.url }}">{{ post.dtstart |

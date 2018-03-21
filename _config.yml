@@ -17,7 +17,7 @@ github: 'mhvlug/hvopen-website'
 gitlab: ''
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
+gaaccount: 'UA-17123640-4'
 
 # The 'comments' setting enables comments. You'll need to select either
 # disqus or isso below to choose a comment system. Individual posts can
@@ -61,4 +61,8 @@ markdown: kramdown
 
 gems: ['jekyll-paginate']
 
-exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*']
+include: ['_redirects']
+
+exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*', 'tools',
+'meetup-sync.py', 'setup.py', 'tox.ini', 'requirements_dev.txt',
+'*egg-info', '.venv*', 'Gemfile*', 'config.ini']

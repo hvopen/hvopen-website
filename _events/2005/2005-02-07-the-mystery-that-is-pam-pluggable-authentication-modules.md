@@ -4,6 +4,8 @@ dtstart: 2005-02-07 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/the-mystery-that-is-pam-pluggable-authentication-modules
 presenter: Renier Morales
+redirect_from:
+- /meetings/2005/the-mystery-that-is-pam-pluggable-authentication-modules
 title: The mystery that is PAM (Pluggable Authentication Modules)
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2011-09-07 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/diy-3d-printing-and-the-makerbot-thing-o-matic
 presenter: Ed Nisley
+redirect_from:
+- /meetings/2011/diy-3d-printing-and-the-makerbot-thing-o-matic
 title: DIY 3D Printing and the Makerbot Thing-o-Matic
 type: meeting
 ---

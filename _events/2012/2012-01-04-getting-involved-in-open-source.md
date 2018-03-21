@@ -4,6 +4,8 @@ dtstart: 2012-01-04 18:00:00 -0500
 location: Multi Purpose Room, 2nd Floor College Center, Vassar College
 mhvlug_url: /meetings/2012/getting-involved-in-open-source
 presenter: Sean Dague
+redirect_from:
+- /meetings/2012/getting-involved-in-open-source
 title: Getting Involved in Open Source
 type: meeting
 ---

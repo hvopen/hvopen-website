@@ -4,6 +4,8 @@ dtstart: 2012-04-04 18:00:00 -0400
 location: Multi Purpose Room, 2nd Floor College Center, Vassar College
 mhvlug_url: /meetings/2012/an-intro-to-chef
 presenter: Sean O&#039;Connor
+redirect_from:
+- /meetings/2012/an-intro-to-chef
 title: An Intro to Chef
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2012-09-05 18:00:00 -0400
 location: Multi Purpose Room, 2nd Floor College Center, Vassar College
 mhvlug_url: /meetings/2012/towards-an-open-cloud-with-openstack
 presenter: Sean Dague
+redirect_from:
+- /meetings/2012/towards-an-open-cloud-with-openstack
 title: Towards an Open Cloud with OpenStack
 type: meeting
 ---

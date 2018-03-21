@@ -4,6 +4,8 @@ dtstart: 2003-05-07 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/kernel-configuration
 presenter: Jim Doherty
+redirect_from:
+- /meetings/2003/kernel-configuration
 title: Kernel Configuration
 type: meeting
 ---

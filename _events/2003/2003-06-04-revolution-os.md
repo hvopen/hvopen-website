@@ -4,6 +4,8 @@ dtstart: 2003-06-04 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/revolution-os
 presenter: 'by permission of J.T.S. Moore '
+redirect_from:
+- /meetings/2003/revolution-os
 title: Revolution OS
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2008-11-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/releasing-open-source-software
 presenter: Many People
+redirect_from:
+- /meetings/2008/releasing-open-source-software
 title: Releasing Open Source Software
 type: meeting
 ---

@@ -1,9 +1,11 @@
 ---
 dtend: 2018-02-07 20:00:00 -0500
 dtstart: 2018-02-07 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2018/cancelled-kubernetes
 presenter: Dan Stone
+redirect_from:
+- /meetings/2018/cancelled-kubernetes
 title: 'CANCELLED: Kubernetes'
 type: meeting
 ---

@@ -1,9 +1,11 @@
 ---
 dtend: 2013-11-06 20:00:00 -0500
 dtstart: 2013-11-06 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/security-locking-your-doors
 presenter: Mike Kershaw and Mike Muller
+redirect_from:
+- /meetings/2013/security-locking-your-doors
 title: 'Security: Locking Your Doors'
 type: meeting
 ---

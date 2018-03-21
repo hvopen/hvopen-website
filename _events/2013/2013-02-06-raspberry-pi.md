@@ -1,9 +1,11 @@
 ---
 dtend: 2013-02-06 20:00:00 -0500
 dtstart: 2013-02-06 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/raspberry-pi
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2013/raspberry-pi
 title: Raspberry Pi
 type: meeting
 ---

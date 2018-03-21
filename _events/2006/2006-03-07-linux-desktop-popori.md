@@ -4,6 +4,8 @@ dtstart: 2006-03-07 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/linux-desktop-popori
 presenter: Many People
+redirect_from:
+- /meetings/2006/linux-desktop-popori
 title: Linux Desktop Popori
 type: meeting
 ---

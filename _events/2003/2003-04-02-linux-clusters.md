@@ -4,6 +4,8 @@ dtstart: 2003-04-02 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/linux-clusters
 presenter: Richard Ferri
+redirect_from:
+- /meetings/2003/linux-clusters
 title: Linux Clusters
 type: meeting
 ---

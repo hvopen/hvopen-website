@@ -4,6 +4,8 @@ dtstart: 2012-06-06 18:00:00 -0400
 location: Multi Purpose Room, 2nd Floor College Center, Vassar College
 mhvlug_url: /meetings/2012/why-the-web-needs-html5
 presenter: Chris Joslyn
+redirect_from:
+- /meetings/2012/why-the-web-needs-html5
 title: Why the Web Needs HTML5
 type: meeting
 ---

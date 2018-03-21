@@ -4,6 +4,8 @@ dtstart: 2011-03-02 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/mhvlug-8th-anniversary-show-and-tell
 presenter: Many People
+redirect_from:
+- /meetings/2011/mhvlug-8th-anniversary-show-and-tell
 title: MHVLUG 8th Anniversary - Show and Tell
 type: meeting
 ---

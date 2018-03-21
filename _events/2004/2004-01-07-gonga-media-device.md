@@ -4,6 +4,8 @@ dtstart: 2004-01-07 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/gonga-media-device
 presenter: Jeff Daley
+redirect_from:
+- /meetings/2004/gonga-media-device
 title: Gonga Media Device
 type: meeting
 ---

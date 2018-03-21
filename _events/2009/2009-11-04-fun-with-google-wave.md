@@ -4,6 +4,8 @@ dtstart: 2009-11-04 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2009/fun-with-google-wave
 presenter: Mike Muller
+redirect_from:
+- /meetings/2009/fun-with-google-wave
 title: Fun with Google Wave
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2006-10-11 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/debugging-hardwaresoftware-on-linux
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2006/debugging-hardwaresoftware-on-linux
 title: Debugging Hardware/Software on Linux
 type: meeting
 ---

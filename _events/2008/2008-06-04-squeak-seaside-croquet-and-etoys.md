@@ -4,6 +4,8 @@ dtstart: 2008-06-04 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/squeak-seaside-croquet-and-etoys
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2008/squeak-seaside-croquet-and-etoys
 title: ' Squeak!, Seaside, Croquet and Etoys '
 type: meeting
 ---

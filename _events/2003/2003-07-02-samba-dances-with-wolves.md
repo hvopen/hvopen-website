@@ -4,6 +4,8 @@ dtstart: 2003-07-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/samba-dances-with-wolves
 presenter: Henry Landry
+redirect_from:
+- /meetings/2003/samba-dances-with-wolves
 title: 'Samba: Dances with Wolves '
 type: meeting
 ---

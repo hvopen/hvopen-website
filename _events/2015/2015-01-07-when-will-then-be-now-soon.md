@@ -1,9 +1,11 @@
 ---
 dtend: 2015-01-07 20:00:00 -0500
 dtstart: 2015-01-07 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2015/when-will-then-be-now-soon
 presenter: Sean Dague
+redirect_from:
+- /meetings/2015/when-will-then-be-now-soon
 title: When will then be now? Soon.
 type: meeting
 ---

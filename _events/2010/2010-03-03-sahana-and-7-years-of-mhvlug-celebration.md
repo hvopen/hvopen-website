@@ -4,6 +4,8 @@ dtstart: 2010-03-03 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/sahana-and-7-years-of-mhvlug-celebration
 presenter: Sean Swehla
+redirect_from:
+- /meetings/2010/sahana-and-7-years-of-mhvlug-celebration
 title: Sahana and 7 Years of MHVLUG Celebration
 type: meeting
 ---

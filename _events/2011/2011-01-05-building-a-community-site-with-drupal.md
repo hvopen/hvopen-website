@@ -4,6 +4,8 @@ dtstart: 2011-01-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/building-a-community-site-with-drupal
 presenter: Sean Dague
+redirect_from:
+- /meetings/2011/building-a-community-site-with-drupal
 title: Building a Community Site with Drupal
 type: meeting
 ---

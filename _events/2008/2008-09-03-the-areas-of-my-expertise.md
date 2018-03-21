@@ -4,6 +4,8 @@ dtstart: 2008-09-03 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/the-areas-of-my-expertise
 presenter: Michael &quot;Porkchop&quot; Kaegler
+redirect_from:
+- /meetings/2008/the-areas-of-my-expertise
 title: The Areas of My Expertise
 type: meeting
 ---

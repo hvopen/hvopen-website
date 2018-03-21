@@ -4,6 +4,8 @@ dtstart: 2013-07-10 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2013/mad-science-fair-open-hardware-expo
 presenter: null
+redirect_from:
+- /meetings/2013/mad-science-fair-open-hardware-expo
 title: Mad Science Fair - Open Hardware Expo
 type: meeting
 ---

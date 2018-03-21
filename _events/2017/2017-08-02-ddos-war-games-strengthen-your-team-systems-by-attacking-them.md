@@ -1,9 +1,11 @@
 ---
 dtend: 2017-08-02 20:00:00 -0400
 dtstart: 2017-08-02 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/ddos-war-games-strengthen-your-team-systems-by-attacking-them
 presenter: Shannon Weyrick
+redirect_from:
+- /meetings/2017/ddos-war-games-strengthen-your-team-systems-by-attacking-them
 title: 'DDoS War Games: Strengthen Your Team & Systems By Attacking Them'
 type: meeting
 ---

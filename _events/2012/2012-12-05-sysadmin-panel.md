@@ -1,9 +1,11 @@
 ---
 dtend: 2012-12-05 20:00:00 -0500
 dtstart: 2012-12-05 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2012/sysadmin-panel
 presenter: null
+redirect_from:
+- /meetings/2012/sysadmin-panel
 title: SysAdmin Panel
 type: meeting
 ---

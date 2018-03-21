@@ -1,9 +1,11 @@
 ---
 dtend: 2017-09-06 20:00:00 -0400
 dtstart: 2017-09-06 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/blockchain
 presenter: Dr. Rebecca Gott
+redirect_from:
+- /meetings/2017/blockchain
 title: Blockchain
 type: meeting
 ---

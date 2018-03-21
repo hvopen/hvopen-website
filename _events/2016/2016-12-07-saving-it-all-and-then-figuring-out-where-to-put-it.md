@@ -1,9 +1,11 @@
 ---
 dtend: 2016-12-07 20:00:00 -0500
 dtstart: 2016-12-07 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2016/saving-it-all-and-then-figuring-out-where-to-put-it
 presenter: Jason Scott
+redirect_from:
+- /meetings/2016/saving-it-all-and-then-figuring-out-where-to-put-it
 title: Saving It All and then Figuring Out Where to Put It
 type: meeting
 ---

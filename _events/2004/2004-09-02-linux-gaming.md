@@ -4,6 +4,8 @@ dtstart: 2004-09-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/linux-gaming
 presenter: Frank Wallingford &amp; Pat Ladd
+redirect_from:
+- /meetings/2004/linux-gaming
 title: Linux Gaming
 type: meeting
 ---

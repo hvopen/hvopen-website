@@ -4,6 +4,8 @@ dtstart: 2005-03-07 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/linux-in-the-datacenter-environment
 presenter: Michael &quot;Porkchop&quot; Kaegler
+redirect_from:
+- /meetings/2005/linux-in-the-datacenter-environment
 title: Linux in the Datacenter Environment
 type: meeting
 ---

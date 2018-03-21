@@ -1,9 +1,11 @@
 ---
 dtend: 2013-04-03 20:00:00 -0400
 dtstart: 2013-04-03 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/typography-physical-art-to-digital-art
 presenter: Patrick Ladd
+redirect_from:
+- /meetings/2013/typography-physical-art-to-digital-art
 title: 'Typography: Physical Art to Digital Art'
 type: meeting
 ---

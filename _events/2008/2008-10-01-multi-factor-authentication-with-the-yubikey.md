@@ -4,6 +4,8 @@ dtstart: 2008-10-01 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/multi-factor-authentication-with-the-yubikey
 presenter: Sean O&#039;Connor
+redirect_from:
+- /meetings/2008/multi-factor-authentication-with-the-yubikey
 title: 'Multi-Factor Authentication With The Yubikey '
 type: meeting
 ---

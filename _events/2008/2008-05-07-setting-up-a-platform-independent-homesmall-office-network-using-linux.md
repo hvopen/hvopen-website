@@ -4,6 +4,8 @@ dtstart: 2008-05-07 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/setting-up-a-platform-independent-homesmall-office-network-using-linux
 presenter: Michael &quot;Porkchop&quot; Kaegler
+redirect_from:
+- /meetings/2008/setting-up-a-platform-independent-homesmall-office-network-using-linux
 title: 'Setting up a platform-independent home/small office network (using linux) '
 type: meeting
 ---

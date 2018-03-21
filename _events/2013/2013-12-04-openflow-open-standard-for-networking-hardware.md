@@ -1,9 +1,11 @@
 ---
 dtend: 2013-12-04 20:00:00 -0500
 dtstart: 2013-12-04 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/openflow-open-standard-for-networking-hardware
 presenter: Robert Cannistra
+redirect_from:
+- /meetings/2013/openflow-open-standard-for-networking-hardware
 title: 'OpenFlow: Open Standard for Networking Hardware'
 type: meeting
 ---

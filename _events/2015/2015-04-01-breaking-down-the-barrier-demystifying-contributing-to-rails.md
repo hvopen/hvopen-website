@@ -1,9 +1,11 @@
 ---
 dtend: 2015-04-01 20:00:00 -0400
 dtstart: 2015-04-01 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2015/breaking-down-the-barrier-demystifying-contributing-to-rails
 presenter: Eileen M. Uchitelle
+redirect_from:
+- /meetings/2015/breaking-down-the-barrier-demystifying-contributing-to-rails
 title: 'Breaking Down the Barrier: Demystifying Contributing to Rails'
 type: meeting
 ---

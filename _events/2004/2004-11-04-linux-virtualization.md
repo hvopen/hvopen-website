@@ -4,6 +4,8 @@ dtstart: 2004-11-04 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/linux-virtualization
 presenter: Bruce Locke
+redirect_from:
+- /meetings/2004/linux-virtualization
 title: Linux Virtualization
 type: meeting
 ---

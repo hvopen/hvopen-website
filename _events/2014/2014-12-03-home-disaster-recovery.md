@@ -1,9 +1,11 @@
 ---
 dtend: 2014-12-03 20:00:00 -0500
 dtstart: 2014-12-03 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2014/home-disaster-recovery
 presenter: null
+redirect_from:
+- /meetings/2014/home-disaster-recovery
 title: Home Disaster Recovery
 type: meeting
 ---

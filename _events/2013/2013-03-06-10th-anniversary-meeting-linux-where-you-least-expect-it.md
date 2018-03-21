@@ -1,9 +1,11 @@
 ---
 dtend: 2013-03-06 20:00:00 -0500
 dtstart: 2013-03-06 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/10th-anniversary-meeting-linux-where-you-least-expect-it
 presenter: null
+redirect_from:
+- /meetings/2013/10th-anniversary-meeting-linux-where-you-least-expect-it
 title: 10th Anniversary Meeting - Linux where you least expect it
 type: meeting
 ---

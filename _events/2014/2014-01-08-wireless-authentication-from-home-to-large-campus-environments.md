@@ -1,9 +1,11 @@
 ---
 dtend: 2014-01-08 20:00:00 -0500
 dtstart: 2014-01-08 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2014/wireless-authentication-from-home-to-large-campus-environments
 presenter: Bruce Locke
+redirect_from:
+- /meetings/2014/wireless-authentication-from-home-to-large-campus-environments
 title: 'Wireless Authentication: From Home To Large Campus Environments'
 type: meeting
 ---

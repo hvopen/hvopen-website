@@ -4,6 +4,8 @@ dtstart: 2011-08-03 18:00:00 -0400
 location: Hancock Center, Marist College
 mhvlug_url: /meetings/2011/scala-100th-mhvlug-meeting
 presenter: Ron Coleman
+redirect_from:
+- /meetings/2011/scala-100th-mhvlug-meeting
 title: Scala - 100th MHVLUG meeting
 type: meeting
 ---

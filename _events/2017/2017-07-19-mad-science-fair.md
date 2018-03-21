@@ -4,6 +4,8 @@ dtstart: 2017-07-19 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2017/mad-science-fair
 presenter: null
+redirect_from:
+- /meetings/2017/mad-science-fair
 title: Mad Science Fair
 type: meeting
 ---

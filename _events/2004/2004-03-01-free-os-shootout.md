@@ -4,6 +4,8 @@ dtstart: 2004-03-01 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/free-os-shootout
 presenter: Many People
+redirect_from:
+- /meetings/2004/free-os-shootout
 title: Free OS Shootout
 type: meeting
 ---

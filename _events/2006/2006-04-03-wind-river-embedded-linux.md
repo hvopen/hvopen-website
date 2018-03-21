@@ -4,6 +4,8 @@ dtstart: 2006-04-03 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/wind-river-embedded-linux
 presenter: Wind River
+redirect_from:
+- /meetings/2006/wind-river-embedded-linux
 title: Wind River, Embedded Linux
 type: meeting
 ---

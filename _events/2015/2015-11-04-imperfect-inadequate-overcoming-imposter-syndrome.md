@@ -1,9 +1,11 @@
 ---
 dtend: 2015-11-04 20:00:00 -0500
 dtstart: 2015-11-04 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2015/imperfect-inadequate-overcoming-imposter-syndrome
 presenter: Al Jachimiak
+redirect_from:
+- /meetings/2015/imperfect-inadequate-overcoming-imposter-syndrome
 title: "Imperfect \u2260 Inadequate:  Overcoming Imposter Syndrome"
 type: meeting
 ---

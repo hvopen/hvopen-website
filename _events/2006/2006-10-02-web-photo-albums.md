@@ -4,6 +4,8 @@ dtstart: 2006-10-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/web-photo-albums
 presenter: Mike Mueller and Sean Dague
+redirect_from:
+- /meetings/2006/web-photo-albums
 title: Web Photo Albums
 type: meeting
 ---

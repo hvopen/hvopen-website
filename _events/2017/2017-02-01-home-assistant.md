@@ -1,9 +1,11 @@
 ---
 dtend: 2017-02-01 20:00:00 -0500
 dtstart: 2017-02-01 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/home-assistant
 presenter: Bruce Locke
+redirect_from:
+- /meetings/2017/home-assistant
 title: Home Assistant
 type: meeting
 ---

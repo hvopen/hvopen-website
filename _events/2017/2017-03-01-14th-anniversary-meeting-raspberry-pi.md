@@ -1,9 +1,11 @@
 ---
 dtend: 2017-03-01 20:00:00 -0500
 dtstart: 2017-03-01 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/14th-anniversary-meeting-raspberry-pi
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2017/14th-anniversary-meeting-raspberry-pi
 title: 14th Anniversary Meeting - Raspberry Pi
 type: meeting
 ---

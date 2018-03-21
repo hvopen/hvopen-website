@@ -1,9 +1,11 @@
 ---
 dtend: 2017-04-05 20:00:00 -0400
 dtstart: 2017-04-05 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/linux-networking-deep-dive
 presenter: Pat Ladd
+redirect_from:
+- /meetings/2017/linux-networking-deep-dive
 title: Linux Networking Deep Dive
 type: meeting
 ---

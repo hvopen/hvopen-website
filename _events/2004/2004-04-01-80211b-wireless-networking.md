@@ -4,6 +4,8 @@ dtstart: 2004-04-01 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/80211b-wireless-networking
 presenter: Mike Kershaw
+redirect_from:
+- /meetings/2004/80211b-wireless-networking
 title: 802.11b Wireless Networking
 type: meeting
 ---

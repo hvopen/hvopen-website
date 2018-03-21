@@ -1,9 +1,11 @@
 ---
 dtend: 2017-01-04 20:00:00 -0500
 dtstart: 2017-01-04 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/jupyter-notebook
 presenter: Matthias Johnson
+redirect_from:
+- /meetings/2017/jupyter-notebook
 title: Jupyter Notebook
 type: meeting
 ---

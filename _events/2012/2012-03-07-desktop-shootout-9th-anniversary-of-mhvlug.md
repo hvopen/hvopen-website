@@ -4,6 +4,8 @@ dtstart: 2012-03-07 18:00:00 -0500
 location: Multi Purpose Room, 2nd Floor College Center, Vassar College
 mhvlug_url: /meetings/2012/desktop-shootout-9th-anniversary-of-mhvlug
 presenter: Many People
+redirect_from:
+- /meetings/2012/desktop-shootout-9th-anniversary-of-mhvlug
 title: Desktop Shootout - 9th Anniversary of MHVLUG
 type: meeting
 ---

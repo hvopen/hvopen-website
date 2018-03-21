@@ -4,6 +4,8 @@ dtstart: 2006-11-06 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/building-a-digital-picture-frame
 presenter: Chris Buccella
+redirect_from:
+- /meetings/2006/building-a-digital-picture-frame
 title: Building a Digital Picture Frame
 type: meeting
 ---

@@ -1,9 +1,11 @@
 ---
 dtend: 2016-04-06 20:00:00 -0400
 dtstart: 2016-04-06 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2016/open-street-map
 presenter: Thomas Hynes
+redirect_from:
+- /meetings/2016/open-street-map
 title: Open Street Map
 type: meeting
 ---

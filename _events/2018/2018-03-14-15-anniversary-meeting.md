@@ -1,9 +1,11 @@
 ---
 dtend: 2018-03-14 20:00:00 -0400
 dtstart: 2018-03-14 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2018/15-anniversary-meeting
 presenter: null
+redirect_from:
+- /meetings/2018/15-anniversary-meeting
 title: 15 Anniversary Meeting
 type: meeting
 ---

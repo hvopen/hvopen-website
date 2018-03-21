@@ -1,9 +1,11 @@
 ---
 dtend: 2012-11-07 20:00:00 -0500
 dtstart: 2012-11-07 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2012/cancelled-typography-physical-art-to-digital-art
 presenter: Patrick Ladd
+redirect_from:
+- /meetings/2012/cancelled-typography-physical-art-to-digital-art
 title: 'CANCELLED: Typography: Physical Art to Digital Art'
 type: meeting
 ---

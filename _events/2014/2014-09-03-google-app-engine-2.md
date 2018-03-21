@@ -1,9 +1,11 @@
 ---
 dtend: 2014-09-03 20:00:00 -0400
 dtstart: 2014-09-03 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2014/google-app-engine-2
 presenter: Patrick Ladd
+redirect_from:
+- /meetings/2014/google-app-engine-2
 title: Google App Engine
 type: meeting
 ---

@@ -1,9 +1,11 @@
 ---
 dtend: 2014-11-05 20:00:00 -0500
 dtstart: 2014-11-05 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2014/modern-dns-is-cooler-than-you-thought
 presenter: Shannon Weyrick
+redirect_from:
+- /meetings/2014/modern-dns-is-cooler-than-you-thought
 title: Modern DNS Is Cooler Than You Thought!
 type: meeting
 ---

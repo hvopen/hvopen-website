@@ -1,9 +1,11 @@
 ---
 dtend: 2015-08-05 20:00:00 -0400
 dtstart: 2015-08-05 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2015/minimal-openstack
 presenter: Sean Dague
+redirect_from:
+- /meetings/2015/minimal-openstack
 title: Minimal OpenStack
 type: meeting
 ---

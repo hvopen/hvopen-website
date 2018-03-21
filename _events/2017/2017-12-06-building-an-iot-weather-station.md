@@ -1,9 +1,11 @@
 ---
 dtend: 2017-12-06 20:00:00 -0500
 dtstart: 2017-12-06 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/building-an-iot-weather-station
 presenter: null
+redirect_from:
+- /meetings/2017/building-an-iot-weather-station
 title: Building an IoT Weather Station
 type: meeting
 ---

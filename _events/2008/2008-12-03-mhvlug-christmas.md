@@ -4,6 +4,8 @@ dtstart: 2008-12-03 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/mhvlug-christmas
 presenter: Many People
+redirect_from:
+- /meetings/2008/mhvlug-christmas
 title: MHVLUG Christmas
 type: meeting
 ---

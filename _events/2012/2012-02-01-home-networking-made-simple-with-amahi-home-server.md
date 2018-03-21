@@ -4,6 +4,8 @@ dtstart: 2012-02-01 18:00:00 -0500
 location: Multi Purpose Room, 2nd Floor College Center, Vassar College
 mhvlug_url: /meetings/2012/home-networking-made-simple-with-amahi-home-server
 presenter: Al Jachimiak and Chris Taylor
+redirect_from:
+- /meetings/2012/home-networking-made-simple-with-amahi-home-server
 title: Home Networking Made Simple with Amahi Home Server
 type: meeting
 ---

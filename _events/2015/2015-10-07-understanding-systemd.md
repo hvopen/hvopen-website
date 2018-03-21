@@ -1,9 +1,11 @@
 ---
 dtend: 2015-10-07 20:00:00 -0400
 dtstart: 2015-10-07 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2015/understanding-systemd
 presenter: Patrick Ladd
+redirect_from:
+- /meetings/2015/understanding-systemd
 title: Understanding systemd
 type: meeting
 ---

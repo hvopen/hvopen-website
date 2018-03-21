@@ -1,9 +1,11 @@
 ---
 dtend: 2014-05-07 20:00:00 -0400
 dtstart: 2014-05-07 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2014/personal-3d-printing
 presenter: Ed Nisley
+redirect_from:
+- /meetings/2014/personal-3d-printing
 title: Personal 3D Printing
 type: meeting
 ---

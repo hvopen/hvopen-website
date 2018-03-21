@@ -1,9 +1,11 @@
 ---
 dtend: 2015-09-02 20:00:00 -0400
 dtstart: 2015-09-02 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2015/lets-go-phishing
 presenter: Paul Chauvet
+redirect_from:
+- /meetings/2015/lets-go-phishing
 title: Let's Go Phishing
 type: meeting
 ---

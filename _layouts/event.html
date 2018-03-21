@@ -24,7 +24,7 @@
       <div>{{ page.dtstart | date: "%-I%P" }} - {{
         page.dtend | date: "%-I%P" }}</div>
       <h3>Where</h3>
-      <div><a href="{{ site.baseurl}}{{location.url}}">{{ location.title }}</a></div>
+      <div><a href="{{ site.baseurl}}{{location.url}}">{{ page.location }}</a></div>
       <div class="address">
         {{ location.address }}<br/>
         {% if location.address1 %}

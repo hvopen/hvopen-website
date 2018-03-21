@@ -1,9 +1,11 @@
 ---
 dtend: 2013-10-02 20:00:00 -0400
 dtstart: 2013-10-02 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2013/software-engineering-20
 presenter: null
+redirect_from:
+- /meetings/2013/software-engineering-20
 title: Software Engineering 2.0
 type: meeting
 ---

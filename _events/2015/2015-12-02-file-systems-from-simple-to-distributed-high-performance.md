@@ -1,9 +1,11 @@
 ---
 dtend: 2015-12-02 20:00:00 -0500
 dtstart: 2015-12-02 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2015/file-systems-from-simple-to-distributed-high-performance
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2015/file-systems-from-simple-to-distributed-high-performance
 title: 'File Systems from Simple to Distributed High Performance '
 type: meeting
 ---

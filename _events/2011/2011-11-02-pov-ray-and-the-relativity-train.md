@@ -4,6 +4,8 @@ dtstart: 2011-11-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/pov-ray-and-the-relativity-train
 presenter: Greg M. Johnson
+redirect_from:
+- /meetings/2011/pov-ray-and-the-relativity-train
 title: POV-Ray and The Relativity Train
 type: meeting
 ---

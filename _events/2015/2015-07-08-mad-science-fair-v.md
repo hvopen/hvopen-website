@@ -4,6 +4,8 @@ dtstart: 2015-07-08 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2015/mad-science-fair-v
 presenter: null
+redirect_from:
+- /meetings/2015/mad-science-fair-v
 title: Mad Science Fair V
 type: meeting
 ---

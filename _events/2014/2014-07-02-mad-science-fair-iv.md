@@ -4,6 +4,8 @@ dtstart: 2014-07-02 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2014/mad-science-fair-iv
 presenter: null
+redirect_from:
+- /meetings/2014/mad-science-fair-iv
 title: Mad Science Fair IV
 type: meeting
 ---

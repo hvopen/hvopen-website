@@ -1,9 +1,11 @@
 ---
 dtend: 2013-09-04 20:00:00 -0400
 dtstart: 2013-09-04 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/nosql-and-mongodb
 presenter: null
+redirect_from:
+- /meetings/2013/nosql-and-mongodb
 title: NoSQL and MongoDB
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2007-04-04 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2007/home-networking-round-table
 presenter: Many People
+redirect_from:
+- /meetings/2007/home-networking-round-table
 title: Home Networking Round Table
 type: meeting
 ---

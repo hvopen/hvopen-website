@@ -4,6 +4,8 @@ dtstart: 2005-05-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/linux-security
 presenter: Mike Kershaw
+redirect_from:
+- /meetings/2005/linux-security
 title: Linux Security
 type: meeting
 ---

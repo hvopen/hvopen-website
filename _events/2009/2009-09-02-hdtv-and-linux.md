@@ -4,6 +4,8 @@ dtstart: 2009-09-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2009/hdtv-and-linux
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2009/hdtv-and-linux
 title: HDTV and Linux
 type: meeting
 ---

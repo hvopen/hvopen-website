@@ -1,9 +1,11 @@
 ---
 dtend: 2016-11-02 20:00:00 -0400
 dtstart: 2016-11-02 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2016/how-do-you-even-test-that-a-software-testing-primer
 presenter: Sean Dague
+redirect_from:
+- /meetings/2016/how-do-you-even-test-that-a-software-testing-primer
 title: How do you even test that? a software testing primer
 type: meeting
 ---

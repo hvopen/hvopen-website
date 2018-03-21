@@ -1,9 +1,11 @@
 ---
 dtend: 2017-06-07 20:00:00 -0400
 dtstart: 2017-06-07 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/ipv6-why-and-how
 presenter: Jack Chastain
+redirect_from:
+- /meetings/2017/ipv6-why-and-how
 title: 'IPv6: Why and How'
 type: meeting
 ---

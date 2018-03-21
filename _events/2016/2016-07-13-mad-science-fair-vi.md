@@ -4,6 +4,8 @@ dtstart: 2016-07-13 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2016/mad-science-fair-vi
 presenter: null
+redirect_from:
+- /meetings/2016/mad-science-fair-vi
 title: Mad Science Fair VI
 type: meeting
 ---

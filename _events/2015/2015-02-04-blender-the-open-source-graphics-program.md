@@ -1,9 +1,11 @@
 ---
 dtend: 2015-02-04 18:00:00 -0500
 dtstart: 2015-02-04 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2015/blender-the-open-source-graphics-program
 presenter: Evan Palmiotti
+redirect_from:
+- /meetings/2015/blender-the-open-source-graphics-program
 title: 'Blender: The Open Source Graphics Program'
 type: meeting
 ---

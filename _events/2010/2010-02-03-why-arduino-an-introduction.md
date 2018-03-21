@@ -4,6 +4,8 @@ dtstart: 2010-02-03 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/why-arduino-an-introduction
 presenter: Ed Nisley
+redirect_from:
+- /meetings/2010/why-arduino-an-introduction
 title: Why Arduino? An Introduction
 type: meeting
 ---

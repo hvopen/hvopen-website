@@ -4,6 +4,8 @@ dtstart: 2005-09-12 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/linux-mini-talks
 presenter: Many People
+redirect_from:
+- /meetings/2005/linux-mini-talks
 title: Linux Mini Talks
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2007-12-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2007/open-source-show-and-tell
 presenter: Many People
+redirect_from:
+- /meetings/2007/open-source-show-and-tell
 title: Open Source Show and Tell
 type: meeting
 ---

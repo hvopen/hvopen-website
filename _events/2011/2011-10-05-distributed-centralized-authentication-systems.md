@@ -4,6 +4,8 @@ dtstart: 2011-10-05 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/distributed-centralized-authentication-systems
 presenter: Paul Chauvet
+redirect_from:
+- /meetings/2011/distributed-centralized-authentication-systems
 title: Distributed & Centralized Authentication Systems
 type: meeting
 ---

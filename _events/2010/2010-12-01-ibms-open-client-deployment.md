@@ -4,6 +4,8 @@ dtstart: 2010-12-01 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/ibms-open-client-deployment
 presenter: John Walicki
+redirect_from:
+- /meetings/2010/ibms-open-client-deployment
 title: IBM's Open Client Deployment
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2005-07-01 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/linux-devices-for-the-home
 presenter: Jim Weir, Jeff Forde, and Joe Apuzzo
+redirect_from:
+- /meetings/2005/linux-devices-for-the-home
 title: Linux Devices for the Home
 type: meeting
 ---

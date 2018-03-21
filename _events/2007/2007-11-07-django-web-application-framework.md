@@ -4,6 +4,8 @@ dtstart: 2007-11-07 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2007/django-web-application-framework
 presenter: Sean O&#039;Connor
+redirect_from:
+- /meetings/2007/django-web-application-framework
 title: Django Web Application Framework
 type: meeting
 ---

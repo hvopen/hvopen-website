@@ -4,6 +4,8 @@ dtstart: 2013-08-07 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2013/scripting-your-world-with-python
 presenter: Michael Muller
+redirect_from:
+- /meetings/2013/scripting-your-world-with-python
 title: Scripting Your World with Python
 type: meeting
 ---

@@ -1,9 +1,11 @@
 ---
 dtend: 2017-11-01 20:00:00 -0400
 dtstart: 2017-11-01 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2017/synth-your-life-away
 presenter: Matthias Johnson and Mike Muller
+redirect_from:
+- /meetings/2017/synth-your-life-away
 title: Synth Your Life Away
 type: meeting
 ---

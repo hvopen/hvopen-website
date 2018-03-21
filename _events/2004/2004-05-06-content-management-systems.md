@@ -4,6 +4,8 @@ dtstart: 2004-05-06 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/content-management-systems
 presenter: Alan Snyder
+redirect_from:
+- /meetings/2004/content-management-systems
 title: Content Management Systems
 type: meeting
 ---

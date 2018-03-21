@@ -4,6 +4,8 @@ dtstart: 2005-08-01 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/basic-scripting-tasks
 presenter: Jim Doherty
+redirect_from:
+- /meetings/2005/basic-scripting-tasks
 title: Basic Scripting Tasks
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2006-06-05 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/blogging-linux-client-and-server-setup
 presenter: Ben Stoutenburgh and Jay Gagnon
+redirect_from:
+- /meetings/2006/blogging-linux-client-and-server-setup
 title: Blogging, Linux Client and Server setup
 type: meeting
 ---

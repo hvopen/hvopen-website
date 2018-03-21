@@ -4,6 +4,8 @@ dtstart: 2014-08-06 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2014/the-go-programming-language
 presenter: Sean Swehla
+redirect_from:
+- /meetings/2014/the-go-programming-language
 title: The Go Programming Language
 type: meeting
 ---

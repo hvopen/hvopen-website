@@ -1,9 +1,11 @@
 ---
 dtend: 2013-01-09 20:00:00 -0500
 dtstart: 2013-01-09 18:00:00 -0500
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/high-performance-computing-at-a-small-scale
 presenter: Ben Stoutenburgh
+redirect_from:
+- /meetings/2013/high-performance-computing-at-a-small-scale
 title: High Performance Computing at a Small Scale
 type: meeting
 ---

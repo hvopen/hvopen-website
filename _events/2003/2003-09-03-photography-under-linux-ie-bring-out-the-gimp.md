@@ -4,6 +4,8 @@ dtstart: 2003-09-03 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/photography-under-linux-ie-bring-out-the-gimp
 presenter: Mike Grundy
+redirect_from:
+- /meetings/2003/photography-under-linux-ie-bring-out-the-gimp
 title: ' Photography under Linux (i.e. bring out the Gimp)'
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2007-09-05 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2007/making-chips-tux-in-the-machine-shop
 presenter: Ed Nisley
+redirect_from:
+- /meetings/2007/making-chips-tux-in-the-machine-shop
 title: 'Making Chips: TUX in the Machine Shop'
 type: meeting
 ---

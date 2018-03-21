@@ -1,9 +1,11 @@
 ---
 dtend: 2016-05-04 20:00:00 -0400
 dtstart: 2016-05-04 18:00:00 -0400
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2016/front-end-web-cli-tools
 presenter: Al Jachimiak
+redirect_from:
+- /meetings/2016/front-end-web-cli-tools
 title: Front-End Web CLI Tools
 type: meeting
 ---

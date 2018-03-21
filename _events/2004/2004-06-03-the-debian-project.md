@@ -4,6 +4,8 @@ dtstart: 2004-06-03 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/the-debian-project
 presenter: Jaldhar H. Vyas
+redirect_from:
+- /meetings/2004/the-debian-project
 title: The Debian Project
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2004-02-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/security-intrusion-detection-hackers
 presenter: Ron Phillips
+redirect_from:
+- /meetings/2004/security-intrusion-detection-hackers
 title: Security, Intrusion Detection & Hackers
 type: meeting
 ---

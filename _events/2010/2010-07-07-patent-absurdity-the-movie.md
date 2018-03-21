@@ -4,6 +4,8 @@ dtstart: 2010-07-07 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/patent-absurdity-the-movie
 presenter: MHVLUG
+redirect_from:
+- /meetings/2010/patent-absurdity-the-movie
 title: Patent Absurdity - The Movie
 type: meeting
 ---

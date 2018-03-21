@@ -4,6 +4,8 @@ dtstart: 2005-12-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/logical-volume-manager
 presenter: Mike Grundy
+redirect_from:
+- /meetings/2005/logical-volume-manager
 title: Logical Volume Manager
 type: meeting
 ---

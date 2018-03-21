@@ -4,6 +4,8 @@ dtstart: 2016-08-03 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2016/open-source-dmx-lighting
 presenter: Matthias Johnson
+redirect_from:
+- /meetings/2016/open-source-dmx-lighting
 title: Open Source DMX Lighting
 type: meeting
 ---

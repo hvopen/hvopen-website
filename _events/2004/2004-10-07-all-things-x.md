@@ -4,6 +4,8 @@ dtstart: 2004-10-07 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/all-things-x
 presenter: Jim Doherty
+redirect_from:
+- /meetings/2004/all-things-x
 title: All Things X
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2003-11-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/linux-packaging-technology
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2003/linux-packaging-technology
 title: Linux Packaging Technology
 type: meeting
 ---

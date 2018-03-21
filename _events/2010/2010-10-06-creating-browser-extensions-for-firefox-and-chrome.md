@@ -4,6 +4,8 @@ dtstart: 2010-10-06 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/creating-browser-extensions-for-firefox-and-chrome
 presenter: Kris Walker
+redirect_from:
+- /meetings/2010/creating-browser-extensions-for-firefox-and-chrome
 title: Creating Browser Extensions for Firefox and Chrome
 type: meeting
 ---

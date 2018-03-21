@@ -4,6 +4,8 @@ dtstart: 2011-02-02 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/cancelled-zimbra
 presenter: Damion Alexander
+redirect_from:
+- /meetings/2011/cancelled-zimbra
 title: Cancelled - Zimbra
 type: meeting
 ---

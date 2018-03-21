@@ -4,6 +4,8 @@ dtstart: 2006-07-10 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2006/project-orang
 presenter: Joe Apuzzo
+redirect_from:
+- /meetings/2006/project-orang
 title: Project Orang
 type: meeting
 ---

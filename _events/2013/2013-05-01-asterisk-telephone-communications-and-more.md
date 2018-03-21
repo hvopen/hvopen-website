@@ -1,9 +1,11 @@
 ---
 dtend: 2013-05-01 20:00:00 -0400
 dtstart: 2013-05-01 18:00:00 -0400
-location: Rockefeller Hall 200, Vassar College
+location: 200 Rockefeller Hall
 mhvlug_url: /meetings/2013/asterisk-telephone-communications-and-more
 presenter: Andrew Sledgianowski
+redirect_from:
+- /meetings/2013/asterisk-telephone-communications-and-more
 title: 'Asterisk: Telephone Communications and More'
 type: meeting
 ---

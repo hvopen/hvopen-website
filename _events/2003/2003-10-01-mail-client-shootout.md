@@ -4,6 +4,8 @@ dtstart: 2003-10-01 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/mail-client-shootout
 presenter: Sean Dague, Jim Doherty, Michale Chase-Salerno, Patrick Berge
+redirect_from:
+- /meetings/2003/mail-client-shootout
 title: Mail Client Shootout
 type: meeting
 ---

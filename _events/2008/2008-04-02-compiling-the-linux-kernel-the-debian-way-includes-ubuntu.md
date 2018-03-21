@@ -4,6 +4,8 @@ dtstart: 2008-04-02 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/compiling-the-linux-kernel-the-debian-way-includes-ubuntu
 presenter: Chris Knadle
+redirect_from:
+- /meetings/2008/compiling-the-linux-kernel-the-debian-way-includes-ubuntu
 title: Compiling the Linux Kernel "The Debian Way" (includes Ubuntu)
 type: meeting
 ---

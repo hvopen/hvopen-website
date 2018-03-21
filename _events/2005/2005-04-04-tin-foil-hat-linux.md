@@ -4,6 +4,8 @@ dtstart: 2005-04-04 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2005/tin-foil-hat-linux
 presenter: Sean Dague
+redirect_from:
+- /meetings/2005/tin-foil-hat-linux
 title: Tin Foil Hat Linux
 type: meeting
 ---

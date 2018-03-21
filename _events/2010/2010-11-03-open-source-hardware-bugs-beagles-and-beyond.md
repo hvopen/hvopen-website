@@ -4,6 +4,8 @@ dtstart: 2010-11-03 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/open-source-hardware-bugs-beagles-and-beyond
 presenter: Mike Grundy
+redirect_from:
+- /meetings/2010/open-source-hardware-bugs-beagles-and-beyond
 title: 'Open Source Hardware: Bugs, Beagles and Beyond'
 type: meeting
 ---

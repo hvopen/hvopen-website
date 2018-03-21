@@ -4,6 +4,8 @@ dtstart: 2011-04-06 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/introduction-to-ipv6
 presenter: Bruce Locke
+redirect_from:
+- /meetings/2011/introduction-to-ipv6
 title: Introduction to IPv6
 type: meeting
 ---

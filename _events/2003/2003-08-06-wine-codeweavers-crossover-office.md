@@ -4,6 +4,8 @@ dtstart: 2003-08-06 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2003/wine-codeweavers-crossover-office
 presenter: Patrick Berge
+redirect_from:
+- /meetings/2003/wine-codeweavers-crossover-office
 title: Wine & Codeweaver's CrossOver Office
 type: meeting
 ---

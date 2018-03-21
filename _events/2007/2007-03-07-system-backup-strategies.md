@@ -4,6 +4,8 @@ dtstart: 2007-03-07 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2007/system-backup-strategies
 presenter: Michael &quot;Porkchop&quot; Kaegler
+redirect_from:
+- /meetings/2007/system-backup-strategies
 title: System Backup Strategies
 type: meeting
 ---

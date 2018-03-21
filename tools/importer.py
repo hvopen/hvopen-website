@@ -49,13 +49,21 @@ class Meeting(object):
             self.slug
         )
 
+    def normalize_location(self):
+        if self.location == "300 Rockefeller Hall, Vassar College":
+            self.location = "300 Rockefeller Hall"
+        if self.location == "Rockefeller Hall 200, Vassar College":
+            self.location = "200 Rockefeller Hall"
+
     def dump(self):
         post = frontmatter.Post(self.body)
+        self.normalize_location()
         post["title"] = self.title
         post["dtstart"] = self.dtstart.strftime("%Y-%m-%d %H:%M:%S %z")
         post["dtend"] = self.dtend.strftime("%Y-%m-%d %H:%M:%S %z")
         post["location"] = self.location
         post["mhvlug_url"] = self.url
+        post["redirect_from"] = [self.url]
         post["presenter"] = self.presenter
         post["type"] = "meeting"
         return frontmatter.dumps(post)

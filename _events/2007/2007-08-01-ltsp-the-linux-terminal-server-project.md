@@ -4,6 +4,8 @@ dtstart: 2007-08-01 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2007/ltsp-the-linux-terminal-server-project
 presenter: Gideon Romm
+redirect_from:
+- /meetings/2007/ltsp-the-linux-terminal-server-project
 title: 'LTSP - The Linux Terminal Server Project   '
 type: meeting
 ---

@@ -4,6 +4,8 @@ dtstart: 2012-08-01 18:00:00 -0400
 location: Lourdes High School Auditorium
 mhvlug_url: /meetings/2012/pimp-my-network
 presenter: Alex Swehla
+redirect_from:
+- /meetings/2012/pimp-my-network
 title: Pimp My Network
 type: meeting
 ---

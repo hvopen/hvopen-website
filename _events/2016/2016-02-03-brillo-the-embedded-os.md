@@ -1,9 +1,11 @@
 ---
 dtend: 2016-02-03 20:00:00 -0500
 dtstart: 2016-02-03 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2016/brillo-the-embedded-os
 presenter: Nitya Narasimhan
+redirect_from:
+- /meetings/2016/brillo-the-embedded-os
 title: Brillo - The Embedded OS
 type: meeting
 ---

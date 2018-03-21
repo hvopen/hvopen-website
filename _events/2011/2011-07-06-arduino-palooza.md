@@ -4,6 +4,8 @@ dtstart: 2011-07-06 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2011/arduino-palooza
 presenter: null
+redirect_from:
+- /meetings/2011/arduino-palooza
 title: Arduino-palooza
 type: meeting
 ---

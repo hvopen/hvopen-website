@@ -4,6 +4,8 @@ dtstart: 2008-03-05 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2008/memories-drams-reflections-30-years-of-body-worn-electronics
 presenter: Greg Priest-Dorman
+redirect_from:
+- /meetings/2008/memories-drams-reflections-30-years-of-body-worn-electronics
 title: Memories DRAMs Reflections, 30 years of body worn electronics.
 type: meeting
 ---

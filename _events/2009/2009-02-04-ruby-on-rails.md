@@ -4,6 +4,8 @@ dtstart: 2009-02-04 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2009/ruby-on-rails
 presenter: Sean Dague
+redirect_from:
+- /meetings/2009/ruby-on-rails
 title: Ruby on Rails
 type: meeting
 ---

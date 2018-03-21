@@ -4,6 +4,8 @@ dtstart: 2009-03-04 18:00:00 -0500
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2009/what-the-heck-is-this-thing-doing
 presenter: Bruce Locke
+redirect_from:
+- /meetings/2009/what-the-heck-is-this-thing-doing
 title: What The Heck Is This Thing Doing?
 type: meeting
 ---

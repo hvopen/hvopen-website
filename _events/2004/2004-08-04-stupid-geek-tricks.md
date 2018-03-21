@@ -4,6 +4,8 @@ dtstart: 2004-08-04 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2004/stupid-geek-tricks
 presenter: Many People
+redirect_from:
+- /meetings/2004/stupid-geek-tricks
 title: Stupid Geek Tricks
 type: meeting
 ---

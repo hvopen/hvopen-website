@@ -1,9 +1,11 @@
 ---
 dtend: 2016-03-02 20:00:00 -0500
 dtstart: 2016-03-02 18:00:00 -0500
-location: 300 Rockefeller Hall, Vassar College
+location: 300 Rockefeller Hall
 mhvlug_url: /meetings/2016/consuming-the-cloud-shoot-out
 presenter: Al Jachimiak, Doug Masiero, Mike Muller
+redirect_from:
+- /meetings/2016/consuming-the-cloud-shoot-out
 title: 'Consuming the Cloud: Shoot Out'
 type: meeting
 ---

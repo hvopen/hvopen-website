@@ -4,6 +4,8 @@ dtstart: 2010-05-05 18:00:00 -0400
 location: Mid Hudson Library System Auditorium
 mhvlug_url: /meetings/2010/crack-and-llvm
 presenter: Mike Muller
+redirect_from:
+- /meetings/2010/crack-and-llvm
 title: Crack and LLVM
 type: meeting
 ---

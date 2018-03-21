@@ -161,6 +161,11 @@ span.highlight {
     padding-bottom: 2em;
 }
 
+.meeting-date {
+    font-style: italic;
+    color: #5c5e6d;
+}
+
 img {
     max-width: 100%;
 }

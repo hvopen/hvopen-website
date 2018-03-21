@@ -6,7 +6,7 @@ layout: default
 "item.dtend > site.time" | sort: 'dtstart' | group_by_exp: "item", "item.dtstart | date:
 '%B'" %}
 {% assign upcoming_meetings = site.events | where_exp: "item",
-"item.dtend > site.time" | where: "type", "meeting") %}
+"item.dtend > site.time" | where: "type", "meeting" %}
 
 {% assign next_event = upcoming_meetings.first %}
 {% assign location = site.locations | where: "title", next_event.location | first %}

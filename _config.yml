@@ -36,7 +36,7 @@ collections:
   events:
     output: true
     title: Events
-    permalink: /:collection/:year/:title
+    permalink: /:collection/:year/:month/:title
   locations:
     output: true
     title: Locations
@@ -61,4 +61,8 @@ markdown: kramdown
 
 gems: ['jekyll-paginate']
 
-exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*']
+include: ['_redirects']
+
+exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*', 'tools',
+'meetup-sync.py', 'setup.py', 'tox.ini', 'requirements_dev.txt',
+'*egg-info', '.venv*', 'Gemfile*', 'config.ini']

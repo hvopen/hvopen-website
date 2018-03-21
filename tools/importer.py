@@ -57,14 +57,15 @@ class Meeting(object):
         post["location"] = self.location
         post["mhvlug_url"] = self.url
         post["presenter"] = self.presenter
+        post["type"] = "meeting"
         return frontmatter.dumps(post)
 
     def write(self):
         dname = os.path.dirname(self.path)
-        Path.mkdir(dname)
-        if not os.path.exists(self.path):
-            with open(self.path, "w") as f:
-                f.write(self.dump())
+        if not os.path.exists(dname):
+            os.mkdir(dname)
+        with open(self.path, "w") as f:
+            f.write(self.dump())
 
 
 res = requests.get("https://mhvlug.org/export-all")

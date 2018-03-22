@@ -7,9 +7,9 @@ title: Kubernetes
 type: meeting
 ---
 
-Kubernetes seems to be all the rage in today’s cloud focused,
-microservice architecture hyped world - but what is this mysterious
-beast and how does one use it in practice?
+[Kubernetes](https://kubernetes.io/) seems to be all the rage in
+today’s cloud focused, microservice architecture hyped world - but
+what is this mysterious beast and how does one use it in practice?
 
 In the first part of this talk, Dan will take you through the core
 architectural concepts behind Kubernetes, give a fast crash course on
@@ -28,6 +28,13 @@ In addition to the above topics and demonstration, Dan will be
 available to answer questions about his knowledge and experience in
 deploying clusters for Moonfarmer clients.
 
-Dan Stone is the Senior Creative Technologist at Moonfarmer, a design
-and development studio in Kingston, NY where he works as an
-application architect and sometime DevOps ringmaster.
+### Speaker ###
+
+Dan Stone is the Senior Creative Technologist
+at [Moonfarmer](https://moonfarmer.com/), a design and development
+studio in Kingston, NY where he works as an application architect and
+sometime DevOps ringmaster.
+
+Dan is co-founder of
+the [Hudson Valley Tech Meetup](https://www.meetup.com/hvtech/),
+and [Catskills Conf](http://www.catskillsconf.com/).

@@ -17,7 +17,7 @@
             "postalCode": "{{ location.zip }}",
             "streetAddress": "{{location.address }}"
         },
-        "name": "{{ location.title }}"
+        "name": "{{ location.title }} {{ location.subtitle }}"
     },
     {% if page.type == "meeting" %}
     "name": "HVOpen Lecture: {{ page.title }}",

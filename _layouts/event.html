@@ -3,6 +3,32 @@
 {% include header.html %}
 
 {% assign location = site.locations | where: "title", page.location | first %}
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "location": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "{{ location.city }}",
+            "addressRegion": "{{ location.state }}",
+            "postalCode": "{{ location.zip }}",
+            "streetAddress": "{{location.address }}"
+        },
+        "name": "{{ location.name }}"
+    },
+    {% if page.type == "meeting" %}
+    "name": "HVOpen Lecture: {{ page.title }}",
+    {% else %}
+    "name": "{{ page.title }}",
+    {% endif %}
+    "startDate": "{{ page.dtstart | date_to_xmlschema }}",
+    "endDate": "{{ page.dtend | date_to_xmlschema }}"
+}
+</script>
+
 <div class="container">
   <div class="row">
     <div class="col-md-9 col-md-offset-3">

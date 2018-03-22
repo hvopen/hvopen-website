@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="outer col-md-6 col-md-offset-3">
+  <div class="inner">
+    <h3>Already a Team member?</h3>
+    <p>click here: <a href="https://hvopen.slack.com/"><b>hvopen.slack.com</b></a></p>
+  </div>
+  <div class="inner">
+    <h3>If not, join us!</h3>
+    <p>Join the HVOpen Community to discuss the project in
+      real-time.</p>
+    <ul style="text-align: left">
+      <li><strong>Talk</strong> to the core devs and the HVOpen
+        community.</li>
+      <li><strong>Learn</strong> from others and ask questions.</li>
+      <li><strong>Share</strong> your work and demos.</li>
+    </ul>
+    <form class="form-inline">
+      <div class="form-group"> <label for="exampleInputEmail2">Email:</label>
+        <input class="form-control" id="inputEmail"
+               placeholder="jane.doe@example.com" required=""
+               type="email"> </div>
+      <button type="button" class="btn btn-primary" style="margin:
+                                                           5px;">Send invitation</button>
+      <div id="result">
+    </form>
+    </div>
+    <div class="inner">
+      <p>We are a friendly, respectful and inclusive community!</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        var btn = $("button");
+        var res = $("#result");
+        var email = $('#inputEmail');
+        var actionUrl = "https://openwhisk.ng.bluemix.net/api/v1/web/Aedo-devadv_probot/default/slackinvite.json";
+        function handler() {
+            $.get(actionUrl, { email: email[0].value })
+                .done(function (data) {
+                    btn.removeClass("btn-danger");
+                    btn.addClass("btn-success");
+                    btn.html("WOOT. CHECK YOUR EMAIL!");
+                    res.html(data.message);
+                })
+                .fail(function (err) {
+                    btn.addClass("btn-danger");
+                    btn.html("Problem with invite");
+                    if(err.responseJSON) console.log(err.responseJSON)
+                    if(err.responseJSON && err.responseJSON.error && err.responseJSON.error.message){
+                        res.html(err.responseJSON.error.message);
+                    } else {
+                        res.html(err.statusText + ":Your invitation didn't work :-( ");
+                    }
+
+                });
+        }
+        btn.click(handler);
+        btn.prop("disabled", true);
+
+        function validate() {
+            console.log("validate")
+            if (email[0].validity.typeMismatch) {
+                btn.prop("disabled", true);
+            } else {
+                btn.prop("disabled", false);
+            }
+        }
+        email.change(validate);
+        email.keyup(validate);
+    })
+  </script>
+</div>

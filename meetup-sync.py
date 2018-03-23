@@ -85,6 +85,13 @@ class Post(object):
         self.location = find_location(self._post["location"])
 
     @property
+    def image(self):
+        try:
+            return self._post["image"]
+        except KeyError:
+            return ""
+
+    @property
     def description(self):
         tags = ("h1", "h2", "h3", "h4")
         location = LOCATION.format(self.location.address)
@@ -102,6 +109,13 @@ class Post(object):
         # strip out ul
         desc = desc.replace("<ul>", "<p>")
         desc = desc.replace("</ul>", "</p>")
+        if self.image:
+            url = "https://hvopen.org{}".format(self.image)
+            desc = """
+<img src="{}" align="center" />
+{}
+""".format(url, desc)
+
         return desc
 
     @property
@@ -117,6 +131,7 @@ class Post(object):
     @property
     def title(self):
         return self._post["title"]
+
 
     @property
     def meetup_id(self):

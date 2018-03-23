@@ -33,10 +33,6 @@
     {% if page.layout == "event" %}
     <meta name="og:title" content="{{ event.title }}" />
     <meta name="twitter:title" content="{{ event.title }}" />
-    <meta name="og:description"
-          content="{{ event.excerpt | escape }}" />
-    <meta name="twitter:description"
-          content="{{ event.excerpt | escape }}" />
     {% else %}
     <meta name="og:title" content="Next Lecture: {{ event.title
                                         }}" />

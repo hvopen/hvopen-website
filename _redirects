@@ -1,2 +1,3 @@
 # bulk redirect of all events
 /meetings /events
+/live https://live.hvopen.org

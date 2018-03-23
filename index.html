@@ -37,7 +37,12 @@ layout: default
           </div>
         </div>
       </div>
-        <div class="content">
+      <div class="content">
+        {% if next_event.image %}
+          <img src="{{ next_event.image }}" align="right" vspace="5"
+          hspace="5" />
+          {% endif %}
+
           {{ next_event.content }}
         </div>
         <div class="row logistics">

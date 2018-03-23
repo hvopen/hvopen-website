@@ -42,6 +42,10 @@
     <div class="col-md-9 col-md-push-3">
       <div class="article">
         <div class="post-content">
+          {% if page.image %}
+          <img src="{{ page.image }}" align="right" vspace="5"
+          hspace="5" />
+          {% endif %}
           {{ content }}
         </div>
       </div>

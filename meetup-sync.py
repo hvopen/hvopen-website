@@ -7,6 +7,7 @@ import configparser
 import datetime
 import json
 import os
+from urllib.parse import quote
 
 import click
 import frontmatter
@@ -16,7 +17,7 @@ import requests
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 URL = "https://api.meetup.com/2/event"
-GROUP = "mhvlug"
+GROUP = "hvopen"
 LOCATION = """
 
 Location:
@@ -200,6 +201,74 @@ def all_events():
                 events.append(os.path.join(root, f))
     return events
 
+def make_google_calendar_url(data):
+    template = ("https://www.google.com/calendar/render?action=TEMPLATE&"
+                "text=%(subject)s&"
+                "dates=%(dtstart)s/%(dtend)s&"
+                "details=%(desc)s&"
+                "location=%(location)s&"
+                "sprop=&sprop=name:")
+    url = template % {
+        "subject": quote(data['subject']),
+        "desc": quote(data['description']),
+        "location": quote(data['location']),
+        "dtstart": data['dtstart'],
+        "dtend": data['dtend']
+    }
+    return url
+
+
+TEMPLATE = """
+<table width="100%">
+<tr>
+<td align="center">
+<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #2B
+AADF;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: ex
+actly;-ms-text-size-adjust: 100%%;-webkit-text-size-adjust: 100%%;">
+                                <a class="mcnButton " title="RSVP on Meetup" href="{0}" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100
+%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">RSVP
+on Meetup</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+</td>
+<td align="center">
+<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #2B
+AADF;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: ex
+actly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <a class="mcnButton " title="Add to Calendar" href="{1}"
+style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-ad
+just: 100%;-webkit-text-size-adjust: 100%;display: block;">Add to Calendar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+</td>
+</table>
+"""  # noqa
+
+def buttons(post):
+    data = {
+        "subject": post.title,
+        "description": markdown.markdown(post._post.content),
+        "dtstart": post.start.isoformat(),
+        "dtend": post.end.isoformat(),
+        "location": post.location.address
+    }
+
+
+    cal_url = make_google_calendar_url(data)
+
+    print(TEMPLATE.format("https://meetup.com/hvopen/events/" + post.meetup_id, cal_url))
+
+
 
 @click.command(context_settings=CONTEXT_SETTINGS)
 @click.argument('event', type=click.Path(exists=True), required=True)
@@ -217,6 +286,7 @@ def main(event):
         post.write(event)
     else:
         resp = update_meetup(post)
+    buttons(post)
 
 
 if __name__ == '__main__':

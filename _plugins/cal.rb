@@ -30,10 +30,16 @@ module Jekyll
       events = site.collections["events"]
 
       events.docs.each do |event|
-        cal.event do |e|
-          e.dtstart = Icalendar::Values::DateTime.new event.dtstart, 'tzid' => "America/New_York"
-          e.dtend = Icalendar::Values::DateTime.new event.dtend, 'tzid' => "America/New_York"
-          e.summary = event.title
+        if event.respond_to?(:meetup_id)
+            cal.event do |e|
+             e.dtstart = Icalendar::Values::DateTime.new event.dtstart, 'tzid' => "America/New_York"
+             e.dtend = Icalendar::Values::DateTime.new event.dtend, 'tzid' => "America/New_York"
+             e.summary = event.title
+             e.description = event.content
+             e.uid = "calendar.#{event.slug}-#{event.meetup_id}@hvopen.org"
+             e.url = "https://hvopen.org#{event.url}"
+             e.dtstamp = Time.new.strftime("%Y%m%dT%H:%M:%S")
+           end
         end
       end
 

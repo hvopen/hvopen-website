@@ -5,6 +5,37 @@ module Jekyll
   class CalendarGenerator < Generator
     safe true
 
+    def location(site, name)
+      locations = site.collections["locations"]
+      location = nil
+      locations.docs.each do |l|
+        if l.title == name
+          location = l
+          break
+        end
+      end
+      address = "#{location.title}"
+      if defined? location.subtitle
+        address += "\n#{location.subtitle}"
+      end
+      if defined? location.address
+        address += "\n#{location.address}"
+      end
+      if defined? location.address1
+        address += "\n#{location.address1}"
+      end
+      if defined? location.city
+        address += "\n#{location.city}"
+      end
+      if defined? location.state
+        address += ", #{location.state}"
+      end
+      if defined? location.zip
+        address += " #{location.zip}"
+      end
+      return address
+    end
+
     def generate(site)
       cal = Icalendar::Calendar.new
       cal.timezone do |t|
@@ -38,7 +69,8 @@ module Jekyll
              e.description = event.content
              e.uid = "calendar.#{event.slug}-#{event.meetup_id}@hvopen.org"
              e.url = "https://hvopen.org#{event.url}"
-             e.dtstamp = Time.new.strftime("%Y%m%dT%H:%M:%S")
+             e.location = self.location(site, event.location)
+             e.dtstamp = Time.new.strftime("%Y%m%dT%H%M%S")
            end
         end
       end

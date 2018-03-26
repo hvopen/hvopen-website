@@ -15,29 +15,29 @@ module Jekyll
       locations = site.collections["locations"]
       location = nil
       locations.docs.each do |l|
-        if l.title == name
+        if l.data["title"] == name
           location = l
           break
         end
       end
-      address = "#{location.title}"
-      if defined? location.subtitle
-        address += "\n#{location.subtitle}"
+      address = "#{location.data[".title"]}"
+      if defined? location.data[".subtitle"]
+        address += "\n#{location.data[".subtitle"]}"
       end
-      if defined? location.address
-        address += "\n#{location.address}"
+      if defined? location.data[".address"]
+        address += "\n#{location.data[".address"]}"
       end
-      if defined? location.address1
-        address += "\n#{location.address1}"
+      if defined? location.data[".address1"]
+        address += "\n#{location.data[".address1"]}"
       end
-      if defined? location.city
-        address += "\n#{location.city}"
+      if defined? location.data[".city"]
+        address += "\n#{location.data[".city"]}"
       end
-      if defined? location.state
-        address += ", #{location.state}"
+      if defined? location.data[".state"]
+        address += ", #{location.data[".state"]}"
       end
-      if defined? location.zip
-        address += " #{location.zip}"
+      if defined? location.data[".zip"]
+        address += " #{location.data[".zip"]}"
       end
       return address
     end
@@ -73,13 +73,13 @@ module Jekyll
         if event.respond_to?(:meetup_id)
           html = converter.convert(event.content)
           cal.event do |e|
-            e.dtstart = Icalendar::Values::DateTime.new event.dtstart, 'tzid' => "America/New_York"
-            e.dtend = Icalendar::Values::DateTime.new event.dtend, 'tzid' => "America/New_York"
-            e.summary = event.title
+            e.dtstart = Icalendar::Values::DateTime.new event.data["dtstart"], 'tzid' => "America/New_York"
+            e.dtend = Icalendar::Values::DateTime.new event.data["dtend"], 'tzid' => "America/New_York"
+            e.summary = event.data["title"]
             e.description = event.content
-            e.uid = "calendar.#{event.slug}-#{event.meetup_id}@hvopen.org"
-            e.url = "https://hvopen.org#{event.url}"
-            e.location = self.location(site, event.location)
+            e.uid = "calendar.#{event.data["slug"]}-#{event.data["meetup_id"]}@hvopen.org"
+            e.url = "https://hvopen.org#{event.data["url"]}"
+            e.location = self.location(site, event.data["location"])
             e.dtstamp = Time.new.strftime("%Y%m%dT%H%M%S")
             e.x_alt_desc = html
             e.x_alt_desc.ical_param('fmttype', "text/html")

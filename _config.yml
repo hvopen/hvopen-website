@@ -59,7 +59,7 @@ highlighter: rouge
 markdown: kramdown
 # markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 
-gems: ['jekyll-paginate']
+gems: ['jekyll-paginate', 'jekyll-sitemap']
 
 include: ['_redirects']
 

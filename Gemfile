@@ -21,5 +21,7 @@ group :jekyll_plugins do
    gem "jekyll-paginate", "~> 1.1.0"
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-redirect-from", "~> 0.13"
+   gem "jekyll-sitemap", "~> 1.2"
+   gem "jekyll-last-modified-at", "~> 1.0"
    gem "octopress-minify-html", "~> 1.3.1"
 end

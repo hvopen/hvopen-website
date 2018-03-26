@@ -1,5 +1,11 @@
 require 'icalendar'
 
+module Icalendar
+  class Event
+    optional_single_property :x_alt_desc
+  end
+end
+
 module Jekyll
 
   class CalendarGenerator < Generator
@@ -59,22 +65,25 @@ module Jekyll
       end
 
       events = site.collections["events"]
+      converter = site.find_converter_instance(Jekyll::Converters::Markdown)
 
       events.docs.each do |event|
         if event.respond_to?(:meetup_id)
-            cal.event do |e|
-             e.dtstart = Icalendar::Values::DateTime.new event.dtstart, 'tzid' => "America/New_York"
-             e.dtend = Icalendar::Values::DateTime.new event.dtend, 'tzid' => "America/New_York"
-             e.summary = event.title
-             e.description = event.content
-             e.uid = "calendar.#{event.slug}-#{event.meetup_id}@hvopen.org"
-             e.url = "https://hvopen.org#{event.url}"
-             e.location = self.location(site, event.location)
-             e.dtstamp = Time.new.strftime("%Y%m%dT%H%M%S")
-           end
+          html = converter.convert(event.content)
+          cal.event do |e|
+            e.dtstart = Icalendar::Values::DateTime.new event.dtstart, 'tzid' => "America/New_York"
+            e.dtend = Icalendar::Values::DateTime.new event.dtend, 'tzid' => "America/New_York"
+            e.summary = event.title
+            e.description = event.content
+            e.uid = "calendar.#{event.slug}-#{event.meetup_id}@hvopen.org"
+            e.url = "https://hvopen.org#{event.url}"
+            e.location = self.location(site, event.location)
+            e.dtstamp = Time.new.strftime("%Y%m%dT%H%M%S")
+            e.x_alt_desc = html
+            e.x_alt_desc.ical_param('fmttype', "text/html")
+          end
         end
       end
-
 
       file = File.new(File.join(site.source, "events.ics"), "w")
       puts cal.to_ical

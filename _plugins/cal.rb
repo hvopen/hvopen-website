@@ -15,29 +15,31 @@ module Jekyll
       locations = site.collections["locations"]
       location = nil
       locations.docs.each do |l|
+        puts l.data["title"]
         if l.data["title"] == name
+          puts l.data["title"]
           location = l
           break
         end
       end
-      address = "#{location.data[".title"]}"
-      if defined? location.data[".subtitle"]
-        address += "\n#{location.data[".subtitle"]}"
+      address = "#{location.data["title"]}"
+      if defined? location.data["subtitle"]
+        address += "\n#{location.data["subtitle"]}"
       end
-      if defined? location.data[".address"]
-        address += "\n#{location.data[".address"]}"
+      if defined? location.data["address"]
+        address += "\n#{location.data["address"]}"
       end
-      if defined? location.data[".address1"]
-        address += "\n#{location.data[".address1"]}"
+      if defined? location.data["address1"]
+        address += "\n#{location.data["address1"]}"
       end
-      if defined? location.data[".city"]
-        address += "\n#{location.data[".city"]}"
+      if defined? location.data["city"]
+        address += "\n#{location.data["city"]}"
       end
-      if defined? location.data[".state"]
-        address += ", #{location.data[".state"]}"
+      if defined? location.data["state"]
+        address += ", #{location.data["state"]}"
       end
-      if defined? location.data[".zip"]
-        address += " #{location.data[".zip"]}"
+      if defined? location.data["zip"]
+        address += " #{location.data["zip"]}"
       end
       return address
     end

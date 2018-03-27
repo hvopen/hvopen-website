@@ -20,7 +20,7 @@ going into this.
 
 <!--more-->
 
-The 3rd genetation of the website was based on Drupal, which worked
+The 3rd generation of the website was based on Drupal, which worked
 well for us. But it was started under the idea that more user
 generated content would be hosted there. The reality is, that never
 really happened. Also, at the time I was maintaining a Drupal site for
@@ -111,7 +111,7 @@ for mapping, and one for ical.
 ### Mapping ###
 
 The
-[map pluggin](https://github.com/hvopen/hvopen-website/blob/master/_plugins/map.rb) is
+[map plugin](https://github.com/hvopen/hvopen-website/blob/master/_plugins/map.rb) is
 used on location pages to inject a custom leaflet.js map for those
 pages. It's build as a custom tag that you insert in pages (or
 layouts) where you want a map.

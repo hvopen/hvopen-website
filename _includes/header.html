@@ -44,11 +44,11 @@
     <meta name="twitter:data1" content="{{ event.dtstart | date: "%a,
             %b %-d - %-I%P" }}" />
     {% if event.image %}
-    <meta name="og:image" content="{{ site.baseurl }}{{ event.image }}" />
-    <meta name="twitter:image" content="{{ site.baseurl }}{{ event.image }}" />
+    <meta name="og:image" content="{{ site.url }}{{ event.image }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ event.image }}" />
     {% else %}
-    <meta name="og:image" content="{{ site.baseurl }}/images/logo_medium.png" />
-    <meta name="twitter:image" content="{{ site.baseurl }}/images/logo_medium.png" />
+    <meta name="og:image" content="{{ site.url }}/images/logo_medium.png" />
+    <meta name="twitter:image" content="{{ site.url }}/images/logo_medium.png" />
     {% endif %}
     {% endif %}
 

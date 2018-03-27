@@ -80,7 +80,7 @@ module Jekyll
             e.summary = event.data["title"]
             e.description = event.content
             e.uid = "calendar.#{event.data["slug"]}-#{event.data["meetup_id"]}@hvopen.org"
-            e.url = "https://hvopen.org#{event.data["url"]}"
+            e.url = "https://hvopen.org#{event.url}"
             e.location = self.location(site, event.data["location"])
             e.dtstamp = Time.new.strftime("%Y%m%dT%H%M%S")
             e.x_alt_desc = html

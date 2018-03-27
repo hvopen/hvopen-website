@@ -109,12 +109,12 @@ layout: default
   <div class="col-md-9">
     {% for post in site.posts %}
     <div class="row col-md-12">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div></h3>
       <div class="post-content">
 
         {{ post.excerpt }}
-        <p><a href="{{ post.url }}">Read More</a> <i>({{ page.content |
+        <p><a href="{{ post.url }}">Read More</a> <i>({{ post.content |
         number_of_words | divided_by: 180 | append: " minutes to read" }})</i></p>
       </div>
     </div>

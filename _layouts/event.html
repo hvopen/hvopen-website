@@ -2,8 +2,6 @@
 
 {% include header.html %}
 
-{% assign location = site.locations | where: "title", page.location | first %}
-
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -12,12 +10,12 @@
         "@type": "Place",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "{{ location.city }}",
-            "addressRegion": "{{ location.state }}",
-            "postalCode": "{{ location.zip }}",
-            "streetAddress": "{{location.address }}"
+            "addressLocality": "{{ event.locobj.city }}",
+            "addressRegion": "{{ event.locobj.state }}",
+            "postalCode": "{{ event.locobj.zip }}",
+            "streetAddress": "{{event.locobj.address }}"
         },
-        "name": "{{ location.title }} {{ location.subtitle }}"
+        "name": "{{ event.locobj.title }} {{ event.locobj.subtitle }}"
     },
     {% if page.type == "meeting" %}
     "name": "HVOpen Lecture: {{ page.title }}",
@@ -56,13 +54,10 @@
       <div>{{ page.dtstart | date: "%-I%P" }} - {{
         page.dtend | date: "%-I%P" }}</div>
       <h3>Where</h3>
-      <div><a href="{{ site.baseurl}}{{location.url}}">{{ page.location }}</a></div>
+      <div><a href="{{ site.baseurl}}{{event.locobj.url}}">{{
+          page.location }}</a></div>
       <div class="address">
-        {{ location.address }}<br/>
-        {% if location.address1 %}
-        {{ location.address1 }}<br/>
-        {% endif %}
-        {{ location.city }}, {{ location.state }} {{ location.zip }}
+        {{ event.locobj.addr_html }}
       </div>
       {% if page.meetup_id %}
       {% if page.dtend > site.time %}

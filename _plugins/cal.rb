@@ -6,22 +6,12 @@ module Icalendar
   end
 end
 
-module Jekyll
 
+module Jekyll
   class CalendarGenerator < Generator
     safe true
 
-    def location(site, name)
-      locations = site.collections["locations"]
-      location = nil
-      locations.docs.each do |l|
-        puts l.data["title"]
-        if l.data["title"] == name
-          puts l.data["title"]
-          location = l
-          break
-        end
-      end
+    def location(site, location)
       address = "#{location.data["title"]}"
       if defined? location.data["subtitle"]
         address += "\n#{location.data["subtitle"]}"
@@ -81,7 +71,7 @@ module Jekyll
             e.description = event.content
             e.uid = "calendar.#{event.data["slug"]}-#{event.data["meetup_id"]}@hvopen.org"
             e.url = "https://hvopen.org#{event.url}"
-            e.location = self.location(site, event.data["location"])
+            e.location = self.location(site, event.data["locobj"])
             e.dtstamp = Time.new.strftime("%Y%m%dT%H%M%S")
             e.x_alt_desc = html
             e.x_alt_desc.ical_param('fmttype', "text/html")

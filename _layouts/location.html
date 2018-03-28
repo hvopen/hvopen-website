@@ -13,13 +13,8 @@
         </div>
         <div class="where">
           <div class="address">
-            {{ page.address }}<br/>
-            {% if page.address1 %}
-            {{ page.address1 }}<br/>
-            {% endif %}
-            {{ page.city }}, {{ page.state }} {{ page.zip }}
+            {{ page.addr_html }}
           </div>
-
           {% map %}
         </div>
       </div>

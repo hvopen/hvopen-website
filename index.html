@@ -9,7 +9,6 @@ layout: default
 "item.dtend > site.time" | where: "type", "meeting" %}
 
 {% assign next_event = upcoming_meetings.first %}
-{% assign location = site.locations | where: "title", next_event.location | first %}
 
 <div class="row">
   <div class="col-md-9 col-md-offset-3">
@@ -54,13 +53,9 @@ layout: default
           </div>
           <div class="col-md-4">
             <h3>Where</h3>
-            <div><a href="{{ site.baseurl}}{{event.locobj.url}}">{{ location.title }}</a></div>
+            <div><a href="{{ site.baseurl}}{{next_event.locobj.url}}">{{next_event.locobj.title}}</a></div>
             <div class="address">
-              {{ location.address }}<br/>
-              {% if location.address1 %}
-              {{ location.address1 }}<br/>
-              {% endif %}
-              {{ location.city }}, {{ location.state }} {{ location.zip }}
+              {{ next_event.locobj.addr_html }}
             </div>
           </div>
           <div class="col-md-4">

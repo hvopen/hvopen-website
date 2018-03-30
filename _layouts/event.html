@@ -1,4 +1,5 @@
 {% include header.html %}
+{% assign description = page.excerpt | strip_html | escape %}
 
 <script type="application/ld+json">
 {
@@ -23,6 +24,7 @@
     {% else %}
     "name": "{{ page.title }}",
     {% endif %}
+    "description": "{{description}}",
     "startDate": "{{ page.dtstart | date_to_xmlschema }}",
     "endDate": "{{ page.dtend | date_to_xmlschema }}",
     "organizer": {

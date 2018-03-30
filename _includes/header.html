@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   {% if page.title %}
   <title>{{ page.title }}</title>
+  <meta name="og:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
   {% else %}
   <title>{{ site.name }}</title>
+  <meta name="og:title" content="{{ site.name }}" />
+  <meta name="twitter:title" content="{{ site.name }}" />
   {% endif %}
     <meta name="viewport" content="width=device-width,
                                    initial-scale=1.0">
@@ -29,10 +33,15 @@
     <meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@hv_open" />
-    <meta name="og:title" content="{{ page.title }}" />
-    <meta name="twitter:title" content="{{ page.title }}" />
+    {% if page.excerpt %}
+    <meta name="description" content="{{page.excerpt}}" />
     <meta name="twitter:description" content="{{page.excerpt}}" />
     <meta name="og:description" content="{{page.excerpt}}" />
+    {% else %}
+    <meta name="description" content="{{site.description}}" />
+    <meta name="twitter:description" content="{{site.description}}" />
+    <meta name="og:description" content="{{site.description}}" />
+    {% endif %}
 
     {% if page.layout == "event" %}
     <meta name="twitter:label1" content="Join Us!" />
@@ -41,11 +50,11 @@
     <meta name="twitter:label2" content="RSVP" />
     <meta name="twitter:data2"
     content="https://meetup.com/hvopen/events/{{ page.meetup_id }}" />
-    {% endif %}
-
-    {% if next_event %}
-    <meta name="twitter:label1" content="Next Meeting {{
-    next_event.title }}}" />
+    {% else %}
+    {% assign next_event = site.events | where_exp: "item",
+    "item.dtend > site.time" | where: "type", "meeting" | first %}
+    <meta name="twitter:label1" content="Next Meeting: {{
+    next_event.title }}" />
     <meta name="twitter:data1"
           content="{{ next_event.dtstart | date: "%a, %b %-d - %-I%P" }}" />
     <meta name="twitter:label2" content="RSVP" />

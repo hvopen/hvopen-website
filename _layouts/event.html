@@ -8,12 +8,12 @@
         "@type": "Place",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "{{ event.locobj.city }}",
-            "addressRegion": "{{ event.locobj.state }}",
-            "postalCode": "{{ event.locobj.zip }}",
-            "streetAddress": "{{event.locobj.address }}"
+            "addressLocality": "{{ page.locobj.city }}",
+            "addressRegion": "{{ page.locobj.state }}",
+            "postalCode": "{{ page.locobj.zip }}",
+            "streetAddress": "{{page.locobj.address }}"
         },
-        "name": "{{ event.locobj.title }} {{ event.locobj.subtitle }}"
+        "name": "{{ page.locobj.title }} {{ page.locobj.subtitle }}"
     },
     {% if page.type == "meeting" %}
     "name": "HVOpen Lecture: {{ page.title }}",
@@ -52,10 +52,10 @@
       <div>{{ page.dtstart | date: "%-I%P" }} - {{
         page.dtend | date: "%-I%P" }}</div>
       <h3>Where</h3>
-      <div><a href="{{ site.baseurl}}{{event.locobj.url}}">{{
+      <div><a href="{{ site.baseurl}}{{page.locobj.url}}">{{
           page.location }}</a></div>
       <div class="address">
-        {{ event.locobj.addr_html }}
+        {{ page.locobj.addr_html }}
       </div>
       {% if page.meetup_id %}
       {% if page.dtend > site.time %}

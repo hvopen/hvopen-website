@@ -33,7 +33,7 @@ title: HVOpen Slack
           <input class="form-control" id="inputEmail"
                  placeholder="margaret.hamilton@example.com" required=""
                  type="email"> </div>
-        <button type="button" class="btn btn-primary" style="margin:
+        <button id="send-invitation" type="button" class="btn btn-primary" style="margin:
                                                              5px;">Send invitation</button>
         <div id="result">
       </form>
@@ -41,7 +41,7 @@ title: HVOpen Slack
     <p>We are a friendly, respectful, and inclusive community!</p>
     <script type="text/javascript">
       $(document).ready(function() {
-        var btn = $("button");
+        var btn = $("#send-invitation");
         var res = $("#result");
         var email = $('#inputEmail');
         var actionUrl = "https://openwhisk.ng.bluemix.net/api/v1/web/Aedo-devadv_probot/default/slackinvite.json";

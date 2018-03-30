@@ -37,9 +37,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@hv_open" />
     {% if page.excerpt %}
-    <meta name="description" content="{{page.excerpt}}" />
-    <meta name="twitter:description" content="{{page.excerpt}}" />
-    <meta name="og:description" content="{{page.excerpt}}" />
+    {% assign description = page.excerpt | strip_html | escape %}
+    <meta name="description" content="{{description}}" />
+    <meta name="twitter:description" content="{{description}}" />
+    <meta name="og:description" content="{{description}}" />
     {% else %}
     <meta name="description" content="{{site.description}}" />
     <meta name="twitter:description" content="{{site.description}}" />
@@ -53,11 +54,10 @@
     <meta name="twitter:label2" content="RSVP" />
     <meta name="twitter:data2"
     content="https://meetup.com/hvopen/events/{{ page.meetup_id }}" />
-    {% else %}
-    {% assign next_event = site.events | where_exp: "item",
-    "item.dtend > site.time" | where: "type", "meeting" | first %}
-    <meta name="twitter:label1" content="Next Meeting: {{
-    next_event.title }}" />
+    {% endif %}
+    {% if next_event %}
+    <meta name="twitter:label1"
+          content="Next Meeting: {{ next_event.title }}" />
     <meta name="twitter:data1"
           content="{{ next_event.dtstart | date: "%a, %b %-d - %-I%P" }}" />
     <meta name="twitter:label2" content="RSVP" />

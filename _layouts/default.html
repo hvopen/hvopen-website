@@ -1,3 +1,6 @@
+ {% assign next_event = site.events | where_exp: "item",
+    "item.dtend > site.time" | where: "type", "meeting" | first %}
+
 {% include header.html %}
 
 <div class="container">

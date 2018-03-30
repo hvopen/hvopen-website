@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   {% if page.title %}
   <title>{{ page.title }}</title>
-  <meta name="og:title" content="{{ page.title }}" />
+  <meta property="og:title" content="{{ page.title }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
   {% else %}
   <title>{{ site.name }}</title>
-  <meta name="og:title" content="{{ site.name }}" />
+  <meta property="og:title" content="{{ site.name }}" />
   <meta name="twitter:title" content="{{ site.name }}" />
   {% endif %}
     <meta name="viewport" content="width=device-width,
@@ -31,8 +31,8 @@
             integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
             crossorigin=""></script>
 
-    <meta name="og:type" content="website" />
-    <meta name="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
     <meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@hv_open" />
@@ -40,11 +40,11 @@
     {% assign description = page.excerpt | strip_html | escape %}
     <meta name="description" content="{{description}}" />
     <meta name="twitter:description" content="{{description}}" />
-    <meta name="og:description" content="{{description}}" />
+    <meta property="og:description" content="{{description}}" />
     {% else %}
     <meta name="description" content="{{site.description}}" />
     <meta name="twitter:description" content="{{site.description}}" />
-    <meta name="og:description" content="{{site.description}}" />
+    <meta property="og:description" content="{{site.description}}" />
     {% endif %}
 
     {% if page.layout == "event" %}
@@ -66,10 +66,10 @@
     {% endif %}
 
     {% if page.image %}
-    <meta name="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
     <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
-    <meta name="og:image" content="{{ site.url }}/images/logo_medium.png" />
+    <meta property="og:image" content="{{ site.url }}/images/logo_medium.png" />
     <meta name="twitter:image" content="{{ site.url }}/images/logo_medium.png" />
     {% endif %}
     <script type="application/ld+json">

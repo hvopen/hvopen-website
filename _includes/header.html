@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   {% if page.title %}
   <title>{{ page.title }}</title>
+  <meta name="og:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
   {% else %}
   <title>{{ site.name }}</title>
+  <meta name="og:title" content="{{ site.name }}" />
+  <meta name="twitter:title" content="{{ site.name }}" />
   {% endif %}
     <meta name="viewport" content="width=device-width,
                                    initial-scale=1.0">
@@ -28,31 +32,45 @@
             crossorigin=""></script>
 
     <meta name="og:type" content="website" />
-    <meta name="og:url" content="{{ site.baseurl }}{{ event.url }}" />
-    <meta name="twitter:url" content="{{ site.baseurl }}{{ event.url }}" />
-    {% if event %}
+    <meta name="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+    <meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@hv_open" />
-    {% if page.layout == "event" %}
-    <meta name="og:title" content="{{ event.title }}" />
-    <meta name="twitter:title" content="{{ event.title }}" />
+    {% if page.excerpt %}
+    <meta name="description" content="{{page.excerpt}}" />
+    <meta name="twitter:description" content="{{page.excerpt}}" />
+    <meta name="og:description" content="{{page.excerpt}}" />
     {% else %}
-    <meta name="og:title" content="Next Lecture: {{ event.title
-                                        }}" />
-    <meta name="twitter:title" content="Next Lecture: {{ event.title
-                                        }}" />
-
+    <meta name="description" content="{{site.description}}" />
+    <meta name="twitter:description" content="{{site.description}}" />
+    <meta name="og:description" content="{{site.description}}" />
     {% endif %}
+
+    {% if page.layout == "event" %}
     <meta name="twitter:label1" content="Join Us!" />
-    <meta name="twitter:data1" content="{{ event.dtstart | date: "%a,
-            %b %-d - %-I%P" }}" />
-    {% if event.image %}
-    <meta name="og:image" content="{{ site.url }}{{ event.image }}" />
-    <meta name="twitter:image" content="{{ site.url }}{{ event.image }}" />
+    <meta name="twitter:data1"
+          content="{{ page.dtstart | date: "%a, %b %-d - %-I%P" }}" />
+    <meta name="twitter:label2" content="RSVP" />
+    <meta name="twitter:data2"
+    content="https://meetup.com/hvopen/events/{{ page.meetup_id }}" />
+    {% else %}
+    {% assign next_event = site.events | where_exp: "item",
+    "item.dtend > site.time" | where: "type", "meeting" | first %}
+    <meta name="twitter:label1" content="Next Meeting: {{
+    next_event.title }}" />
+    <meta name="twitter:data1"
+          content="{{ next_event.dtstart | date: "%a, %b %-d - %-I%P" }}" />
+    <meta name="twitter:label2" content="RSVP" />
+    <meta name="twitter:data2"
+    content="https://meetup.com/hvopen/events/{{ next_event.meetup_id }}" />
+    {% endif %}
+
+    {% if page.image %}
+    <meta name="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
     <meta name="og:image" content="{{ site.url }}/images/logo_medium.png" />
     <meta name="twitter:image" content="{{ site.url }}/images/logo_medium.png" />
-    {% endif %}
     {% endif %}
 
 </head>

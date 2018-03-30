@@ -1,7 +1,9 @@
 # Jekyll configuration
 
-name: Hudson Valley Open Technology Forum
-description: Open Source, Open Hardware, Open Data
+name: HVOpen
+description: >-
+  Sharing the joys of open technology throughout the Hudson
+  Valley
 
 # url is currently only used only for the RSS feed in feed.xml
 url: https://hvopen.org
@@ -13,7 +15,7 @@ url: https://hvopen.org
 baseurl:
 
 # These can be '' to hide the Github or Gitlab nav buttons
-github: 'mhvlug/hvopen-website'
+github: 'hvopen/hvopen-website'
 gitlab: ''
 
 # Set this to your UA-# value, or '' to disable the block completely

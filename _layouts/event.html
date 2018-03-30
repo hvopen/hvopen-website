@@ -15,6 +15,9 @@
         },
         "name": "{{ page.locobj.title }} {{ page.locobj.subtitle }}"
     },
+    {% if page.image %}
+    "image": "{{ site.url }}{{ page.image }}",
+    {% endif %}
     {% if page.type == "meeting" %}
     "name": "HVOpen Lecture: {{ page.title }}",
     {% else %}

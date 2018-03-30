@@ -21,7 +21,14 @@
     "name": "{{ page.title }}",
     {% endif %}
     "startDate": "{{ page.dtstart | date_to_xmlschema }}",
-    "endDate": "{{ page.dtend | date_to_xmlschema }}"
+    "endDate": "{{ page.dtend | date_to_xmlschema }}",
+    "organizer": {
+        "ethicsPolicy": "https://hvopen.org/code-of-conduct",
+        "name": "HVOpen",
+        "foundingDate": "20130305T0000",
+        "url": "https://hvopen.org",
+        "logo": "{{ site.url }}/images/logo_medium.png"
+    }
 }
 </script>
 

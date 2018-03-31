@@ -30,7 +30,7 @@ module Jekyll
         return ""
       end
 
-      puts page.inspect
+      Jekyll.logger.debug "Adding Map: ", page.url
 
       popup = "<b>#{page["title"]}</b>"
       if page["subtitle"]

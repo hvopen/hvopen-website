@@ -84,6 +84,7 @@ module Jekyll
         end
       end
 
+      Jekyll.logger.debug "Generating iCal"
       page = PageWithoutAFile.new(site, "", "", "events.ics")
       page.content = cal.to_ical
       page.data["layout"] = nil

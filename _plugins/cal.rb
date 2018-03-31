@@ -6,6 +6,11 @@ module Icalendar
   end
 end
 
+class PageWithoutAFile < Jekyll::Page
+  def read_yaml(*)
+    @data ||= {}
+  end
+end
 
 module Jekyll
   class CalendarGenerator < Generator
@@ -79,12 +84,10 @@ module Jekyll
         end
       end
 
-      file = File.new(File.join(site.source, "events.ics"), "w")
-      puts cal.to_ical
-      file.write(cal.to_ical)
-      file.close()
-
-      site.static_files << Jekyll::StaticFile.new(site, site.source, "/", "events.ics")
+      page = PageWithoutAFile.new(site, "", "", "events.ics")
+      page.content = cal.to_ical
+      page.data["layout"] = nil
+      site.pages << page
     end
   end
 end

@@ -2,8 +2,10 @@
 /meetings /events
 /live http://live.hvopen.org
 /content/officer-roles /about
+# Contacts
 /contact?category=Lightning%20Talk https://goo.gl/forms/MhJegBO3Tir7SlHf1
 /contact/Lightning%20Talk https://goo.gl/forms/MhJegBO3Tir7SlHf1
-/contact/* /about
+/contact/* https://goo.gl/forms/ZbA11t7x445DZA9G3
+# Calendar
 /calendar/*             /events
 /calendar             /events

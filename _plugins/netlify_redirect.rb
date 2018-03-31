@@ -30,9 +30,12 @@ module JekyllRedirectFrom
     end
 
     def generate_netlify
-      return if File.exist? site.in_source_dir("redirects.net")
-      page = PageWithoutAFile.new(site, "", "", "redirects.net")
-      page.content = ""
+      # return if File.exist? site.in_source_dir("_redirects")
+      page = PageWithoutAFile.new(site, "", "", "_redirects")
+      file = File.open("_redirects", "rb")
+      page.content = file.read
+      file.close
+      page.content += "\n# Redirect from netlify_redirect\n"
       @redirects.each do |from, to|
         page.content += "#{from} #{to}\n"
       end

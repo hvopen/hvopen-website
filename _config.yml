@@ -63,7 +63,7 @@ markdown: kramdown
 
 gems: ['jekyll-paginate', 'jekyll-sitemap']
 
-include: ['_redirects']
+# include: ['_redirects']
 
 exclude: ['README.md', 'LICENSE', 'vendor', '*flymake*', 'tools',
 'meetup-sync.py', 'setup.py', 'tox.ini', 'requirements_dev.txt',

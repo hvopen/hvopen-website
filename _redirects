@@ -3,5 +3,7 @@
 /live http://live.hvopen.org
 /content/officer-roles /about
 /contact?category=Lightning%20Talk https://goo.gl/forms/MhJegBO3Tir7SlHf1
+/contact/Lightning%20Talk https://goo.gl/forms/MhJegBO3Tir7SlHf1
+/contact/* /about
 /calendar/*             /events
 /calendar             /events

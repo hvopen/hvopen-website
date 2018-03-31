@@ -4,11 +4,15 @@ module Jekyll
     priority :highest
 
     def generate(site)
+      locations = site.collections["locations"]
+      locations.docs.each do |loc|
+        loc.data["addr_html"] = self.address(loc)
+      end
+
       events = site.collections["events"]
       events.docs.each do |event|
         location = self.location(site, event.data["location"])
         if location
-          location.data["addr_html"] = self.address(location)
           event.data["locobj"] = location
         end
       end
@@ -16,13 +20,13 @@ module Jekyll
 
     def address(location)
       address = ""
-      if defined? location.data["subtitle"]
+      if location.data["subtitle"]
         address += "#{location.data["subtitle"]}<br/>"
       end
-      if defined? location.data["address"]
+      if location.data["address"]
         address += "\n#{location.data["address"]}<br/>"
       end
-      if defined? location.data["address1"]
+      if location.data["address1"]
         address += "\n#{location.data["address1"]}<br/>"
       end
       if defined? location.data["city"]

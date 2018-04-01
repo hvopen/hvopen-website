@@ -1,9 +1,13 @@
 # Jekyll configuration
 
-name: HVOpen
+name: >-
+  HVOpen - An Open Technology meetup serving the Hudson Valley of NY
+  State.
 description: >-
-  Sharing the joys of open technology throughout the Hudson
-  Valley
+  A monthly gathering of open technology contributors, users,
+  enthusiasts, and open curious folks. Main meeting with lecture and
+  lightning talks held the first Wednesday of the month at Vassar
+  College.
 
 # url is currently only used only for the RSS feed in feed.xml
 url: https://hvopen.org

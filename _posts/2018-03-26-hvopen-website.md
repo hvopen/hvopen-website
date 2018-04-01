@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "The New HVOpen Website"
+title: "The New HV Open Website"
 date: 2018-03-26 15:00:00 -0400
 excerpt_separator: <!--more-->
 ---
 
-As part of the rebranding to HVOpen it was time to simplify the
+As part of the rebranding to HV Open it was time to simplify the
 platform for the website at the same time. I had a few requirements
 going into this.
 
@@ -68,7 +68,7 @@ Jekyll, so anything I learn here can be applied there.
 
 Jekyll has a concept of posts (blog posts) and pages out of the
 box. But you can also build custom types via the collections
-mechanism. For HVOpen the custom types are `events` and
+mechanism. For HV Open the custom types are `events` and
 `locations`.
 
 With the gen3 website, I realized that we only really have about 6
@@ -171,7 +171,7 @@ for describing events:
         "name": "300 Rockefeller Hall 3rd Floor Auditorium"
     },
 
-    "name": "HVOpen Lecture: Unity 3D Development",
+    "name": "HV Open Lecture: Unity 3D Development",
 
     "startDate": "2018-04-04T18:00:00-04:00",
     "endDate": "2018-04-04T20:00:00-04:00"

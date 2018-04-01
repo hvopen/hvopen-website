@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "MHVLUG becomes HVOpen"
+title: "MHVLUG becomes HV Open"
 date: 2018-03-09 15:00:00 -0500
 excerpt_separator: <!--more-->
 ---
 
-![HVOpen Logo](/images/logo_medium.png "HVOpen Logo")
+![HV Open Logo](/images/logo_medium.png "HV Open Logo")
 
 15 years ago MHVLUG was formed around the nascent Linux operating
 system. Linux was just transitioning from the hobbyist and ISP realms

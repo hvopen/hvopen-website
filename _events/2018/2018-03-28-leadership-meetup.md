@@ -7,15 +7,15 @@ title: Leadership Meetup
 type: leadership
 ---
 
-HVOpen leadership meetup to discuss topics about running the
+HV Open leadership meetup to discuss topics about running the
 group. This is the quarterly meeting of core volunteers and others
 that would like to volunteer to help on the organizing side of
-HVOpen. All are welcome, but be prepared to go home with an assigned
+HV Open. All are welcome, but be prepared to go home with an assigned
 task at the end of it.
 
 Topics for discussion:
 
-* HVOpen Rebrand status
+* HV Open Rebrand status
   * Website status
   * Mailchimp Templates
   * Full name of group

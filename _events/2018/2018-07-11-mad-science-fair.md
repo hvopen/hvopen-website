@@ -7,7 +7,7 @@ title: Mad Science Fair
 type: meeting
 ---
 
-Every July we gather together in a special HVOpen event we call the
+Every July we gather together in a special HV Open event we call the
 Mad Science Fair. People are encouraged to bring their hardware and
 software hacking projects in a show and tell forum. We'll have tables
 set up with power available. We kick off the evening with a short

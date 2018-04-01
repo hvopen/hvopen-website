@@ -41,7 +41,7 @@ module Jekyll
 
     def generate(site)
       cal = Icalendar::Calendar.new
-      cal.x_wr_calname = "HVOpen Events Calendar"
+      cal.x_wr_calname = "HV Open Events Calendar"
 
       cal.timezone do |t|
         t.tzid = "America/New_York"

@@ -1,4 +1,4 @@
-HVOpen Website
+HV Open Website
 ================
 
 This is the website that
@@ -12,7 +12,7 @@ Tour of Content
 ========================
 
 Jekyll content is based on `collections`, which are markdown formatted
-documents with some additional metadata. For HVOpen we have the
+documents with some additional metadata. For HV Open we have the
 following content types:
 
 * _events - all events (use `type` field to distinguish between

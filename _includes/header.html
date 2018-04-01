@@ -93,6 +93,7 @@
               },
               "name": "{{ event.locobj.title }} {{ event.locobj.subtitle }}"
           },
+          "url": "{{ site.url }}{{ event.url }}",
           {% if event.image %}
           "image": "{{ site.url }}{{ event.image }}",
           {% endif %}

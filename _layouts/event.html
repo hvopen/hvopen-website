@@ -1,6 +1,5 @@
 {% include header.html %}
 {% assign description = page.excerpt | strip_html | escape %}
-
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -17,14 +16,14 @@
         "name": "{{ page.locobj.title }} {{ page.locobj.subtitle }}"
     },
     "url": "{{ site.url }}{{ event.url }}",
-    {% if page.image %}
+    {%- if page.image %}
     "image": "{{ site.url }}{{ page.image }}",
-    {% endif %}
-    {% if page.type == "meeting" %}
+    {%- endif %}
+    {%- if page.type == "meeting" %}
     "name": "HV Open Lecture: {{ page.title }}",
-    {% else %}
+    {%- else %}
     "name": "{{ page.title }}",
-    {% endif %}
+    {%- endif %}
     "description": "{{description}}",
     "startDate": "{{ page.dtstart | date_to_xmlschema }}",
     "endDate": "{{ page.dtend | date_to_xmlschema }}",
@@ -38,7 +37,6 @@
     }
 }
 </script>
-
 <div class="container">
   <div class="row">
     <div class="col-md-9 col-md-offset-3">

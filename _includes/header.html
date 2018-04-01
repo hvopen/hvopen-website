@@ -94,14 +94,14 @@
               "name": "{{ event.locobj.title }} {{ event.locobj.subtitle }}"
           },
           "url": "{{ site.url }}{{ event.url }}",
-          {% if event.image %}
+          {%- if event.image %}
           "image": "{{ site.url }}{{ event.image }}",
-          {% endif %}
-          {% if event.type == "meeting" %}
+          {%- endif %}
+          {%- if event.type == "meeting" %}
           "name": "HV Open Lecture: {{ event.title }}",
-          {% else %}
+          {%- else %}
           "name": "{{ event.title }}",
-          {% endif %}
+          {%- endif %}
           "description": "{{description}}",
           "startDate": "{{ event.dtstart | date_to_xmlschema }}",
           "endDate": "{{ event.dtend | date_to_xmlschema }}",
@@ -115,9 +115,8 @@
           }
       }
     </script>
-    {% endfor %}
-    {% endif %}
-
+    {%- endfor %}
+    {%- endif %}
 </head>
 
 <body>

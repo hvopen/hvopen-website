@@ -105,6 +105,12 @@
           "description": "{{description}}",
           "startDate": "{{ event.dtstart | date_to_xmlschema }}",
           "endDate": "{{ event.dtend | date_to_xmlschema }}",
+          {%- if event.meetup_id %}
+          "potentialAction": {
+              "@type": "RsvpAction",
+              "target": "https://meetup.com/hvopen/events/{{ event.meetup_id }}"
+          },
+          {%- endif %}
           "organizer": {
               "@type": "Organization",
               "ethicsPolicy": "https://hvopen.org/code-of-conduct",

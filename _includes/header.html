@@ -72,6 +72,50 @@
     <meta property="og:image" content="{{ site.url }}/images/logo_medium.png" />
     <meta name="twitter:image" content="{{ site.url }}/images/logo_medium.png" />
     {% endif %}
+    <!-- build structured upcoming event list for front page -->
+    {% if page.path == "index.html" %}
+    {% assign upcoming_events = site.events | where_exp: "item",
+    "item.dtend > site.time" %}
+    {% for event in upcoming_events %}
+    {% assign description = event.excerpt | strip_html | escape %}
+    <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "location": {
+              "@type": "Place",
+              "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "{{ event.locobj.city }}",
+                  "addressRegion": "{{ event.locobj.state }}",
+                  "postalCode": "{{ event.locobj.zip }}",
+                  "streetAddress": "{{event.locobj.address }}"
+              },
+              "name": "{{ event.locobj.title }} {{ event.locobj.subtitle }}"
+          },
+          {% if event.image %}
+          "image": "{{ site.url }}{{ event.image }}",
+          {% endif %}
+          {% if event.type == "meeting" %}
+          "name": "HV Open Lecture: {{ event.title }}",
+          {% else %}
+          "name": "{{ event.title }}",
+          {% endif %}
+          "description": "{{description}}",
+          "startDate": "{{ event.dtstart | date_to_xmlschema }}",
+          "endDate": "{{ event.dtend | date_to_xmlschema }}",
+          "organizer": {
+              "@type": "Organization",
+              "ethicsPolicy": "https://hvopen.org/code-of-conduct",
+              "name": "HV Open",
+              "foundingDate": "20130305T0000",
+              "url": "https://hvopen.org",
+              "logo": "{{ site.url }}/images/logo_medium.png"
+          }
+      }
+    </script>
+    {% endfor %}
+    {% endif %}
 
 </head>
 

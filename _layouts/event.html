@@ -30,7 +30,8 @@
     {%- if page.meetup_id %}
     "potentialAction": {
         "@type": "RsvpAction",
-        "target": "https://www.meetup.com/hvopen/events/{{ page.meetup_id }}"
+        "target": "https://www.meetup.com/hvopen/events/{{ page.meetup_id }}",
+        "endTime": "{{ page.dtend | date_to_xmlschema }}"
     },
     {%- endif %}
     "organizer": {

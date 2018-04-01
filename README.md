@@ -17,13 +17,15 @@ following content types:
 
 * _events - all events (use `type` field to distinguish between
   meetings and other events)
+* _locations - so we don't have to copy/paste that bit into every
+  event
 * _posts - news items
 
 
 Making Changes
 ====================
 
-* Fork [hvopen-website](https://github.com/mhvlug/hvopen-website)
+* Fork [hvopen-website](https://github.com/hvopen/hvopen-website)
 * Clone locally
 * Make changes
 * Commit

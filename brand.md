@@ -1,5 +1,10 @@
 ---
 layout: default-narrow
+title: HV Open Branding Guidelines
+excerpt: >-
+    This is a set of guidelines to help with consistency when discussing
+    HV Open, and in creating colateral like stickers, posters, or other
+    promotional materials.
 ---
 
 # Brand Guidelines #

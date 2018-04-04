@@ -39,3 +39,7 @@ sometime DevOps ringmaster.
 Dan is co-founder of
 the [Hudson Valley Tech Meetup](https://www.meetup.com/hvtech/),
 and [Catskills Conf](http://www.catskillsconf.com/).
+
+### Lightning Talks ###
+
+* [Propose a lightning talk](https://goo.gl/forms/MhJegBO3Tir7SlHf1)

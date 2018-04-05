@@ -48,7 +48,9 @@
   <div class="row">
     <div class="col-md-9 col-md-offset-3">
       {% if page.title_image %}
-      <img src="{{ site.baseurl }}{{ page.title_image }}">
+      <a href="{{ site.baseurl }}{{ page.url }}">
+        <img alt="{{ page.title }}" src="{{ site.baseurl }}{{ page.title_image }}">
+      </a>
       {% else %}
       <h1><a href="{{ site.baseurl }}{{ page.url }}">
           {{ page.title }}

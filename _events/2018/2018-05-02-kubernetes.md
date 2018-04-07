@@ -46,4 +46,8 @@ and [Catskills Conf](http://www.catskillsconf.com/).
 We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
-* [Propose a lightning talk](https://goo.gl/forms/MhJegBO3Tir7SlHf1)
+* None yet, please propose below!
+
+<a class="btn btn-default btn-hvopen"
+  href="https://goo.gl/forms/MhJegBO3Tir7SlHf1" role="button">Propose
+  a Lightning Talk</a>

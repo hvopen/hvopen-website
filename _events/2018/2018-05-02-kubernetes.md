@@ -6,6 +6,7 @@ meetup_id: '247516815'
 title: Kubernetes
 type: meeting
 image: /images/talks/kubernetes_logo.png
+image_alt: Kubernetes Logo
 ---
 
 [Kubernetes](https://kubernetes.io/) seems to be all the rage in

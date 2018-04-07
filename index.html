@@ -20,16 +20,20 @@ layout: default
 
 <div class="row front-page-section">
   <div class="col-md-3">
-    <h1 class="highlight"><span class="highlight">Next</span> Meeting</h1>
-    <div class="dateBox">
-      <span class="month">{{ next_event.dtstart | date: "%b" }} </span>
-      <span class="day">{{ next_event.dtstart | date: "%-d" }}</span>
-      <span class="time">{{ next_event.dtstart | date: "%-I%P" }}</span>
+    <div class="row">
+      <div class="col-md-12">
+      <h1 class="highlight"><span class="highlight">Next</span> Meeting</h1>
+      <div class="dateBox">
+        <span class="month">{{ next_event.dtstart | date: "%b" }} </span>
+        <span class="day">{{ next_event.dtstart | date: "%-d" }}</span>
+        <span class="time">{{ next_event.dtstart | date: "%-I%P" }}</span>
+      </div>
+      </div>
     </div>
   </div>
   <div class="col-md-9">
 
-    <div class="article">
+    <div class="next-event">
       <div class="row">
         <div class="col-md-12">
           <h1 class="meeting-title"><a href="{{ site.baseurl}}{{
@@ -38,7 +42,7 @@ layout: default
       </div>
       <div class="content">
         {% if next_event.image %}
-          <img src="{{ next_event.image }}" align="right" vspace="5"
+          <img alt="{{ next_event.image_alt }}" src="{{ next_event.image }}" align="right" vspace="5"
           hspace="5" />
           {% endif %}
 
@@ -104,7 +108,7 @@ layout: default
   </div>
   <div class="col-md-9">
     {% for post in site.posts %}
-    <div class="row col-md-12">
+    <div class="row col-md-12 article">
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <h3><div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div></h3>
       <div class="post-content">

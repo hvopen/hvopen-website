@@ -180,6 +180,15 @@ img {
     .location-map {
         height: 400px;
     }
+
+    .dateBox {
+        font-size: 2em;
+        font-weight: bold;
+        color: #5c5e6d;
+    }
+    .dateBox .time::before {
+        content: " - ";
+    }
 }
 
 @media (min-width: 992px) {
@@ -187,43 +196,45 @@ img {
         text-align: right;
     }
 
-.dateBox {
-    display: inline-block;
-    width: 60px;
-    margin-right: 5px;
-    margin-top: 3em;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 11px;
-    color: #444;
-    text-align: center;
-    text-transform: uppercase;
-    background: #fafafa; /* Old browsers */
-    border: 1px solid #ddd;
-    border-bottom: 1px solid #aaa;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-}
-.day {
-    display: block;
-    position: relative;
-    font-size: 4em;
-    font-weight: bold;
-    line-height: 1.2em;
-    color: #17171A;
-}
-.month {
-    display: block;
-    color: #17171A;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    background: #FFD503;
-    border-radius: 2px 2px 0 0;
-    -webkit-border-radius: 2px 2px 0 0;
-}
+    .dateBox {
+        display: inline-block;
+        width: 5.3em;
+        margin-top: 1em;
 
-.location-map {
-    height: 600px;
-}
+        font-weight: bold;
+        color: #444;
+        text-align: center;
+        background: #fafafa; /* Old browsers */
+        border: 1px solid #ddd;
+        border-bottom: 1px solid #aaa;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+    .day {
+        display: block;
+        position: relative;
+        font-size: 2.5em;
+        font-weight: bold;
+        line-height: 1.5em;
+        color: #17171A;
+    }
+    .month {
+        text-transform: uppercase;
+        display: block;
+        color: #17171A;
+        line-height: 1.5em;
+        font-size: 1em;
+        background: #FFD503;
+        border-radius: 2px 2px 0 0;
+        -webkit-border-radius: 2px 2px 0 0;
+    }
+    .time {
+        background-color: #f3f3f3;
+        display: block;
+    }
+
+    .location-map {
+        height: 600px;
+    }
 
 }

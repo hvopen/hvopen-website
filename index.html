@@ -21,19 +21,19 @@ layout: default
 <div class="row front-page-section">
   <div class="col-md-3">
     <h1 class="highlight"><span class="highlight">Next</span> Meeting</h1>
+    <div class="dateBox">
+      <span class="month">{{ next_event.dtstart | date: "%b" }} </span>
+      <span class="day">{{ next_event.dtstart | date: "%-d" }}</span>
+      <span class="time">{{ next_event.dtstart | date: "%-I%P" }}</span>
+    </div>
   </div>
   <div class="col-md-9">
 
     <div class="article">
       <div class="row">
-        <div class="col-md-9">
-        <h1 class="meeting-title"><a href="{{ site.baseurl}}{{ next_event.url }}">{{ next_event.title }}</a></h1>
-        </div>
-        <div class="col-md-3 date-container">
-          <div class="dateBox">
-            <span class="month">{{ next_event.date | date: "%b" }}</span>
-            <span class="day">{{ next_event.date | date: "%-d" }}</span>
-          </div>
+        <div class="col-md-12">
+          <h1 class="meeting-title"><a href="{{ site.baseurl}}{{
+                                             next_event.url }}">{{ next_event.title }}</a></h1>
         </div>
       </div>
       <div class="content">

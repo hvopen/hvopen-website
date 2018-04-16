@@ -23,9 +23,3 @@ Josh presented many of the aspects of working with data using “R” - a <A hre
 Attendees were able to follow along with the examples Josh illustrated. He illustrated how data was easily organised and presented in numerical or chart forms.
 
 A short illustration of some of the things you can do with R was given by referencing <A href="http://graphicacy.com">Graphicacy</A>, a group that makes wall charts based on data analysis using R.
-
-
-https://en.wikipedia.org/wiki/R_(programming_language):w %.md
-:e %.md
-
-

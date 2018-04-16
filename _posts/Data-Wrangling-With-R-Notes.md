@@ -13,6 +13,7 @@ excerpt_separator: <!--more-->
   
 Attendees: 26
 
+---
 ## LT1 - Sean Dague: Ubuntu Gnome 3 Desktop
 
    Sean presented the [Gnome 3 Desktop](https://extensions.gnome.org), compared similarities and differences with Unity and noted a few Issues.
@@ -21,6 +22,7 @@ Attendees: 26
 
   Application writing for Roku and many other (Firestick, etc.) sources of video content using [ODD tools](https://github.com/oddnetworks "github - oddnetworks"). Writing Apps for Roku.
 
+---
 ## Main Talk: Josh Kornblat: Data wrangling with R
 
   Josh presented many of the aspects of working with data using “R” - a [language](https://www.r-project.org/about.html "r-project.org") that allows for reasonably easy ways of working with statistical information.

@@ -5,31 +5,24 @@ date: 2018-03-26 15:00:00 -0400
 excerpt_separator: <!--more-->
 ---
 
-10 January 2018 - 300 Rockefeller Hall, Vassar College, Poughkeepsie, NY
+<H1>10 January 2018 - 300 Rockefeller Hall, Vassar College, Poughkeepsie, NY</H1>
+Attendees: 26
 
-LT1 - Sean Dague: Ubuntu Gnome 3 Desktop
+<H2>LT1 - Sean Dague: Ubuntu Gnome 3 Desktop</H2>
 
-Sean presented the Gnome 3 Desktop, compared similarities and differences with Unity and noted a few Issues.
+Sean presented the <a href="https://extensions.gnome.org">Gnome 3 Desktop</a>, compared similarities and differences with Unity and noted a few Issues.
 
-https://extensions.gnome.org
+<H2>LT2: Al Jachimiak: ODD Networks: Over the Top Roku Devceloper.</H2>
 
+Application writing for Roku and many other (Firestick, etc.) sources of video content using <A href="https://github.com/oddnetworks">ODD tools</A>. Writing Apps for Roku.
 
-LT2: Al Jachimiak: ODD Networks: Over the Top Roku Devceloper.
+<H2>Main Talk: Josh Kornblat: Data wrangling with R</H2>
 
-Application writing for Roku and many other ways (Firestick, etc.) to get video content. Writing Apps for Roku.
-
-https://github.com/oddnetworks
-
-
-Main Talk: Josh Kornblat: Data wrangling with R
-
-Josh presented many of the aspects of working with data using “R” - a language that allows for reasonably easy ways of working with statistical information.
-
+Josh presented many of the aspects of working with data using “R” - a <A href="https://www.r-project.org/about.html">language</A> that allows for reasonably easy ways of working with statistical information.
 
 Attendees were able to follow along with the examples Josh illustrated. He illustrated how data was easily organised and presented in numerical or chart forms.
 
-
-A short illustration of some of the things you can do with R was given by referencing http://graphicacy.com - a group that makes wall charts based on data analysis using R.
+A short illustration of some of the things you can do with R was given by referencing <A href="http://graphicacy.com">Graphicacy</A>, a group that makes wall charts based on data analysis using R.
 
 
 https://en.wikipedia.org/wiki/R_(programming_language):w %.md

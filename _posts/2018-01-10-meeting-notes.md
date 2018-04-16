@@ -5,7 +5,10 @@ date: 2018-03-26 15:00:00 -0400
 excerpt_separator: <!--more-->
 ---
 
-<H1>10 January 2018 - 300 Rockefeller Hall, Vassar College, Poughkeepsie, NY</H1>
+<H1>Data Wrangling with R</H1>
+10 January 2018<BR>
+300 Rockefeller Hall, Vassar College<BR>
+Poughkeepsie, NY<BR>
 Attendees: 26
 
 <H2>LT1 - Sean Dague: Ubuntu Gnome 3 Desktop</H2>

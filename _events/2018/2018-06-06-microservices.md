@@ -2,6 +2,7 @@
 dtend: 2018-06-06 20:00:00 -0400
 dtstart: 2018-06-06 18:00:00 -0400
 location: 300 Rockefeller Hall
+meetup_id: '250307639'
 title: Learning Microservices in the open with Game On! Text Adventure
 type: meeting
 ---

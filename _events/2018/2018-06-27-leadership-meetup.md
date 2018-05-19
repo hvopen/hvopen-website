@@ -2,6 +2,7 @@
 dtend: 2018-06-27 20:00:00 -0400
 dtstart: 2018-06-27 18:30:00 -0400
 location: Schatzi's Pub
+meetup_id: '250935765'
 title: Leadership Meetup
 type: leadership
 ---

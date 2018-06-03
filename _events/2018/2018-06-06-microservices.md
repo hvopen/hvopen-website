@@ -30,7 +30,8 @@ applications and supporting infrastructure.
 We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
-* None yet, please propose below!
+* West Point weather balloon missions - Eric Meyers
+* 2 spaces left, please propose below!
 
 <a class="btn btn-default btn-hvopen"
   href="https://goo.gl/forms/MhJegBO3Tir7SlHf1" role="button">Propose

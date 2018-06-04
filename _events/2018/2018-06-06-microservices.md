@@ -30,7 +30,7 @@ applications and supporting infrastructure.
 We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
-* West Point weather balloon missions - Eric Meyers
+* West Point weather balloon missions - Eric Myers
 * Windows Subsystem for Linux - Bruce Locke
 * 1 space left, please propose below!
 

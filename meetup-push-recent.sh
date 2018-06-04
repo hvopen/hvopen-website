@@ -9,7 +9,7 @@ FILES=$(git diff-tree --no-commit-id -r --name-only HEAD HEAD~${HOW_MANY} | grep
 if [[ ! -d .venv3 ]]; then
     virtualenv -p python3 .venv3
     source .venv3/bin/activate
-    pip install -U requirements_dev.txt
+    pip install -U -r requirements_dev.txt
 else
     source .venv3/bin/activate
 fi

@@ -286,7 +286,7 @@ def main(event):
         post.write(event)
     else:
         resp = update_meetup(post)
-    buttons(post)
+    # buttons(post)
 
 
 if __name__ == '__main__':

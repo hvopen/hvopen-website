@@ -32,8 +32,4 @@ following [lightning talks](/lightning-talks.html) before the meeting:
 
 * West Point weather balloon missions - Eric Myers
 * Windows Subsystem for Linux - Bruce Locke
-* 1 space left, please propose below!
-
-<a class="btn btn-default btn-hvopen"
-  href="https://goo.gl/forms/MhJegBO3Tir7SlHf1" role="button">Propose
-  a Lightning Talk</a>
+* ESPBasic on the ESP8266 - Joe Appuzo

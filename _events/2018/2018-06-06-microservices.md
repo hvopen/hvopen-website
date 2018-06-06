@@ -32,4 +32,4 @@ following [lightning talks](/lightning-talks.html) before the meeting:
 
 * West Point weather balloon missions - Eric Myers
 * Windows Subsystem for Linux - Bruce Locke
-* ESPBasic on the ESP8266 - Joe Appuzo
+* ESPBasic on the ESP8266 - Joe Apuzzo https://github.com/esp8266/Basic

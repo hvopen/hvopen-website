@@ -280,7 +280,7 @@ def main(event):
 
     """
     post = Post(frontmatter.load(event))
-    if post.meetup_id is None:
+    if not post.meetup_id:
         resp = create_meetup(post)
         post.meetup_id = resp["id"]
         post.write(event)

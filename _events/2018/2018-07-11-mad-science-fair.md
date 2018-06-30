@@ -8,38 +8,51 @@ title_image: /images/madscience.png
 type: meeting
 ---
 
-Every July we gather together in a special HV Open event we call the
-Mad Science Fair. People are encouraged to bring their hardware and
-software hacking projects in a show and tell forum. We'll have tables
-set up with power available. We kick off the evening with a short
-inspirational video, and then proceed to interactive discussions with
-people showing what they've got. Everyone is welcomed to come and
-enjoy, even if you don't have something to exhibit.
+We have so many creative makers in our community, and every year we
+dedicate one meeting to create a space to share what they are doing
+with others. At the Mad Science Fair, members of our community bring
+their projects, hardware, software, feltware, papercraft, musical whatever
+medium they work in, and set them up on display for an evening of
+show and tell.
 
-We ask folks to register in advance so we have a sense of space
-planning. We ask a few basic bits of information:
+## What to Expect ##
 
-* Contact info
-* Project Description
-* How much space you need to show your project
-* How much power / networking you need
-* Any other special needs
+Every year is a little different with what shows up. Here is the list
+of what's confirmed this year:
 
-<a class="btn btn-default btn-hvopen" href="https://hvopen.org/reg2018"
-role="button">Register Now</a>
+* Doing Green Screen Video with Blender - put yourself on the surface
+  of Mars!
+* Building a Vacuum Tube Headphone Amplifier
+* Dive into Ham Radio with a cloud based edge of network device
+* Learn to Solder with some easy soldering basics
+* A wifi based telescope viewer
+* A large addressable LED light installation
+* A journey through converting a home to Geothermal Heating & Cooling,
+  and collecting data off of the system
 
-### Project Ideas ###
+Lourdes also has a number of 3D printers, 3D printing pens, and fields
+a robotics team, all of which will be on display for the evening. Come
+join us for a great night.
 
-The following have been presented at previous Mad Science Fair
-events. These are just for inspiration. Anything you've made or done
-in the software or physical space, or a mashup of both is
-welcomed.
+## For Attendees ##
 
-* 3D Printers
-* Vacuum tube headphone amplifier
-* Home Asssistant home automation system
-* Scale model of the solar system
-* Pi Arcade
-* PVC Pipe Organ
-* Various flashy LED projects
-* DJ / Turntable Scripting
+Bring your curiosity and your questions and be inspired! Come prepared
+to have great conversations with new people that have created some
+really fun things.
+
+Please
+[RSVP at meetup](https://www.meetup.com/hvopen/events/248938581/) so
+we know who's coming.
+
+## For Creators ##
+
+We'd love to host you! But we need to know what you need to be
+successful. Please fill
+out [this registration form](https://hvopen.org/reg2018) which tells
+us how much space and power you need to show off your creation.
+
+**Please Register by July 6th**
+
+Don't worry if your project is only half done. This is about learning
+from each other, so the process is also just as interesting as the
+destination.

@@ -7,7 +7,7 @@ title: Streaming Realtime Data with MQTT
 type: meeting
 ---
 
-MQTT is Publish / Subscribe data protocol that's used throughout the
+MQTT is a Publish / Subscribe data protocol that's used throughout the
 Internet of Things space. But it can also be used for all kinds of
 real time data streams, including turning government provided open
 data into open event streams.

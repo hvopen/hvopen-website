@@ -2,6 +2,7 @@
 dtend: 2018-09-05 20:00:00 -0400
 dtstart: 2018-09-05 18:00:00 -0400
 location: 300 Rockefeller Hall
+meetup_id: '253345912'
 title: Streaming Realtime Data with MQTT
 type: meeting
 ---

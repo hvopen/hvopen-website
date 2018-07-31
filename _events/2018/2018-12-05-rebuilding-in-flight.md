@@ -1,6 +1,6 @@
 ---
-dtend: 2018-12-05 20:00:00 -0400
-dtstart: 2018-12-05 18:00:00 -0400
+dtend: 2018-12-05 20:00:00 -0500
+dtstart: 2018-12-05 18:00:00 -0500
 location: 300 Rockefeller Hall
 meetup_id: '253346057'
 title: Rebuilding the airplane in flight... safely

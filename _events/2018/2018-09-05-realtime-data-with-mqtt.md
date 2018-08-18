@@ -5,6 +5,8 @@ location: 300 Rockefeller Hall
 meetup_id: '253345912'
 title: Streaming Realtime Data with MQTT
 type: meeting
+image: /images/talks/mqtt-icon.png
+image_alt: MQTT Icon
 ---
 
 MQTT is a Publish / Subscribe data protocol that's used throughout the

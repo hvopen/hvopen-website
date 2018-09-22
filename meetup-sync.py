@@ -133,7 +133,6 @@ class Post(object):
     def title(self):
         return self._post["title"]
 
-
     @property
     def meetup_id(self):
         try:
@@ -152,6 +151,9 @@ class Post(object):
 
 
 def get_meetup_key():
+    if os.environ.get("MEETUP_API"):
+        return os.environ.get("MEETUP_API")
+
     c = configparser.ConfigParser()
     c.read("config.ini")
     return c["default"].get("meetup_api_key")
@@ -200,6 +202,7 @@ def all_events():
             if f.endswith(".md"):
                 events.append(os.path.join(root, f))
     return events
+
 
 def make_google_calendar_url(data):
     template = ("https://www.google.com/calendar/render?action=TEMPLATE&"
@@ -254,6 +257,7 @@ just: 100%;-webkit-text-size-adjust: 100%;display: block;">Add to Calendar</a>
 </table>
 """  # noqa
 
+
 def buttons(post):
     data = {
         "subject": post.title,
@@ -263,11 +267,10 @@ def buttons(post):
         "location": post.location.address
     }
 
-
     cal_url = make_google_calendar_url(data)
 
-    print(TEMPLATE.format("https://meetup.com/hvopen/events/" + post.meetup_id, cal_url))
-
+    print(TEMPLATE.format("https://meetup.com/hvopen/events/" +
+                          post.meetup_id, cal_url))
 
 
 @click.command(context_settings=CONTEXT_SETTINGS)

@@ -10,6 +10,7 @@ from requests.auth import HTTPBasicAuth
 
 from hvopen_tools.models import Post
 from hvopen_tools.formatters import post_to_mailchimp
+from hvopen_tools.mailchimp import mailchimp_button
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
@@ -65,12 +66,15 @@ def fill_template(c_id, post):
                 "$hvopen_cal_3char_month": post.start.strftime("%b"),
                 "$hvopen_cal_date_e": post.start.day,
                 "$hvopen_cal_date_time_lmp": post.start.strftime("%l%P"),
-                # "$hvopen_talk_image": "",
+                "$hvopen_talk_image": post.image,
                 "$hvopen_date_day_month_date_year": (
                     post.start.strftime("%a, %B %e, %Y")),
                 # "$hvopen_time_span": "",
                 # "$hvopen_location_full": "",
-                "$hvopen_meetup_button_markup": "",
+                "$hvopen_meetup_button_markup": mailchimp_button(
+                    "RSVP on Meetup",
+                    "https://www.meetup.com/hvopen/events/{}".format(post.meetup_id),
+                    "#ffd503", "#000000"),
                 "$hvopen_cal_button_markup": "",
                 "$hvopenupcomingevents": "",
 

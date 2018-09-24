@@ -49,7 +49,7 @@ setup(
     include_package_data=True,
     keywords='hvopen_tools',
     name='hvopen_tools',
-    packages=find_packages(include=['hvopen_tools']),
+    packages=find_packages(include=['hvopen_tools*']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

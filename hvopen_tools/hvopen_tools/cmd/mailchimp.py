@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
+import datetime
 import json
 import logging
 import os
 
 import click
+import dateutil.tz
 import frontmatter
 import requests
 from requests.auth import HTTPBasicAuth
@@ -23,6 +25,12 @@ AUTH = HTTPBasicAuth('user', API_KEY)
 LIST_ID = "6650a88ab6"
 TEMPLATE_ID = 122801
 
+DRY_RUN = False
+
+UPCOMING_EVENT_TEMPLATE = """
+<p>{date} - <a href="{url}">{name}</a></p>
+"""
+
 
 def mc_get(url):
     url = API + url
@@ -30,13 +38,27 @@ def mc_get(url):
 
 
 def mc_post(url, data):
-    url = API + url
-    return requests.post(url, auth=AUTH, json=data)
+    if DRY_RUN:
+        return {"id": 1}
+
+    URL = API + url
+    resp = requests.post(URL, auth=AUTH, json=data)
+    if resp:
+        return json.loads(resp.content)
+    else:
+        _LOG.error("{} {}: {}".format(url, resp.status_code, resp.content))
 
 
 def mc_put(url, data):
-    url = API + url
-    return requests.put(url, auth=AUTH, json=data)
+    if DRY_RUN:
+        return {"id": 1}
+
+    URL = API + url
+    resp = requests.put(URL, auth=AUTH, json=data)
+    if resp:
+        return json.loads(resp.content)
+    else:
+        _LOG.error("{} {}: {}".format(url, resp.status_code, resp.content))
 
 
 def create_campaign(name):
@@ -49,17 +71,36 @@ def create_campaign(name):
             "list_id": LIST_ID
         }
     }
-    r = mc_post("/campaigns", data)
-    if r:
-        return json.loads(r.content)
-    else:
-        _LOG.error("create_campaign {}: {}".format(r.status_code, r.content))
+    return mc_post("/campaigns", data)
 
+
+def future_events():
+    events = []
+
+    for root, dirs, files in os.walk("_events"):
+        for f in files:
+            if f.endswith(".md"):
+                fname = os.path.join(root, f)
+                post = Post(frontmatter.load(fname))
+                if post.start > datetime.datetime.now(
+                        dateutil.tz.gettz("America/New York")):
+                    events.append(post)
+    return events
+
+def events_to_list(events):
+    html = ""
+    for e in sorted(events, key=lambda x: x.start):
+        html += UPCOMING_EVENT_TEMPLATE.format(
+            name=e.title,
+            url="https://meetup.com/hvopen/events/" + e.meetup_id,
+            date=e.start.strftime("%b %e %l%P"))
+    return html
 
 
 def fill_template(c_id, post):
     url = "/campaigns/{}/content".format(c_id)
 
+    upcoming_events = events_to_list(future_events())
     data = {
         "template": {
             "id": TEMPLATE_ID,
@@ -81,7 +122,7 @@ def fill_template(c_id, post):
                     "https://www.meetup.com/hvopen/events/{}".format(post.meetup_id),
                     "#ffd503", "#000000"),
                 "$hvopen_cal_button_markup": "",
-                "$hvopenupcomingevents": "",
+                "$hvopenupcomingevents": upcoming_events
 
             }
         }
@@ -94,7 +135,11 @@ def fill_template(c_id, post):
 
 @click.command(context_settings=CONTEXT_SETTINGS)
 @click.argument('event', type=click.Path(exists=True), required=True)
-def main(event):
+@click.option('--dry-run/--no-dry-run', default=False)
+def main(event, dry_run=False):
+    global DRY_RUN
+    DRY_RUN=dry_run
+
     post = Post(frontmatter.load(event))
     if not post.meetup_id:
         return

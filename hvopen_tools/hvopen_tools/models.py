@@ -1,7 +1,10 @@
 import os
 import datetime
+import logging
+
 import frontmatter
 
+_LOG = logging.getLogger(__name__)
 
 ADDRESS = """
 {title}
@@ -47,7 +50,6 @@ def find_location(name):
     for root, dirs, files in os.walk("_locations"):
         for f in files:
             location = frontmatter.load(os.path.join(root, f))
-            print(location["title"])
             if location["title"] == name:
                 return Location(location)
     raise Exception("No location found for {}".format(name))
@@ -61,7 +63,11 @@ class Post(object):
             post["dtstart"], "%Y-%m-%d %H:%M:%S %z")
         self.end = datetime.datetime.strptime(
             post["dtend"], "%Y-%m-%d %H:%M:%S %z")
-        self.location = find_location(self._post["location"])
+        try:
+            self.location = find_location(self._post["location"])
+        except:
+            _LOG.exception("Failed to find location")
+            self.location = dict()
 
     @property
     def image(self):

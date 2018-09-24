@@ -16,6 +16,7 @@ requirements = [
     'Markdown>=2.6',
     'python-frontmatter>=0.4.2',
     'requests>=2.18',
+    'python-dateutil'
 ]
 
 setup_requirements = ['pytest-runner', ]

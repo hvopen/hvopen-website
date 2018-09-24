@@ -9,14 +9,15 @@ FILES=$(git diff-tree --no-commit-id -r --name-only HEAD HEAD~${HOW_MANY} | grep
 if [[ ! -d .venv3 ]]; then
     virtualenv -p python3 .venv3
     source .venv3/bin/activate
-    pip install -U -r requirements_dev.txt
 else
     source .venv3/bin/activate
 fi
 
+pip install -U hvopen_tools
+
 for f in ${FILES}; do
     if [[ -e "$f" ]]; then
         echo "Syncing $f to meetup"
-        ./meetup-sync.py $f
+        meetup-sync $f
     fi
 done

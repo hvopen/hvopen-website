@@ -11,11 +11,16 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = [
+    'Click>=6.0',
+    'Markdown>=2.6',
+    'python-frontmatter>=0.4.2',
+    'requests>=2.18',
+]
 
 setup_requirements = ['pytest-runner', ]
 
-test_requirements = ['pytest', ]
+test_requirements = ['pytest', 'flake8']
 
 setup(
     author="Sean Dague",
@@ -25,8 +30,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
@@ -36,7 +39,7 @@ setup(
     description="Publishing tools for HV Open Website",
     entry_points={
         'console_scripts': [
-            'hvopen_tools=hvopen_tools.cli:main',
+            'meetup-sync=hvopen_tools.cmd.meetup:main',
         ],
     },
     install_requires=requirements,

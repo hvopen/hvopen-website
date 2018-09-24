@@ -1,4 +1,9 @@
 {% include header.html %}
+{%- if page.meetup_group %}
+{% assign meetup_group = page.meetup_group %}
+{%- else %}
+{% assign meetup_group = "hvopen" %}
+{%- endif %}
 {% assign description = page.excerpt | strip_html | escape %}
 <script type="application/ld+json">
 {
@@ -30,7 +35,7 @@
     {%- if page.meetup_id %}
     "potentialAction": {
         "@type": "RsvpAction",
-        "target": "https://www.meetup.com/hvopen/events/{{ page.meetup_id }}",
+        "target": "https://www.meetup.com/{{ meetup_group }}/events/{{ page.meetup_id }}",
         "endTime": "{{ page.dtend | date_to_xmlschema }}"
     },
     {%- endif %}
@@ -84,11 +89,13 @@
       {% if page.meetup_id %}
       {% if page.dtend > site.time %}
       <h3>RSVP</h3>
-      <a class="btn btn-default btn-hvopen" href="https://www.meetup.com/hvopen/events/{{ page.meetup_id }}"
+      <a class="btn btn-default btn-hvopen"
+         href="https://www.meetup.com/{{ meetup_group }}/events/{{ page.meetup_id }}"
          role="button">RSVP on Meetup</a>
       {% else %}
       <h3>Meetup</h3>
-      <a class="btn btn-default btn-hvopen" href="https://www.meetup.com/hvopen/events/{{ page.meetup_id }}"
+      <a class="btn btn-default btn-hvopen"
+         href="https://www.meetup.com/{{ meetup_group}}/events/{{ page.meetup_id }}"
          role="button">View on Meetup</a>
       {% endif %}
       {% endif %}

@@ -28,7 +28,7 @@ TEMPLATE_ID = 122801
 DRY_RUN = False
 
 UPCOMING_EVENT_TEMPLATE = """
-<p>{date} - <a href="{url}">{name}</a></p>
+<p>{date}: <a href="{url}">{name}</a></p>
 """
 
 
@@ -91,15 +91,25 @@ def future_events():
 def events_to_list(events):
     html = """<h2 style="margin:0;margin-bottom:10px;color:inherit;font-family:Helvetica, Arial, sans-serif;font-size:30px;font-weight:400;line-height:1.3;padding:0;text-align:left;word-wrap:normal;">Upcoming Events</h2>"""  # noqa
     for e in sorted(events, key=lambda x: x.start):
+        group = e.meetup_group
+
         html += UPCOMING_EVENT_TEMPLATE.format(
             name=e.title,
-            url="https://meetup.com/hvopen/events/" + e.meetup_id,
-            date=e.start.strftime("%b %e %l%P"))
+            url="https://meetup.com/" + group + "/events/" + e.meetup_id,
+            date=e.start.strftime("%b %e - %l%P"))
     return html
 
 
 def fill_template(c_id, post):
     url = "/campaigns/{}/content".format(c_id)
+
+    IMG = """<img src="https://hvopen.org{}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto" />"""  # noqa
+
+    print(post.image)
+    if post.image:
+        image = IMG.format(post.image)
+    else:
+        image = ""
 
     upcoming_events = events_to_list(future_events())
     data = {
@@ -113,7 +123,7 @@ def fill_template(c_id, post):
                 "$hvopen_cal_3char_month": post.start.strftime("%b"),
                 "$hvopen_cal_date_e": post.start.day,
                 "$hvopen_cal_date_time_lmp": post.start.strftime("%l%P"),
-                "$hvopen_talk_image": post.image,
+                "$hvopen_talk_image": image,
                 "$hvopen_date_day_month_date_year": (
                     post.start.strftime("%a, %B %e, %Y")),
                 # "$hvopen_time_span": "",

@@ -81,6 +81,10 @@ class Post(object):
         return self._post.content
 
     @property
+    def meetup_group(self):
+        return self._post.get("meetup_group", "hvopen")
+
+    @property
     def time(self):
         epoch = int(self.start.strftime('%s'))
         return epoch * 1000

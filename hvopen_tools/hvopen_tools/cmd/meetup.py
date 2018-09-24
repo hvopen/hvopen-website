@@ -14,6 +14,7 @@ from hvopen_tools.formatters import post_to_meetup
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 URL = "https://api.meetup.com/2/event"
 GROUP = "hvopen"
+VENUES = "https://api.meetup.com/{}/venues".format(GROUP)
 
 
 def get_meetup_key():
@@ -25,7 +26,7 @@ def get_meetup_key():
     return c["default"].get("meetup_api_key")
 
 
-def meetup_post(url, post):
+def meetup_post(url, post, venue_id=None):
     data = {
         "time": post.time,
         "key": get_meetup_key(),
@@ -35,6 +36,8 @@ def meetup_post(url, post):
         "description": post_to_meetup(post),
         "duration": post.duration
     }
+    if venue_id:
+        data["venue_id"] = venue_id
     print(data)
     res = requests.post(url, data=data)
     return json.loads(res.content.decode('utf-8'))
@@ -44,9 +47,22 @@ def create_meetup(post):
     return meetup_post(URL, post)
 
 
-def update_meetup(post):
+def update_meetup(post, venue_id):
     url = URL + "/" + post.meetup_id
-    return meetup_post(url, post)
+    return meetup_post(url, post, venue_id)
+
+
+def find_venue(name):
+    data = {
+        "key": get_meetup_key(),
+        "sign": "true",
+    }
+    r = requests.get(VENUES, params=data)
+    venues = json.loads(r.content)
+    for v in venues:
+        if v["name"].startswith(name):
+            return v["id"]
+    return None
 
 
 def all_events():
@@ -74,7 +90,8 @@ def main(event):
         post.meetup_id = resp["id"]
         post.write(event)
     else:
-        resp = update_meetup(post)
+        venue_id = find_venue(post.location.title)
+        resp = update_meetup(post, venue_id)
 
 
 if __name__ == '__main__':

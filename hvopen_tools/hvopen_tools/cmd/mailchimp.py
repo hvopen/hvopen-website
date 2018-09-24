@@ -87,8 +87,9 @@ def future_events():
                     events.append(post)
     return events
 
+
 def events_to_list(events):
-    html = ""
+    html = """<h2 style="margin:0;margin-bottom:10px;color:inherit;font-family:Helvetica, Arial, sans-serif;font-size:30px;font-weight:400;line-height:1.3;padding:0;text-align:left;word-wrap:normal;">Upcoming Events</h2>"""  # noqa
     for e in sorted(events, key=lambda x: x.start):
         html += UPCOMING_EVENT_TEMPLATE.format(
             name=e.title,
@@ -119,7 +120,8 @@ def fill_template(c_id, post):
                 # "$hvopen_location_full": "",
                 "$hvopen_meetup_button_markup": mailchimp_button(
                     "RSVP on Meetup",
-                    "https://www.meetup.com/hvopen/events/{}".format(post.meetup_id),
+                    "https://www.meetup.com/hvopen/events/{}".format(
+                        post.meetup_id),
                     "#ffd503", "#000000"),
                 "$hvopen_cal_button_markup": "",
                 "$hvopenupcomingevents": upcoming_events
@@ -138,7 +140,7 @@ def fill_template(c_id, post):
 @click.option('--dry-run/--no-dry-run', default=False)
 def main(event, dry_run=False):
     global DRY_RUN
-    DRY_RUN=dry_run
+    DRY_RUN = dry_run
 
     post = Post(frontmatter.load(event))
     if not post.meetup_id:

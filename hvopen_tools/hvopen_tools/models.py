@@ -65,7 +65,7 @@ class Post(object):
             post["dtend"], "%Y-%m-%d %H:%M:%S %z")
         try:
             self.location = find_location(self._post["location"])
-        except:
+        except Exception:
             _LOG.exception("Failed to find location")
             self.location = dict()
 

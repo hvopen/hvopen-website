@@ -1,5 +1,3 @@
-
-
 BUTTON_MARKUP = """
 <table class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
     <tbody class="mcnButtonBlockOuter">
@@ -17,7 +15,9 @@ BUTTON_MARKUP = """
             </td>
         </tr>
     </tbody>
-</table>"""
+</table>"""  # noqa
+
 
 def mailchimp_button(text, url, bgcolor, color="#FFFFFF"):
-    return BUTTON_MARKUP.format(text=text, url=url, bgcolor=bgcolor, color=color)
+    return BUTTON_MARKUP.format(
+        text=text, url=url, bgcolor=bgcolor, color=color)

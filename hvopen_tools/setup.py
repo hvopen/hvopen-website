@@ -40,6 +40,7 @@ setup(
     entry_points={
         'console_scripts': [
             'meetup-sync=hvopen_tools.cmd.meetup:main',
+            'mailchimp-sync=hvopen_tools.cmd.mailchimp:main',
         ],
     },
     install_requires=requirements,

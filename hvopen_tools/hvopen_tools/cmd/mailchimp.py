@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import logging
 import os
 
 import click
@@ -11,6 +12,8 @@ from requests.auth import HTTPBasicAuth
 from hvopen_tools.models import Post
 from hvopen_tools.formatters import post_to_mailchimp
 from hvopen_tools.mailchimp import mailchimp_button
+
+_LOG = logging.getLogger(__name__)
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
@@ -47,13 +50,15 @@ def create_campaign(name):
         }
     }
     r = mc_post("/campaigns", data)
-    return json.loads(r.content)
+    if r:
+        return json.loads(r.content)
+    else:
+        _LOG.error("create_campaign {}: {}".format(r.status_code, r.content))
+
 
 
 def fill_template(c_id, post):
     url = "/campaigns/{}/content".format(c_id)
-
-    print(post.mailchimp_desc)
 
     data = {
         "template": {
@@ -83,8 +88,8 @@ def fill_template(c_id, post):
     }
 
     r = mc_put(url, data)
-    print(r.status_code)
-    print(r.content)
+    if not r:
+        _LOG.error("fill_template {}: {}".format(r.status_code, r.content))
 
 
 @click.command(context_settings=CONTEXT_SETTINGS)
@@ -96,6 +101,8 @@ def main(event):
 
     # TODO: find out if there is an existing campaign before stubbing it out.
     resp = create_campaign(post.title)
+    if not resp:
+        return 1
     fill_template(resp["id"], post)
     # print(json.dumps(resp, indent=4))
 

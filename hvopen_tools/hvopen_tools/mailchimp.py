@@ -20,8 +20,4 @@ BUTTON_MARKUP = """
 </table>"""
 
 def mailchimp_button(text, url, bgcolor, color="#FFFFFF"):
-    return BUTTON_MARKUP.format({
-        "text": text,
-        "url": url,
-        "bgcolor": bgcolor,
-        "color": color})
+    return BUTTON_MARKUP.format(text=text, url=url, bgcolor=bgcolor, color=color)

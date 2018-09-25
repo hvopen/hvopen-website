@@ -32,9 +32,16 @@ UPCOMING_EVENT_TEMPLATE = """
 """
 
 
-def mc_get(url):
-    url = API + url
-    return requests.get(url, auth=AUTH)
+def mc_get(url, data=None):
+    URL = API + url
+    if not data:
+        data = {}
+
+    resp = requests.get(URL, auth=AUTH, params=data)
+    if resp:
+        return json.loads(resp.content)
+    else:
+        _LOG.error("{} {}: {}".format(url, resp.status_code, resp.content))
 
 
 def mc_post(url, data):
@@ -156,12 +163,19 @@ def main(event, dry_run=False):
     if not post.meetup_id:
         return
 
-    # TODO: find out if there is an existing campaign before stubbing it out.
-    resp = create_campaign(post.title)
-    if not resp:
-        return 1
-    fill_template(resp["id"], post)
-    # print(json.dumps(resp, indent=4))
+    campaign_id = None
+
+    res = mc_get("/search-campaigns", data={"query": post.title})
+    for r in res.get('results', []):
+        campaign = r['campaign']
+        # There is already one with this title name in draft
+        if campaign['status'] == "save":
+            campaign_id = campaign["id"]
+
+    if not campaign_id:
+        resp = create_campaign(post.title)
+        campaign_id = resp["id"]
+    fill_template(campaign_id, post)
 
 
 if __name__ == "__main__":

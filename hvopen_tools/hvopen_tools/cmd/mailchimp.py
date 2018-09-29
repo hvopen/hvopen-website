@@ -28,7 +28,10 @@ TEMPLATE_ID = 122801
 DRY_RUN = False
 
 UPCOMING_EVENT_TEMPLATE = """
-<p>{date}: <a href="{url}">{name}</a></p>
+<tr><td style="padding: 0 10px; text-align: right">{date}</td>
+<td style="padding: 0 10px; text-align: right">{time}</td>
+<td style="padding: 0 10px"><a href="{url}">{name}</a></td>
+</tr>
 """
 
 
@@ -96,14 +99,28 @@ def future_events():
 
 
 def events_to_list(events):
-    html = """<h2 style="margin:0;margin-bottom:10px;color:inherit;font-family:Helvetica, Arial, sans-serif;font-size:30px;font-weight:400;line-height:1.3;padding:0;text-align:left;word-wrap:normal;">Upcoming Events</h2>"""  # noqa
+    html = """<h2 style="margin:0;margin-bottom:10px;
+color:inherit;font-family:Helvetica, Arial, sans-serif;font-size:30px;
+font-weight:400;line-height:1.3;padding:0;text-align:left;word-wrap:normal;">
+Upcoming Events</h2>
+<table>
+"""  # noqa
+    month = ""
+
     for e in sorted(events, key=lambda x: x.start):
         group = e.meetup_group
+        newmonth = e.start.strftime("%B")
+        if month != newmonth:
+            month = newmonth
+            html += """<tr><td colspan="3"
+style="padding: 10px 0 0 0"><b>{}</b></td></tr>""".format(month)
 
         html += UPCOMING_EVENT_TEMPLATE.format(
             name=e.title,
             url="https://meetup.com/" + group + "/events/" + e.meetup_id,
-            date=e.start.strftime("%b %e - %l%P"))
+            date=e.start.strftime("%e"),
+            time=e.start.strftime("%l%P"))
+    html += "</table>"
     return html
 
 

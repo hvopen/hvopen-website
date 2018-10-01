@@ -29,7 +29,7 @@ appreciation for the challenges involved in planning and executing a
 large-scale rewrite and deployment of critical path software across a
 widely distributed network.
 
-## Speaker ##
+### Speaker ###
 
 Shannon Weyrick is vice president of architecture at NS1. A 20-year
 veteran of internet infrastructure, Shannon is an accomplished
@@ -48,6 +48,8 @@ following [lightning talks](/lightning-talks.html) before the meeting:
 
 * None yet, please propose below!
 
+
 <a class="btn btn-default btn-hvopen"
-  href="https://goo.gl/forms/MhJegBO3Tir7SlHf1" role="button">Propose
+  href="mailto:sean@dague.net?cc=matthias.a.johnson@gmail.com&subject=HV%20Open%20Lightning%20Talk%20Submission"
+  role="button">Propose
   a Lightning Talk</a>

@@ -1,3 +1,5 @@
+import re
+
 import markdown
 
 LOCATION = """
@@ -6,6 +8,8 @@ Location:
 
 {}
 """
+
+LINK_STYLE="Margin:0;color:#1684B9;font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none"  # noqa
 
 
 def post_to_meetup(post):
@@ -36,4 +40,6 @@ def post_to_meetup(post):
 
 
 def post_to_mailchimp(post):
-    return markdown.markdown(post.content)
+    html = markdown.markdown(post.content)
+    html = re.sub("<a href", '<a style="%s" href"' % LINK_STYLE, html)
+    return html

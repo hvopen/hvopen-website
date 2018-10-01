@@ -27,12 +27,14 @@ TEMPLATE_ID = 122801
 
 DRY_RUN = False
 
+LINK_STYLE="Margin:0;color:#1684B9;font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none"  # noqa
+
 UPCOMING_EVENT_TEMPLATE = """
 <tr><td style="padding: 0 10px; text-align: right">{date}</td>
 <td style="padding: 0 10px; text-align: right">{time}</td>
-<td style="padding: 0 10px"><a href="{url}">{name}</a></td>
+<td style="padding: 0 10px"><a href="{url}" style="%s">{name}</a></td>
 </tr>
-"""
+""" % LINK_STYLE
 
 
 def mc_get(url, data=None):
@@ -99,12 +101,7 @@ def future_events():
 
 
 def events_to_list(events):
-    html = """<h2 style="margin:0;margin-bottom:10px;
-color:inherit;font-family:Helvetica, Arial, sans-serif;font-size:30px;
-font-weight:400;line-height:1.3;padding:0;text-align:left;word-wrap:normal;">
-Upcoming Events</h2>
-<table>
-"""  # noqa
+    html = """<table>"""
     month = ""
 
     for e in sorted(events, key=lambda x: x.start):
@@ -129,7 +126,6 @@ def fill_template(c_id, post):
 
     IMG = """<img src="https://hvopen.org{}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto" />"""  # noqa
 
-    print(post.image)
     if post.image:
         image = IMG.format(post.image)
     else:
@@ -152,14 +148,16 @@ def fill_template(c_id, post):
                     post.start.strftime("%a, %B %e, %Y")),
                 # "$hvopen_time_span": "",
                 # "$hvopen_location_full": "",
+                "$hvopen_patreon_button": mailchimp_button(
+                    "Support HV Open",
+                    "https://www.patreon.com/bePatron?c=1666879",
+                    "#ffd503", "#000000"),
                 "$hvopen_meetup_button_markup": mailchimp_button(
                     "RSVP on Meetup",
                     "https://www.meetup.com/hvopen/events/{}".format(
                         post.meetup_id),
                     "#ffd503", "#000000"),
-                "$hvopen_cal_button_markup": "",
                 "$hvopenupcomingevents": upcoming_events
-
             }
         }
     }

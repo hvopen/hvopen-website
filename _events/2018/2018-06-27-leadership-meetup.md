@@ -7,6 +7,7 @@ title: Leadership Meetup
 type: leadership
 ---
 
+
 HV Open leadership meetup to discuss topics about running the
 group. This is the quarterly meeting of core volunteers and others
 that would like to volunteer to help on the organizing side of

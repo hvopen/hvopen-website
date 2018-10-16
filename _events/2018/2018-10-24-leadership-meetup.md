@@ -1,7 +1,7 @@
 ---
 dtend: 2018-10-24 21:00:00 -0400
 dtstart: 2018-10-24 19:00:00 -0400
-location: Schatzi's Pub
+location: Underground Coffee & Ales
 meetup_id: '255568034'
 title: Leadership Meetup
 type: leadership

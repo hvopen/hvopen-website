@@ -184,7 +184,7 @@ def main(event, dry_run=False):
     for r in res.get('results', []):
         campaign = r['campaign']
         # There is already one with this title name in draft
-        if campaign['status'] == "save":
+        if campaign['status'] in ("save", "paused"):
             campaign_id = campaign["id"]
 
     if not campaign_id:

@@ -1,8 +1,9 @@
 ---
-dtend: 2018-02-06 20:00:00 -0500
-dtstart: 2018-02-06 18:00:00 -0500
+dtend: 2019-02-06 20:00:00 -0500
+dtstart: 2019-02-06 18:00:00 -0500
 location: 300 Rockefeller Hall
-title: Everything is on fire, everything is fine: investigating data breaches
+meetup_id: '255987403'
+title: 'Everything is on fire, everything is fine: investigating data breaches'
 type: meeting
 ---
 

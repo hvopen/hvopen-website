@@ -2,7 +2,8 @@
 dtend: 2019-01-09 20:00:00 -0500
 dtstart: 2019-01-09 18:00:00 -0500
 location: 300 Rockefeller Hall
-title: 'GlusterFS'
+meetup_id: '256705530'
+title: GlusterFS
 type: meeting
 ---
 

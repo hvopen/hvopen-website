@@ -41,6 +41,15 @@ of infrastructure projects, from high-performance servers to novel
 programming languages and runtimes, and enjoys writing and speaking at
 industry conferences.
 
+### Pizza! ###
+
+For the December meeting we're going to try something new. Instead of
+going to the Palace for Dinner after we're going to do
+Pay-it-forward-Pizza at the meeting itself. All are welcome to have
+Pizza, and we'll be collecting funds to pay-it-forward for future
+meetings. After the meeting we'll head to a local Poughkeepsie area
+bar for a holiday drink or two.
+
 ### Lightning Talks ###
 
 We'll also be doing the

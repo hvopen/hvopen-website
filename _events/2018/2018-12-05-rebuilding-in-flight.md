@@ -55,7 +55,9 @@ bar for a holiday drink or two.
 We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
-* None yet, please propose below!
+* Report from Mini Maker Fair - Sean Swelha
+* What's coming in RHEL8 - Pat Ladd
+* Room for one more, please propose below!
 
 
 <a class="btn btn-default btn-hvopen"

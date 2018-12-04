@@ -18,14 +18,6 @@ While at Red Hat, he's specialized on RHEL, Ansible, Satllite 6, Gluster, and Op
 He's been a member of HV Open since it's founding (ok, second meeting...).  This will be his 10th talk for HV Open.
 
 
-### Pizza! ###
-
-New to HV Open last month, 
-we'll have Pay-it-forward-Pizza at the meeting. All are welcome to have
-pizza, and we'll be collecting funds to pay-it-forward for future
-meetings. After the meeting we'll head to a local Poughkeepsie area
-bar for a drink or two.
-
 ### Lightning Talks ###
 
 We'll also be doing the

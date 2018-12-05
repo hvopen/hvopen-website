@@ -57,7 +57,7 @@ following [lightning talks](/lightning-talks.html) before the meeting:
 
 * Report from Mini Maker Fair - Sean Swelha
 * What's coming in RHEL8 - Pat Ladd
-* [Dreamcetcher v3.03](https://othernet.is/products/dreamcatcher-3-0) (Board) from [Othernet](https://othernet.is/) - Joe Apuzzo N1JTA
+* [Dreamcatcher v3.03](https://othernet.is/products/dreamcatcher-3-0) (Board) from [Othernet](https://othernet.is/) - Joe Apuzzo N1JTA
 
 
 <a class="btn btn-default btn-hvopen"

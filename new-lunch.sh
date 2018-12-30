@@ -20,10 +20,13 @@ if [[ -e ${FILE} ]]; then
     exit 1
 fi
 
+START=$(date -d "${DATE} 12:00" +"%Y-%m-%d %H:%M:%S %z")
+END=$(date -d "${DATE} 13:00" +"%Y-%m-%d %H:%M:%S %z")
+
 cat - <<EOF > ${FILE}
 ---
-dtend: ${DATE} 13:00:00 -0400
-dtstart: ${DATE} 12:00:00 -0400
+dtend: ${END}
+dtstart: ${START}
 location: Formosa Cuisine
 title: HV Open Lunch
 type: lunch

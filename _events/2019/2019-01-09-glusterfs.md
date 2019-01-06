@@ -34,7 +34,7 @@ HV Open.
 We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
-* Signal - open source secure messaging - Sean
+* [Signal](https://www.signal.org/) - open source secure messaging - Sean
 * We welcome more, please propose below!
 
 

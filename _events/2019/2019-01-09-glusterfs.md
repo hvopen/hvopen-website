@@ -35,6 +35,7 @@ We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
 * [Signal](https://www.signal.org/) - open source secure messaging - Sean
+* [Openmediavault](https://www.openmediavault.org/) + [Rock64 board](https://www.ebay.com/itm/ROCK64-Single-Board-Computer-Kit-includes-MicroSD-and-Power-Adapter/273620689403) = Affordable Home NAS - Joe [Rock64 images](http://wiki.pine64.org/index.php/ROCK64_Software_Release#Stretch_OpenMediaVault_OS_Image_arm64_.5BmicroSD_.2F_eMMC_Boot.5D_.5B0.7.8.5D)  
 * We welcome more, please propose below!
 
 

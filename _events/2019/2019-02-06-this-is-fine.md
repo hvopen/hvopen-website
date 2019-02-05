@@ -13,7 +13,13 @@ This talk will be interactive. Audience members will be presented with puzzles a
 
 ### Speaker ###
 
-Josh Shomo
+Joshua Shomo is a Director at The Crypsis Group, where he supports client
+investigations and forensic analysis in response to cyber-attacks and other data
+breach incidents.
+
+Josh was also a member of teams that took first place honors in two SANS Initiative national cyber security competitions –
+DFIR Netwars at the SANS Cyber Defense Initiative in 2014 in Washington, DC, and Mac Forensics at SANS Security
+West 2016 in San Diego.
 
 ### Lightning Talks ###
 

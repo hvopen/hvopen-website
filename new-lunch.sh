@@ -27,7 +27,7 @@ cat - <<EOF > ${FILE}
 ---
 dtend: ${END}
 dtstart: ${START}
-location: Formosa Cuisine
+location: Mole Mole
 title: HV Open Lunch
 type: lunch
 ---

@@ -2,6 +2,7 @@
 dtend: 2019-05-01 20:00:00 -0400
 dtstart: 2019-05-01 18:00:00 -0400
 location: 300 Rockefeller Hall
+meetup_id: '259570358'
 title: Making Electronics on the Cheap
 type: meeting
 ---

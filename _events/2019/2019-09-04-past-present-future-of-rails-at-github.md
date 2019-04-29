@@ -2,9 +2,11 @@
 dtend: 2019-09-04 20:00:00 -0400
 dtstart: 2019-09-04 18:00:00 -0400
 location: 300 Rockefeller Hall
+meetup_id: '261011161'
 title: Past, Present, and Future of Rails at GitHub
 type: meeting
 ---
+
 On August 15, 2018 GitHub was deployed to production running Rails 5.2. 
 This was a historic event; for years GitHub had been behind Rails and 
 dependent on a custom fork of Rails 2.3. This talk will visit GitHub’s 

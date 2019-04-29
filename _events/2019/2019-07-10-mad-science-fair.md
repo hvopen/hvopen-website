@@ -2,6 +2,7 @@
 dtend: 2019-07-10 20:00:00 -0400
 dtstart: 2019-07-10 18:00:00 -0400
 location: Lourdes High School Auditorium
+meetup_id: '261011160'
 title: Mad Science Fair
 title_image: /images/madscience.png
 type: meeting

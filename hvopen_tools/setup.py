@@ -15,7 +15,7 @@ requirements = [
     'Click>=6.0',
     'Markdown>=2.6',
     'python-frontmatter>=0.4.2',
-    'requests>=2.18',
+    'requests>=2.20',
     'python-dateutil'
 ]
 

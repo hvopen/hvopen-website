@@ -13,3 +13,7 @@
 # Calendar
 /calendar/*             /events
 /calendar             /events
+
+# redirect mhvlug.org
+https://mhvlug.org/* https://hvopen.org/:splat 301!
+http://mhvlug.org/* http://hvopen.org/:splat 301!

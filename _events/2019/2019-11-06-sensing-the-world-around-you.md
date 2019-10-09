@@ -1,6 +1,6 @@
 ---
-dtend: 2019-11-06 20:00:00 -0400
-dtstart: 2019-11-06 18:00:00 -0400
+dtend: 2019-11-06 20:00:00 -0500
+dtstart: 2019-11-06 18:00:00 -0500
 location: 300 Rockefeller Hall
 title: Sensing the World Around You
 type: meeting

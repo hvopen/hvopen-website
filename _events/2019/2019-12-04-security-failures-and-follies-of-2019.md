@@ -1,6 +1,6 @@
 ---
-dtend: 2019-12-04 20:00:00 -0400
-dtstart: 2019-12-04 18:00:00 -0400
+dtend: 2019-12-04 20:00:00 -0500
+dtstart: 2019-12-04 18:00:00 -0500
 location: 300 Rockefeller Hall
 title: Security Failures and Follies of 2019
 type: meeting

@@ -7,8 +7,10 @@ title: Sensing the World Around You
 type: meeting
 ---
 Doing some cool stuff with software defined radio and open source software.
-### Speaker ###
 
+Software-defined radio (SDR) is a radio communication system where components that have been traditionally implemented in hardware (e.g. mixers, filters, amplifiers, modulators/demodulators, detectors, etc.) are instead implemented by means of software on a personal computer or embedded system. While the concept of SDR is not new, the rapidly evolving capabilities of digital electronics render practical many processes which were once only theoretically possible.
+### Speaker ###
+Steve Bossert
 
 ### Lightning Talks ###
 

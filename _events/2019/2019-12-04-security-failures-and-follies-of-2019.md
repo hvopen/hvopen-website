@@ -6,9 +6,9 @@ meetup_id:
 title: Security Failures and Follies of 2019
 type: meeting
 ---
-Paul Chauvet will recap some of the security failures and follies of the past year.
+Some security breaches require extremely sophisticated attacks to breach multiple layers of defenses.  Others?  Not so much.  Some have had an almost comical level of negligence - even when the organizations involved had the resources to deal with them.  This talk will discuss some of the most high profile compromises over the past year or two, and discuss some steps organizations can implement (and should have with these breaches) to make it less likely or at least harder, for them to be breached.
 ### Speaker ###
-
+Paul Chauvet is the Information Security Officer and cybersecurity instructor at SUNY New Paltz and a long-time HVOpen/MHVLUG member.  He's one of the organizers of the Hudson Valley InfoSec group and has been working to instill a healthy level paranoia about security among people of all ages.
 
 ### Lightning Talks ###
 

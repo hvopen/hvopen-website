@@ -11,6 +11,7 @@ A collection of projects come together to offer mesh capabilities:
 * Configurable interconnect of services via Istio
 * Tracing and measurement via Jaeger
 * Visualization via Kiali
+
 ### Speaker ###
 Patrick Ladd is a technical account manager for Red Hat working with large financial services customers on their OpenShift clusters.  Prior to that he was IT manager for a local company and a software developer at IBM.
 As a long time HV Open member, he’s given previous talks on many aspects of the open source ecosystem, including the Linux virtual memory and network subsystems, systemd, LVM, Ansible, and Gluster. He’s also done programming talks, a talk on typography and a talk on Linux gaming.

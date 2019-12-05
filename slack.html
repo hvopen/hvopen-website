@@ -28,58 +28,9 @@ title: HV Open Slack
         and spread the reach of the group.</li>
     </ul>
     <p>
-      <form class="form-inline">
-        <div class="form-group"> <label for="exampleInputEmail2">Email:</label>
-          <input class="form-control" id="inputEmail"
-                 placeholder="margaret.hamilton@example.com" required=""
-                 type="email"> </div>
-        <button id="send-invitation" type="button" class="btn btn-primary" style="margin:
-                                                             5px;">Send invitation</button>
-        <div id="result">
-      </form>
+        Follow <a href="https://join.slack.com/t/hvopen/shared_invite/enQtODYxNDg5NTI3MTU3LWZiMzAzZmNhMDAwNTBiZDVjYWEwZjMyYzJlZDQxMjQ5MTY4NTUxMWYyMDBkZDliMDQzYmRjNDg1ZDlhYmUxY2U">this
+            link</a> to be invited to the slack channel.
     </p>
-    <p>We are a friendly, respectful, and inclusive community!</p>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        var btn = $("#send-invitation");
-        var res = $("#result");
-        var email = $('#inputEmail');
-        var actionUrl = "https://openwhisk.ng.bluemix.net/api/v1/web/Aedo-devadv_probot/default/slackinvite.json";
-        function handler() {
-            $.get(actionUrl, { email: email[0].value })
-                .done(function (data) {
-                    btn.removeClass("btn-danger");
-                    btn.addClass("btn-success");
-                    btn.html("WOOT. CHECK YOUR EMAIL!");
-                    res.html(data.message);
-                })
-                .fail(function (err) {
-                    btn.addClass("btn-danger");
-                    btn.html("Problem with invite");
-                    if(err.responseJSON) console.log(err.responseJSON)
-                    if(err.responseJSON && err.responseJSON.error && err.responseJSON.error.message){
-                        res.html(err.responseJSON.error.message);
-                    } else {
-                        res.html(err.statusText + ":Your invitation didn't work :-( ");
-                    }
-
-                });
-        }
-        btn.click(handler);
-        btn.prop("disabled", true);
-
-        function validate() {
-            console.log("validate")
-            if (email[0].validity.typeMismatch) {
-                btn.prop("disabled", true);
-            } else {
-                btn.prop("disabled", false);
-            }
-        }
-        email.change(validate);
-        email.keyup(validate);
-    })
-    </script>
     </div>
   </div>
 </div>

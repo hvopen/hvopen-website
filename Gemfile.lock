@@ -90,7 +90,7 @@ PLATFORMS
 
 DEPENDENCIES
   icalendar (~> 2.4.0)
-  jekyll (~> 3)
+  jekyll
   jekyll-feed (~> 0.6)
   jekyll-last-modified-at (< 1.0.1)
   jekyll-paginate (~> 1.1.0)

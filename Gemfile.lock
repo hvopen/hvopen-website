@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
@@ -24,9 +24,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    icalendar (2.6.0)
-      ice_cube (~> 0.16)
-    ice_cube (0.16.3)
+    icalendar (2.4.1)
     jekyll (3.8.6)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -91,7 +89,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  icalendar (= 2.6.0)
+  icalendar (~> 2.4.0)
   jekyll (~> 3)
   jekyll-feed (~> 0.6)
   jekyll-last-modified-at (< 1.0.1)
@@ -100,8 +98,5 @@ DEPENDENCIES
   jekyll-sitemap (~> 1.2)
   octopress-minify-html (~> 1.3.1)
 
-RUBY VERSION
-   ruby 2.6.5p114
-
 BUNDLED WITH
-   2.0.2
+   2.0.1

@@ -1,7 +1,7 @@
 ---
 dtend: 2020-02-05 20:00:00 -0500
 dtstart: 2020-02-05 18:00:00 -0500
-location: 300 Rockefeller Hall
+location: 200 Rockefeller Hall
 meetup_id: '267706067'
 title: 'Everyday Pandas for Totally not Data Scientists'
 type: meeting

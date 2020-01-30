@@ -6,9 +6,9 @@ meetup_id: '267706067'
 title: 'Everyday Pandas for Totally not Data Scientists'
 type: meeting
 ---
-
-Come out and learn about the open source and easy-to-use data structures and data analysis tools for the Python programming 
-language.
+When considering the field of data science, Pandas is the de-facto tool in everyone's toolbox. But can it be used for general business data wrangling?
+In this talk, we will explore a handful of use cases where Pandas is used in a business environment, instead of a data science environment, and how it can be used in conjunction with, and in some cases in place of, traditional SQL databases.
+We will also explore supporting libraries and tools that are frequently used in conjunction with Pandas. 
 
 ### Speaker ###
 

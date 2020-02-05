@@ -28,7 +28,7 @@ interests visualization, big data, and computing history. He lives in Hopewell J
 We'll also be doing the
 following [lightning talks](/lightning-talks.html) before the meeting:
 
-* [tracer](http://tracer-package.com/) - finds outdated running applications in your system - Patrick Ladd
+* [tracer](http://tracer-package.com/) - finds outdated running applications in your system ([slides](https://redhat.slides.com/pladd/tracer/fullscreen?token=S3eDdGau)) - [Patrick Ladd](http://people.redhat.com/pladd/)
 
 
 <a class="btn btn-default btn-hvopen"

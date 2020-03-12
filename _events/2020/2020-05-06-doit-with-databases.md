@@ -1,10 +1,12 @@
 ---
-dtend: 2020-04-01 20:00:00 -0400
-dtstart: 2020-04-01 18:00:00 -0400
+dtend: 2020-05-06 20:00:00 -0400
+dtstart: 2020-05-06 18:00:00 -0400
 location: 200 Rockefeller Hall
 title: 'Just do it - with databases!'
 type: meeting
 ---
+
+**Note: due to [Vassar campus response to covid-19](https://www.vassar.edu/coronavirus-updates/), there will be no April meeting. We'll tenatively hold this meeting in May. Check back for future updates.**
 
 When creating modern software, we often are lured into the latest and
 greatest new trends in software development. However, very often our

@@ -1,7 +1,7 @@
 ---
 dtend: 2020-05-06 21:00:00 -0400
 dtstart: 2020-05-06 19:00:00 -0400
-location: Zoom Virtual!
+location: Zoom
 title: 'Lightning Strikes'
 type: meeting
 meetup_id: '270429766'

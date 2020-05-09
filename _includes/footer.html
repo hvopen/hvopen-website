@@ -2,19 +2,16 @@
   <div class="container navbar-inverse">
     <div class="row">
       <div class="col-md-offset-3 col-md-3 navbar-inverse">
-        <div><a href="{{ site.baseurl
-                                                }}/about.html">About</a></div>
-        <div><a href="https://github.com/{{ site.github }}">Website Source</a></div>
-        <div><a href="{{ site.baseurl }}/code-of-conduct.html">Code of Conduct</a></div>
-        <div><a href="{{ site.baseurl }}/brand.html">Brand Guidelines</a></div>
+        <div><a href="https://hvopen.org/about.html">About</a></div>
+        <div><a href="https://github.com/hvopen/hvopen-website">Website Source</a></div>
+        <div><a href="https://hvopen.org/code-of-conduct.html">Code of Conduct</a></div>
+        <div><a href="https://hvopen.org/brand.html">Brand Guidelines</a></div>
       </div>
       <div class="col-md-3 navbar-inverse">
-        <div><a href="{{ site.baseurl
-                                    }}/mailinglist.html">Mailing List</a></div>
-        <div><a href="{{ site.baseurl
-                                    }}/slack.html">Slack</a></div>
-        <div><a href="{{ site.baseurl }}/archive.html">News Archive</a></div>
-        <div><a href="{{ site.baseurl }}/feed.xml">RSS</a></div>
+        <div><a href="https://hvopen.org/mailinglist.html">Mailing List</a></div>
+        <div><a href="https://hvopen.org/slack.html">Slack</a></div>
+        <div><a href="https://hvopen.org/archive.html">News Archive</a></div>
+        <div><a href="https://hvopen.org/feed.xml">RSS</a></div>
         <div><a href="https://goo.gl/forms/ZbA11t7x445DZA9G3">Contact Us</a></div>
       </div>
       <!-- <div class="col-md-6 navbar-inverse"> -->
@@ -23,8 +20,7 @@
     </div>
     <div class="row">
       <div class="col-md-offset-3 col-md-6 navbar-inverse">
-      <p class="copyright">&copy;{{ site.time | date: '%Y' }} {{
-        site.name }}. Powered
+      <p class="copyright">&copy;2016-2020 HV Open. Powered
         by <a href="http://jekyllrb.com">Jekyll</a>, theme
         by <a href="https://github.com/hvopen/hvopen-website">HV Open</a>
         based on work by
@@ -35,7 +31,14 @@
   </div>
   </div>
   </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-{% include analytics.html %}
+    ga('create', '{{ site.gaaccount }}', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>

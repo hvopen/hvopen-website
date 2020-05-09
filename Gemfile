@@ -21,5 +21,4 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.13.0"
    gem "jekyll-sitemap", "~> 1.4"
    gem "jekyll-redirect-from", "~> 0.16.0"
-   gem "octopress-minify-html", "~> 1.3.1"
 end

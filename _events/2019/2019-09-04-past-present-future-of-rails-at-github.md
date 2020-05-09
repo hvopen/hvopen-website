@@ -20,7 +20,12 @@ means for the future and establish that GitHub and Rails are in it
 together for the long haul.
 ### Speaker ###
 
-Eileen M. Uchitelle 
+Eileen Uchitelle is a Staff Software Engineer on the Ruby Architecture
+Team at GitHub and a member of the Rails Core team. She's an avid 
+contributor to open source focusing on the Ruby on Rails framework and 
+its dependencies. Eileen is passionate about scalability, performance,
+and making open source communities more sustainable and welcoming.
+
 ### Lightning Talks ###
 
 We'll also be doing the

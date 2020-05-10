@@ -11,7 +11,9 @@ type: meeting
 ---
 
 
-[<img width="177" height="250" hspace="5" align="right" alt="" src="http://arduinothedocumentary.org/poster-arduino.jpg" />](http://arduinothedocumentary.org/)July's meeting is going to be in two parts. First, we'll be doing a showing of the Arduino Documentary, which describes the evolution of the popular hobbyist platform. With a running time of 28 minutes, it's a really compelling video.
+[Arduino the Documentary](http://arduinothedocumentary.org/)
+
+July's meeting is going to be in two parts. First, we'll be doing a showing of the Arduino Documentary, which describes the evolution of the popular hobbyist platform. With a running time of 28 minutes, it's a really compelling video.
 
 After that we're going to have Arduino show and tell, with fame and fortune (well, at least the fame part, details coming shortly). We encourage all MHVLUG members to build and bring some Arduino based creation and show it to the group. Contest eligibility:
 - Main logic for whatever you are creating must be in a *duino platform (Arduino or various clones)

@@ -11,7 +11,7 @@ type: meeting
 ---
 
 
-[<img alt="openflow logo" src="http://www.openflow.org/img/newlogo7.png" style="width: 272px; height: 72px; float: left; padding-right: 10px;" />](http://www.openflow.org/)OpenFlow enables networks to evolve, by giving a remote controller the power to modify the behavior of network devices, through a well-defined "forwarding instruction set". The growing OpenFlow ecosystem now includes routers, switches, virtual switches, and access points from a range of vendors. 
+[OpenFlow](http://www.openflow.org/) enables networks to evolve, by giving a remote controller the power to modify the behavior of network devices, through a well-defined "forwarding instruction set". The growing OpenFlow ecosystem now includes routers, switches, virtual switches, and access points from a range of vendors. 
 
 ### Lightning Talks
 - Synaptics - tweak your touchpad in Linux - Sean Dague

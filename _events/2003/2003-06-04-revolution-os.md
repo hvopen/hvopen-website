@@ -11,8 +11,6 @@ type: meeting
 ---
 
 
-<img alt="" src="http://www.revolution-os.com/images/finalrevosforwebcopy.jpg" />
-
 REVOLUTION OS tells the inside story of the hackers who rebelled against the proprietary software model and Microsoft to create GNU/Linux and the Open Source movement.
 
 More details on the movie, including links to purchase it on DVD can be found at [the Revolution OS Website.](http://www.revolution-os.com/)

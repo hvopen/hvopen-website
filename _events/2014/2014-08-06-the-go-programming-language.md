@@ -11,7 +11,7 @@ type: meeting
 ---
 
 
-<font face="DejaVu Sans, Helvetica, Arial, sans-serif"><img alt="http://golang.org/doc/gopher/gopherbw.png" src="/sites/default/files/gopherbw.png" style="width: 200px; border-width: 0px; border-style: solid; margin-left: 0px; margin-right: 0px; float: left; height: 200px;" />Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.</font>
+Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
 ### Lightning Talks
 - [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes): an open source [container](https://www.docker.com/) cluster manager - Joe

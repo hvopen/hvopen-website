@@ -11,6 +11,4 @@ type: meeting
 ---
 
 
-<img alt="" src="http://www.freedomdowntime.com/teasers/0606.jpeg" />
-
 This film documents the story of computer hacker Kevin Mitnick, imprisoned without bail for nearly five years. This film was edited by our own Porkchop. It is now available on DVD at [Freedom Downtime](http://www.freedomdowntime.com/).

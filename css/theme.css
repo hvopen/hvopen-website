@@ -268,7 +268,8 @@ img {
   text-align: left;
 }
 .admonition.note, .admonition.info, .admonition.tips {
-  border-color: #e74c3c;
+    background-color: #f9f0f0;
+    border-color: #e74c3c;
 }
 .admonition.warning, .admonition.warn, .admonition.important {
   color: #361d06;

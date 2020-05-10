@@ -6,8 +6,6 @@ title: 'Lightning Strikes'
 type: meeting
 ---
 
-**Note: due to coronavirus, all HV Open Meetings will now be
-digital. RSVP on Meetup to get the Zoom connect link**
 
 An all Lightning talk Night!
 

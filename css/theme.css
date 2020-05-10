@@ -249,3 +249,30 @@ img {
     }
 
 }
+
+.admonition {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: left;
+}
+.admonition-title {
+  font-weight: bold;
+  text-align: left;
+}
+.admonition.note, .admonition.info, .admonition.tips {
+  color: #000203;
+  background-color: #62bfec;
+  border-color: #1684B9;
+}
+.admonition.warning, .admonition.warn, .admonition.important {
+  color: #361d06;
+  background-color: #f3c195;
+  border-color: #e67e22;
+}
+.admonition.danger, .admonition.critical {
+  color: #4d100a;
+  background-color: #f5b4ae;
+  border-color: #e74c3c;
+}

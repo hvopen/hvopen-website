@@ -40,6 +40,7 @@ description: >-
     </div>
 </div>
 
+{% if next_event %}
 
 <div class="row front-page-section">
   <div class="col-md-3">
@@ -95,6 +96,7 @@ description: >-
   </div>
 </div>
 
+
 <div class="row front-page-section">
   <div class="col-md-3">
     <h1 class="highlight"><span class="highlight">Upcoming</span></h1>
@@ -122,3 +124,19 @@ description: >-
 
   </div>
 </div>
+{% else %}
+<!-- this is what happens when nothing is on the schedule -->
+<div class="row front-page-section">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-9">
+      <div class="next-event">
+          <h1 class="meeting-title"><a>Check back soon!</a></h1>
+      </div>
+      <div class="content">
+          Our team is working on scheduling future events. Please
+          check back soon to see what will be happening.
+      </div>
+  </div>
+</div>
+{% endif %}

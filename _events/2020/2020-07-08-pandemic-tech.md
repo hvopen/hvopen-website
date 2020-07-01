@@ -21,4 +21,4 @@ Lightning Talks will be:
 
 Have a topic you'd like to share?  Contact us and we'll add you to the agenda!
 
-RSVP on [Meetup](https://www.meetup.com/hvopen/events/271626996/)
+RSVP on [Meetup](https://www.meetup.com/hvopen/events/271635869/)

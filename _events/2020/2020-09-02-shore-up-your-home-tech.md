@@ -19,6 +19,8 @@ Lightning Talks will be:
 - Joe Apuzzo - Calibre Ebook - How to save your sanity during COVID-19 with e-books
 - Patrick Ladd - NetGuard - An Android application specific firewall.
 
+![TalkLogos](/images/talks/hvopen2020-09.png)
+
 Have a topic you'd like to share?  Contact us and we'll add you to the agenda!
 
 RSVP on [Meetup](https://www.meetup.com/hvopen/events/272836935/)

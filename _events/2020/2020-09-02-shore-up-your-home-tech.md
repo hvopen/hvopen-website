@@ -14,7 +14,7 @@ An all Lightning talk Night!
 
 Lightning Talks will be:
 
-- Patrick Ladd - PiHole - Block those ads from your network
+- Jim Kutter - PiHole - Block those ads from your network
 - Matthias Johnson - NeverWare - Don't miss class because your Chromebook is broken. Make Chromebooks from old computer hardware
 - Joe Apuzzo - Calibre Ebook - How to save your sanity during COVID-19 with e-books
 - Patrick Ladd - NetGuard - An Android application specific firewall.

@@ -10,7 +10,7 @@ meetup_id: '273672521'
 **Note: due to coronavirus, all HV Open Meetings will now be
 digital. RSVP on Meetup to get the Zoom connect link**
 
-An all Lightning talk Night!
+Monthly meeting and social hour. If you have a brief talk you want to share on what you've been hacking on lately, let us know and we'll add you to the agenda.
 
 Lightning Talks will be:
 

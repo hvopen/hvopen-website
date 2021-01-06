@@ -14,8 +14,9 @@ Monthly meeting and social hour. If you have a brief talk you want to share on w
 
 Sign up to present a topic https://goo.gl/forms/ZbA11t7x445DZA9G3
 
-Lightning Talk will be:
+Lightning Talks will be:
 
+- Patrick Ladd - What's up with CentOS?
 - Mike Muller - A Raspberry Pi Guitar Stomp Box
 
 RSVP on [Meetup](https://www.meetup.com/hvopen/events/275454067/)

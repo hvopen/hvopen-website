@@ -19,4 +19,4 @@ Lightning Talks will be:
 - WireGuard: Fast, modern, secure VPN tunnel - Patrick Ladd
 - Pixel Passion: A few raster art tools and workflows  - Matthias Johnson
 
-RSVP on [Meetup](https://www.meetup.com/hvopen/events/276678759/)
+RSVP on [Meetup](https://www.meetup.com/hvopen/events/277248643/)

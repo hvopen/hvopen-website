@@ -6,6 +6,7 @@ title: 'May 2022 Meeting'
 type: meeting
 meetup_id: '285092368'
 ---
+**Masks and proof of vaccination or negative test required on Vassar campus if attending in person.**
 
 Efficient analysis and collection of deeply inspected, high throughput network traffic is hard… especially as the trend towards globally distributed applications continues.
 

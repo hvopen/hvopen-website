@@ -8,7 +8,7 @@ meetup_id: '287166841'
 ---
 **Masks and proof of vaccination or negative test required on Vassar campus if attending in person.**
 
-Inkscape is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers.
+Inkscape is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. This presentation will go over some of the recent changes in Inkscape as well as some ways to programmatically create content.
 
 Speaker:
 Matthias Johnson
